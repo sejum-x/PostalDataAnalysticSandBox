@@ -1,0 +1,8 @@
+pyodbc==4.0.39
+pandas==2.0.3
+sqlalchemy==2.0.19
+matplotlib==3.7.2
+seaborn==0.12.2
+numpy==1.24.3
+jupyter==1.0.0
+openpyxl==3.1.2
