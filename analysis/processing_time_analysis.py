@@ -1,5 +1,5 @@
 """
-Аналіз часу обробки посилок (Завдання 3)
+Аналіз часу обробки посилок в розрізі періодів (Завдання 3)
 Працює з delivery_periodic_raw_data
 """
 
@@ -29,9 +29,9 @@ class ProcessingTimeAnalyzer:
             print(f"❌ Помилка завантаження даних: {e}")
             return False
 
-    def analyze_processing_times(self, filepath=None):
+    def analyze_processing_times_by_periods(self, filepath=None):
         """
-        Завдання 3: Аналіз часу обробки посилок
+        Завдання 3: Аналіз часу обробки посилок в розрізі періодів
         """
         if filepath and not self.load_data(filepath):
             return {'error': 'Не вдалося завантажити дані'}
@@ -40,139 +40,145 @@ class ProcessingTimeAnalyzer:
             return {'error': 'Немає даних для аналізу'}
 
         try:
-            print("🔄 Аналіз часу обробки посилок...")
+            print("🔄 Аналіз часу обробки посилок по періодах...")
+
+            # Створюємо колонку періоду
+            self.data['period'] = self.data['start_year'].astype(str) + '-' + \
+                                 self.data['start_month'].astype(str).str.zfill(2)
 
             # Конвертуємо числові колонки
             numeric_columns = ['processing_time_hours', 'deliveries_count', 'parcel_max_size', 'parcel_max_weight']
             for col in numeric_columns:
                 if col in self.data.columns:
                     self.data[col] = pd.to_numeric(self.data[col], errors='coerce')
-
-            # Заповнюємо NaN значення нулями
             self.data[numeric_columns] = self.data[numeric_columns].fillna(0)
 
-            # Аналіз по типах посилок
-            parcel_processing = self.data.groupby(['parcel_type_name', 'parcel_max_size', 'parcel_max_weight']).agg({
+            # 📊 АНАЛІЗ ЧАСУ ОБРОБКИ ПО ПЕРІОДАХ І ТИПАХ ПОСИЛОК
+            period_parcel_processing = self.data.groupby([
+                'period', 'parcel_type_name', 'parcel_max_size', 'parcel_max_weight'
+            ]).agg({
                 'processing_time_hours': ['mean', 'median', 'std', 'min', 'max'],
                 'deliveries_count': 'sum',
-                'delivery_id': 'count',
-                'department_id': 'nunique'
+                'department_id': 'nunique',
+                'delivery_id': 'count'
             }).round(2)
 
             # Сплющуємо колонки
-            parcel_processing.columns = [
+            period_parcel_processing.columns = [
                 'avg_processing_time', 'median_processing_time', 'std_processing_time',
                 'min_processing_time', 'max_processing_time',
-                'total_deliveries', 'total_records', 'departments_handling'
+                'total_deliveries', 'departments_handling', 'total_records'
             ]
 
-            # Заповнюємо NaN після агрегації
-            parcel_processing = parcel_processing.fillna(0)
+            period_parcel_processing = period_parcel_processing.fillna(0)
 
-            # Рейтинг складності обробки
-            parcel_processing['complexity_score'] = (
-                (parcel_processing['avg_processing_time'] * 0.5) +
-                (parcel_processing['std_processing_time'] * 0.3) +
-                (parcel_processing['max_processing_time'] * 0.2)
+            # Індекс складності обробки по періодах
+            period_parcel_processing['period_complexity_score'] = (
+                (period_parcel_processing['avg_processing_time'] * 0.5) +
+                (period_parcel_processing['std_processing_time'] * 0.3) +
+                (period_parcel_processing['max_processing_time'] * 0.2)
             ).round(2)
 
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси типів посилок
-            parcel_processing_dict = {}
-            for (parcel_type, max_size, max_weight), row in parcel_processing.iterrows():
-                key = f"{parcel_type}_{max_size}_{max_weight}".replace(' ', '_').replace('*', 'x')
-                parcel_processing_dict[key] = {
-                    'parcel_type_name': parcel_type,
-                    'parcel_max_size': max_size,
-                    'parcel_max_weight': max_weight,
-                    **row.to_dict()
-                }
+            # 📈 ТРЕНДИ ЧАСУ ОБРОБКИ ПО ТИПАХ ПОСИЛОК
+            processing_trends = self.data.groupby(['parcel_type_name', 'period']).agg({
+                'processing_time_hours': 'mean',
+                'deliveries_count': 'sum',
+                'department_id': 'nunique'
+            }).round(2).fillna(0)
 
-            # Найскладніші для обробки типи посилок
-            complex_parcels = parcel_processing.nlargest(10, 'complexity_score')
-            complex_parcels_dict = {}
-            for (parcel_type, max_size, max_weight), row in complex_parcels.iterrows():
-                key = f"{parcel_type}_{max_size}_{max_weight}".replace(' ', '_').replace('*', 'x')
-                complex_parcels_dict[key] = {
-                    'parcel_type_name': parcel_type,
-                    'parcel_max_size': max_size,
-                    'parcel_max_weight': max_weight,
-                    **row.to_dict()
-                }
+            processing_trends.columns = ['avg_processing_time', 'total_deliveries', 'departments_handling']
 
-            # Аналіз по відділенням
-            dept_processing = self.data.groupby(['department_id', 'department_number', 'department_type']).agg({
-                'processing_time_hours': ['mean', 'median', 'std'],
+            # 📊 ПОРІВНЯННЯ ПЕРІОДІВ ПО ЧАСУ ОБРОБКИ
+            period_comparison = self.data.groupby('period').agg({
+                'processing_time_hours': ['mean', 'median', 'std', 'min', 'max'],
+                'deliveries_count': 'sum',
+                'parcel_type_id': 'nunique',
+                'department_id': 'nunique'
+            }).round(2).fillna(0)
+
+            period_comparison.columns = [
+                'avg_processing_time', 'median_processing_time', 'std_processing_time',
+                'min_processing_time', 'max_processing_time',
+                'total_deliveries', 'parcel_types', 'departments'
+            ]
+
+            # 🏆 НАЙСКЛАДНІШІ ПОСИЛКИ ПО ПЕРІОДАХ
+            complex_parcels_by_period = {}
+            for period in self.data['period'].unique():
+                period_data = period_parcel_processing.loc[
+                    period_parcel_processing.index.get_level_values(0) == period
+                ]
+                if not period_data.empty:
+                    top_complex = period_data.nlargest(5, 'period_complexity_score')
+                    complex_parcels_by_period[period] = self._convert_multiindex_to_dict(top_complex)
+
+            # 📊 АНАЛІЗ ЕФЕКТИВНОСТІ ВІДДІЛЕНЬ ПО ПЕРІОДАХ
+            dept_efficiency_by_period = self.data.groupby(['period', 'department_id', 'department_number']).agg({
+                'processing_time_hours': 'mean',
                 'deliveries_count': 'sum',
                 'parcel_type_id': 'nunique'
             }).round(2).fillna(0)
 
-            dept_processing.columns = [
-                'avg_processing_time', 'median_processing_time', 'std_processing_time',
-                'total_deliveries', 'parcel_types_handled'
+            dept_efficiency_by_period.columns = [
+                'avg_processing_time', 'total_deliveries', 'parcel_types_handled'
             ]
 
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси відділень
-            dept_processing_dict = {}
-            for (dept_id, dept_number, dept_type), row in dept_processing.iterrows():
-                key = f"dept_{dept_id}_{dept_number}"
-                dept_processing_dict[key] = {
-                    'department_id': dept_id,
-                    'department_number': dept_number,
-                    'department_type': dept_type,
-                    **row.to_dict()
-                }
+            # Рахуємо ефективність (безпечне ділення)
+            dept_efficiency_by_period['efficiency_ratio'] = (
+                dept_efficiency_by_period['total_deliveries'] /
+                (dept_efficiency_by_period['avg_processing_time'] + 0.1)
+            ).round(2)
 
-            # Аналіз по регіонах
-            region_processing = self.data.groupby('department_region').agg({
+            # 🏆 НАЙЕФЕКТИВНІШІ ВІДДІЛЕННЯ ПО ПЕРІОДАХ
+            efficient_departments_by_period = {}
+            for period in self.data['period'].unique():
+                period_data = dept_efficiency_by_period.loc[
+                    dept_efficiency_by_period.index.get_level_values(0) == period
+                ]
+                if not period_data.empty:
+                    top_efficient = period_data.nlargest(5, 'efficiency_ratio')
+                    efficient_departments_by_period[period] = self._convert_multiindex_to_dict(top_efficient)
+
+            # 📊 АНАЛІЗ ПО РЕГІОНАХ І ПЕРІОДАХ
+            region_processing_by_period = self.data.groupby(['period', 'department_region']).agg({
                 'processing_time_hours': ['mean', 'median', 'std'],
                 'deliveries_count': 'sum',
                 'department_id': 'nunique',
                 'parcel_type_id': 'nunique'
             }).round(2).fillna(0)
 
-            region_processing.columns = [
+            region_processing_by_period.columns = [
                 'avg_processing_time', 'median_processing_time', 'std_processing_time',
                 'total_deliveries', 'departments_count', 'parcel_types_count'
             ]
 
-            # Аналіз по періодах
-            period_processing = self.data.groupby(['start_year', 'start_month']).agg({
-                'processing_time_hours': ['mean', 'median'],
-                'deliveries_count': 'sum',
-                'delivery_id': 'count'
-            }).round(2).fillna(0)
+            # 📈 ДИНАМІКА ЗМІН ПО ПЕРІОДАХ
+            period_changes = {}
+            periods = sorted(self.data['period'].unique())
+            for i in range(1, len(periods)):
+                prev_period = periods[i-1]
+                curr_period = periods[i]
 
-            period_processing.columns = [
-                'avg_processing_time', 'median_processing_time',
-                'total_deliveries', 'total_records'
-            ]
+                prev_data = period_comparison.loc[prev_period] if prev_period in period_comparison.index else None
+                curr_data = period_comparison.loc[curr_period] if curr_period in period_comparison.index else None
 
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси періодів
-            period_processing_dict = {}
-            for (year, month), row in period_processing.iterrows():
-                key = f"{year}_{month:02d}"
-                period_processing_dict[key] = {
-                    'year': year,
-                    'month': month,
-                    **row.to_dict()
-                }
-
-            # Аналіз ефективності (час обробки vs кількість доставок)
-            efficiency_analysis = self.data.groupby('department_id').agg({
-                'processing_time_hours': 'mean',
-                'deliveries_count': 'sum'
-            }).fillna(0)
-
-            # Безпечне ділення для ефективності
-            efficiency_analysis['efficiency_ratio'] = (
-                efficiency_analysis['deliveries_count'] / (efficiency_analysis['processing_time_hours'] + 0.1)
-            ).round(2)
-
-            # Топ ефективні відділення
-            efficient_departments = efficiency_analysis.nlargest(10, 'efficiency_ratio')
+                if prev_data is not None and curr_data is not None:
+                    changes = {
+                        'previous_period': prev_period,
+                        'current_period': curr_period,
+                        'avg_processing_time_change': float(curr_data['avg_processing_time'] - prev_data['avg_processing_time']),
+                        'deliveries_change': int(curr_data['total_deliveries'] - prev_data['total_deliveries']),
+                        'departments_change': int(curr_data['departments'] - prev_data['departments']),
+                        'improvement_percentage': float(
+                            ((prev_data['avg_processing_time'] - curr_data['avg_processing_time']) /
+                             (prev_data['avg_processing_time'] + 0.1)) * 100
+                        )
+                    }
+                    period_changes[f"{prev_period}_to_{curr_period}"] = changes
 
             # Загальна статистика
             general_stats = {
+                'total_periods': int(self.data['period'].nunique()),
                 'total_records': int(len(self.data)),
                 'avg_processing_time': float(self.data['processing_time_hours'].mean()),
                 'median_processing_time': float(self.data['processing_time_hours'].median()),
@@ -180,31 +186,55 @@ class ProcessingTimeAnalyzer:
                 'max_processing_time': float(self.data['processing_time_hours'].max()),
                 'total_parcel_types': int(self.data['parcel_type_name'].nunique()),
                 'total_departments': int(self.data['department_id'].nunique()),
-                'total_deliveries': int(self.data['deliveries_count'].sum())
+                'total_deliveries': int(self.data['deliveries_count'].sum()),
+                'total_regions': int(self.data['department_region'].nunique())
             }
 
             # Збираємо результати з конвертацією типів
             results = {
+                'analysis_type': 'processing_time_by_periods',
                 'general_stats': self._convert_numpy_types(general_stats),
-                'parcel_type_processing': self._convert_numpy_types(parcel_processing_dict),
-                'complex_parcels': self._convert_numpy_types(complex_parcels_dict),
-                'department_processing': self._convert_numpy_types(dept_processing_dict),
-                'region_processing': self._convert_numpy_types(region_processing.to_dict('index')),
-                'period_processing': self._convert_numpy_types(period_processing_dict),
-                'efficiency_analysis': self._convert_numpy_types(efficiency_analysis.to_dict('index')),
-                'efficient_departments': self._convert_numpy_types(efficient_departments.to_dict('index')),
+                'period_parcel_processing': self._convert_multiindex_to_dict(period_parcel_processing),
+                'processing_trends': self._convert_multiindex_to_dict(processing_trends),
+                'period_comparison': self._convert_numpy_types(period_comparison.to_dict('index')),
+                'complex_parcels_by_period': self._convert_numpy_types(complex_parcels_by_period),
+                'department_efficiency_by_period': self._convert_multiindex_to_dict(dept_efficiency_by_period),
+                'efficient_departments_by_period': self._convert_numpy_types(efficient_departments_by_period),
+                'region_processing_by_period': self._convert_multiindex_to_dict(region_processing_by_period),
+                'period_changes': self._convert_numpy_types(period_changes),
                 'analysis_timestamp': datetime.now().isoformat()
             }
 
-            # Зберігаємо результати
-            self._save_results(results, 'processing_time_analysis')
+            # Зберігаємо в окремий файл
+            self._save_results(results, 'processing_time_by_periods')
 
-            print("✅ Аналіз часу обробки посилок завершено!")
+            print("✅ Аналіз часу обробки по періодах завершено!")
             return results
 
         except Exception as e:
-            print(f"❌ Помилка при аналізі часу обробки: {e}")
+            print(f"❌ Помилка при аналізі часу обробки по періодах: {e}")
             return {'error': str(e)}
+
+    def _convert_multiindex_to_dict(self, df):
+        """Конвертує MultiIndex DataFrame в словник"""
+        result = {}
+        for idx, row in df.iterrows():
+            if isinstance(idx, tuple):
+                key = "_".join([str(i).replace(' ', '_').replace('/', '_').replace('*', 'x') for i in idx])
+            else:
+                key = str(idx).replace(' ', '_').replace('/', '_').replace('*', 'x')
+
+            # Додаємо інформацію про індекси
+            row_dict = row.to_dict()
+            if isinstance(idx, tuple):
+                index_names = df.index.names if hasattr(df.index, 'names') else []
+                for i, index_name in enumerate(index_names):
+                    if index_name and i < len(idx):
+                        row_dict[index_name] = idx[i]
+
+            result[key] = self._convert_numpy_types(row_dict)
+
+        return result
 
     def _convert_numpy_types(self, obj):
         """Конвертує numpy типи в Python типи для JSON серіалізації"""
@@ -226,16 +256,21 @@ class ProcessingTimeAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу"""
+        """Зберігає результати аналізу в окремі файли"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             filename = f"{filename_prefix}_{timestamp}.json"
             filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
+            # Створюємо директорію якщо не існує
+            os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
+
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(results, f, ensure_ascii=False, indent=2)
 
             print(f"💾 Результати збережено: {filename}")
+            return filepath
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")
+            return None

@@ -80,26 +80,12 @@ class CourierAnalyzer:
                 (courier_stats['total_improvement'] * 0.3)
             ).round(2)
 
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси в строки
-            courier_stats_dict = {}
-            for (courier_id, courier_name), row in courier_stats.iterrows():
-                key = f"courier_{courier_id}_{courier_name.replace(' ', '_')}"
-                courier_stats_dict[key] = {
-                    'courier_id': courier_id,
-                    'courier_name': courier_name,
-                    **row.to_dict()
-                }
+            # Конвертуємо MultiIndex в словник
+            courier_stats_dict = self._convert_multiindex_to_dict(courier_stats)
 
             # Топ кур'єри
             top_couriers = courier_stats.nlargest(10, 'efficiency_score')
-            top_couriers_dict = {}
-            for (courier_id, courier_name), row in top_couriers.iterrows():
-                key = f"courier_{courier_id}_{courier_name.replace(' ', '_')}"
-                top_couriers_dict[key] = {
-                    'courier_id': courier_id,
-                    'courier_name': courier_name,
-                    **row.to_dict()
-                }
+            top_couriers_dict = self._convert_multiindex_to_dict(top_couriers)
 
             # Аналіз по регіонах
             region_stats = self.data.groupby('region_name').agg({
@@ -118,16 +104,7 @@ class CourierAnalyzer:
             }).round(2).fillna(0)
 
             city_stats.columns = ['total_deliveries', 'avg_delivery_time', 'unique_couriers']
-
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси міст
-            city_stats_dict = {}
-            for (city_name, region_name), row in city_stats.iterrows():
-                key = f"{city_name}_{region_name}".replace(' ', '_')
-                city_stats_dict[key] = {
-                    'city_name': city_name,
-                    'region_name': region_name,
-                    **row.to_dict()
-                }
+            city_stats_dict = self._convert_multiindex_to_dict(city_stats)
 
             # Загальна статистика
             general_stats = {
@@ -141,6 +118,7 @@ class CourierAnalyzer:
 
             # Збираємо результати з конвертацією типів
             results = {
+                'analysis_type': 'courier_performance_analysis',
                 'general_stats': self._convert_numpy_types(general_stats),
                 'courier_performance': self._convert_numpy_types(courier_stats_dict),
                 'top_couriers': self._convert_numpy_types(top_couriers_dict),
@@ -149,7 +127,7 @@ class CourierAnalyzer:
                 'analysis_timestamp': datetime.now().isoformat()
             }
 
-            # Зберігаємо результати
+            # Зберігаємо результати в окремий файл
             self._save_results(results, 'courier_performance_analysis')
 
             print("✅ Аналіз продуктивності кур'єрів завершено!")
@@ -158,6 +136,27 @@ class CourierAnalyzer:
         except Exception as e:
             print(f"❌ Помилка при аналізі кур'єрів: {e}")
             return {'error': str(e)}
+
+    def _convert_multiindex_to_dict(self, df):
+        """Конвертує MultiIndex DataFrame в словник"""
+        result = {}
+        for idx, row in df.iterrows():
+            if isinstance(idx, tuple):
+                key = "_".join([str(i).replace(' ', '_').replace('/', '_') for i in idx])
+            else:
+                key = str(idx).replace(' ', '_').replace('/', '_')
+
+            # Додаємо інформацію про індекси
+            row_dict = row.to_dict()
+            if isinstance(idx, tuple):
+                index_names = df.index.names if hasattr(df.index, 'names') else []
+                for i, index_name in enumerate(index_names):
+                    if index_name and i < len(idx):
+                        row_dict[index_name] = idx[i]
+
+            result[key] = self._convert_numpy_types(row_dict)
+
+        return result
 
     def _convert_numpy_types(self, obj):
         """Конвертує numpy типи в Python типи для JSON серіалізації"""
@@ -179,16 +178,21 @@ class CourierAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу"""
+        """Зберігає результати аналізу в окремі файли"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             filename = f"{filename_prefix}_{timestamp}.json"
             filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
+            # Створюємо директорію якщо не існує
+            os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
+
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(results, f, ensure_ascii=False, indent=2)
 
             print(f"💾 Результати збережено: {filename}")
+            return filepath
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")
+            return None

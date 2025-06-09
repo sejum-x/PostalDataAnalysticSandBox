@@ -60,9 +60,9 @@ class PostDWAnalyticsSystem:
         print("📊 МЕНЮ АНАЛІЗУ DATA WAREHOUSE")
         print("-"*60)
         print("1. 🚚 Аналіз продуктивності кур'єрів (Завдання 1)")
-        print("2. 🏢 Аналіз завантажень відділень (Завдання 2)")
-        print("3. ⏱️ Аналіз часу обробки посилок (Завдання 3)")
-        print("4. 🚛 Аналіз використання транспорту (Завдання 4)")
+        print("2. 🏢 Аналіз завантажень відділень по періодах (Завдання 2)")
+        print("3. ⏱️ Аналіз часу обробки посилок по періодах (Завдання 3)")
+        print("4. 🚛 Аналіз використання транспорту по періодах (Завдання 4)")
         print("5. 🎯 Провести всі аналізи")
         print("0. ⬅️ Повернутися до головного меню")
         print("-"*60)
@@ -177,7 +177,7 @@ class PostDWAnalyticsSystem:
             return False
 
     def run_department_analysis(self):
-        """Запуск аналізу відділень (Завдання 2)"""
+        """Запуск аналізу відділень по періодах (Завдання 2)"""
         files = self.get_available_files()
 
         if not files['delivery_periodic']:
@@ -186,22 +186,24 @@ class PostDWAnalyticsSystem:
             return False
 
         try:
-            print("🔄 Аналіз завантажень відділень...")
-            results = self.department_analyzer.analyze_department_workload(files['delivery_periodic'])
+            print("🔄 Аналіз завантажень відділень по періодах...")
+            # ✅ ВИПРАВЛЕНО: викликаємо правильний метод з періодами
+            results = self.department_analyzer.analyze_department_workload_by_periods(files['delivery_periodic'])
 
             if 'error' in results:
                 print(f"❌ {results['error']}")
                 return False
 
-            print("✅ Аналіз відділень завершено!")
+            print("✅ Аналіз відділень по періодах завершено!")
             print(f"📊 Проаналізовано {results['general_stats']['total_departments']} відділень")
+            print(f"📅 За {results['general_stats']['total_periods']} періодів")
             return True
         except Exception as e:
             print(f"❌ Помилка при аналізі відділень: {e}")
             return False
 
     def run_processing_analysis(self):
-        """Запуск аналізу часу обробки (Завдання 3)"""
+        """Запуск аналізу часу обробки по періодах (Завдання 3)"""
         files = self.get_available_files()
 
         if not files['delivery_periodic']:
@@ -210,21 +212,24 @@ class PostDWAnalyticsSystem:
             return False
 
         try:
-            print("🔄 Аналіз часу обробки посилок...")
-            results = self.processing_analyzer.analyze_processing_times(files['delivery_periodic'])
+            print("🔄 Аналіз часу обробки посилок по періодах...")
+            # ✅ ВИПРАВЛЕНО: викликаємо правильний метод з періодами
+            results = self.processing_analyzer.analyze_processing_times_by_periods(files['delivery_periodic'])
 
             if 'error' in results:
                 print(f"❌ {results['error']}")
                 return False
 
-            print("✅ Аналіз часу обробки завершено!")
+            print("✅ Аналіз часу обробки по періодах завершено!")
+            print(f"📊 Проаналізовано {results['general_stats']['total_parcel_types']} типів посилок")
+            print(f"📅 За {results['general_stats']['total_periods']} періодів")
             return True
         except Exception as e:
             print(f"❌ Помилка при аналізі часу обробки: {e}")
             return False
 
     def run_transport_analysis(self):
-        """Запуск аналізу транспорту (Завдання 4)"""
+        """Запуск аналізу транспорту по періодах (Завдання 4)"""
         files = self.get_available_files()
 
         if not files['delivery_periodic']:
@@ -233,14 +238,17 @@ class PostDWAnalyticsSystem:
             return False
 
         try:
-            print("🔄 Аналіз використання транспорту...")
-            results = self.transport_analyzer.analyze_transport_utilization(files['delivery_periodic'])
+            print("🔄 Аналіз використання транспорту по періодах...")
+            # ✅ ВИПРАВЛЕНО: викликаємо правильний метод з періодами
+            results = self.transport_analyzer.analyze_transport_utilization_by_periods(files['delivery_periodic'])
 
             if 'error' in results:
                 print(f"❌ {results['error']}")
                 return False
 
-            print("✅ Аналіз транспорту завершено!")
+            print("✅ Аналіз транспорту по періодах завершено!")
+            print(f"📊 Проаналізовано {results['general_stats']['total_transport_types']} типів транспорту")
+            print(f"📅 За {results['general_stats']['total_periods']} періодів")
             return True
         except Exception as e:
             print(f"❌ Помилка при аналізі транспорту: {e}")

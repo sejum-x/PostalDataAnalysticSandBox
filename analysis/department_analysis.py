@@ -1,5 +1,5 @@
 """
-Аналіз завантажень відділень (Завдання 2)
+Аналіз завантажень відділень в розрізі періодів (Завдання 2)
 Працює з delivery_periodic_raw_data
 """
 
@@ -29,9 +29,9 @@ class DepartmentAnalyzer:
             print(f"❌ Помилка завантаження даних: {e}")
             return False
 
-    def analyze_department_workload(self, filepath=None):
+    def analyze_department_workload_by_periods(self, filepath=None):
         """
-        Завдання 2: Аналіз завантажень відділень
+        Завдання 2: Аналіз завантажень відділень в розрізі періодів
         """
         if filepath and not self.load_data(filepath):
             return {'error': 'Не вдалося завантажити дані'}
@@ -40,121 +40,167 @@ class DepartmentAnalyzer:
             return {'error': 'Немає даних для аналізу'}
 
         try:
-            print("🔄 Аналіз завантажень відділень...")
+            print("🔄 Аналіз завантажень відділень по періодах...")
+
+            # Створюємо колонку періоду
+            self.data['period'] = self.data['start_year'].astype(str) + '-' + \
+                                 self.data['start_month'].astype(str).str.zfill(2)
+
+            # ✅ ВИПРАВЛЕНО: Правильне створення дат з існуючими колонками
+            try:
+                # Заповнюємо NaN значення
+                date_columns = ['start_year', 'start_month', 'start_day', 'end_year', 'end_month', 'end_day']
+                for col in date_columns:
+                    self.data[col] = pd.to_numeric(self.data[col], errors='coerce').fillna(1)
+
+                # Створюємо DataFrame з датами для pd.to_datetime
+                start_dates_df = self.data[['start_year', 'start_month', 'start_day']].copy()
+                start_dates_df.columns = ['year', 'month', 'day']
+
+                end_dates_df = self.data[['end_year', 'end_month', 'end_day']].copy()
+                end_dates_df.columns = ['year', 'month', 'day']
+
+                # Конвертуємо в дати
+                start_dates = pd.to_datetime(start_dates_df)
+                end_dates = pd.to_datetime(end_dates_df)
+
+                # Рахуємо тривалість періоду
+                self.data['period_duration_days'] = (end_dates - start_dates).dt.days + 1
+
+                print(f"✅ Успішно створено дати. Середня тривалість періоду: {self.data['period_duration_days'].mean():.1f} днів")
+
+            except Exception as date_error:
+                print(f"⚠️ Помилка створення дат: {date_error}")
+                print("Використовуємо фіксовану тривалість періоду")
+                self.data['period_duration_days'] = 30
 
             # Конвертуємо числові колонки
             numeric_columns = ['deliveries_count', 'processing_time_hours', 'deliveries_share_percentage']
             for col in numeric_columns:
                 if col in self.data.columns:
                     self.data[col] = pd.to_numeric(self.data[col], errors='coerce')
-
-            # Заповнюємо NaN значення нулями
             self.data[numeric_columns] = self.data[numeric_columns].fillna(0)
 
-            # Основна статистика по відділенням
-            dept_stats = self.data.groupby(['department_id', 'department_number', 'department_address']).agg({
-                'delivery_id': 'count',
-                'deliveries_count': ['sum', 'mean'],
-                'processing_time_hours': ['mean', 'median', 'max'],
+            # 📊 АНАЛІЗ ПО ПЕРІОДАХ І ВІДДІЛЕННЯМ
+            period_dept_analysis = self.data.groupby([
+                'period', 'department_id', 'department_number', 'department_type'
+            ]).agg({
+                'deliveries_count': 'sum',
+                'processing_time_hours': 'mean',
                 'deliveries_share_percentage': 'mean',
                 'parcel_type_id': 'nunique',
-                'transport_body_type_id': 'nunique'
-            }).round(2)
+                'period_duration_days': 'first'
+            }).round(2).fillna(0)
 
-            # Сплющуємо колонки
-            dept_stats.columns = [
-                'total_records',
-                'total_deliveries', 'avg_deliveries_per_period',
-                'avg_processing_time', 'median_processing_time', 'max_processing_time',
-                'avg_share_percentage',
-                'parcel_types_handled', 'transport_types_used'
+            period_dept_analysis.columns = [
+                'total_deliveries', 'avg_processing_time', 'avg_share_percentage',
+                'parcel_types_handled', 'period_days'
             ]
 
-            # Заповнюємо NaN після агрегації
-            dept_stats = dept_stats.fillna(0)
-
-            # Рейтинг завантаженості
-            dept_stats['workload_score'] = (
-                (dept_stats['total_deliveries'] * 0.4) +
-                (dept_stats['avg_processing_time'] * 0.3) +
-                (dept_stats['avg_share_percentage'] * 0.3)
+            # Рахуємо доставки на день
+            period_dept_analysis['deliveries_per_day'] = (
+                period_dept_analysis['total_deliveries'] /
+                period_dept_analysis['period_days'].replace(0, 1)
             ).round(2)
 
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси відділень
-            dept_stats_dict = {}
-            for (dept_id, dept_number, dept_address), row in dept_stats.iterrows():
-                key = f"dept_{dept_id}_{dept_number}"
-                dept_stats_dict[key] = {
-                    'department_id': dept_id,
-                    'department_number': dept_number,
-                    'department_address': dept_address,
-                    **row.to_dict()
-                }
+            # Індекс завантаженості по періодах
+            period_dept_analysis['period_workload_score'] = (
+                (period_dept_analysis['deliveries_per_day'] * 0.4) +
+                (period_dept_analysis['avg_processing_time'] * 0.3) +
+                (period_dept_analysis['avg_share_percentage'] * 0.3)
+            ).round(2)
 
-            # Найзавантаженіші відділення
-            busiest_departments = dept_stats.nlargest(10, 'workload_score')
-            busiest_dict = {}
-            for (dept_id, dept_number, dept_address), row in busiest_departments.iterrows():
-                key = f"dept_{dept_id}_{dept_number}"
-                busiest_dict[key] = {
-                    'department_id': dept_id,
-                    'department_number': dept_number,
-                    'department_address': dept_address,
-                    **row.to_dict()
-                }
+            # 📈 ТРЕНДИ ПО ВІДДІЛЕННЯМ
+            dept_trends = self.data.groupby(['department_id', 'department_number', 'period']).agg({
+                'deliveries_count': 'sum',
+                'processing_time_hours': 'mean',
+                'deliveries_share_percentage': 'mean'
+            }).round(2).fillna(0)
 
-            # Аналіз по типах відділень
-            dept_type_stats = self.data.groupby('department_type').agg({
-                'delivery_id': 'count',
+            dept_trends.columns = ['total_deliveries', 'avg_processing_time', 'avg_share_percentage']
+
+            # 📊 ЗАГАЛЬНА СТАТИСТИКА ПО ПЕРІОДАХ
+            period_summary = self.data.groupby('period').agg({
+                'deliveries_count': 'sum',
+                'processing_time_hours': 'mean',
+                'department_id': 'nunique',
+                'parcel_type_id': 'nunique',
+                'transport_body_type_id': 'nunique'
+            }).round(2).fillna(0)
+
+            period_summary.columns = [
+                'total_deliveries', 'avg_processing_time',
+                'active_departments', 'parcel_types', 'transport_types'
+            ]
+
+            # 🏆 ТОП ЗАВАНТАЖЕНІ ВІДДІЛЕННЯ ПО ПЕРІОДАХ
+            top_busy_by_period = {}
+            for period in self.data['period'].unique():
+                period_data = period_dept_analysis.loc[
+                    period_dept_analysis.index.get_level_values(0) == period
+                ]
+                if not period_data.empty:
+                    top_5 = period_data.nlargest(5, 'period_workload_score')
+                    top_busy_by_period[period] = self._convert_multiindex_to_dict(top_5)
+
+            # 📊 АНАЛІЗ ПО ТИПАХ ВІДДІЛЕНЬ І ПЕРІОДАХ
+            dept_type_period_analysis = self.data.groupby(['period', 'department_type']).agg({
                 'deliveries_count': 'sum',
                 'processing_time_hours': 'mean',
                 'department_id': 'nunique'
             }).round(2).fillna(0)
 
-            dept_type_stats.columns = ['total_records', 'total_deliveries', 'avg_processing_time', 'departments_count']
+            dept_type_period_analysis.columns = [
+                'total_deliveries', 'avg_processing_time', 'departments_count'
+            ]
 
-            # Аналіз по регіонах
-            region_stats = self.data.groupby('department_region').agg({
-                'delivery_id': 'count',
+            # 📊 АНАЛІЗ ПО РЕГІОНАХ І ПЕРІОДАХ
+            region_period_analysis = self.data.groupby(['period', 'department_region']).agg({
+                'deliveries_count': 'sum',
+                'processing_time_hours': 'mean',
+                'department_id': 'nunique',
+                'parcel_type_id': 'nunique'
+            }).round(2).fillna(0)
+
+            region_period_analysis.columns = [
+                'total_deliveries', 'avg_processing_time',
+                'departments_count', 'parcel_types'
+            ]
+
+            # 📈 ПОРІВНЯННЯ ПЕРІОДІВ
+            period_comparison = {}
+            periods = sorted(self.data['period'].unique())
+            for i in range(1, len(periods)):
+                prev_period = periods[i-1]
+                curr_period = periods[i]
+
+                prev_data = period_summary.loc[prev_period] if prev_period in period_summary.index else None
+                curr_data = period_summary.loc[curr_period] if curr_period in period_summary.index else None
+
+                if prev_data is not None and curr_data is not None:
+                    comparison = {
+                        'previous_period': prev_period,
+                        'current_period': curr_period,
+                        'deliveries_change': float(curr_data['total_deliveries'] - prev_data['total_deliveries']),
+                        'processing_time_change': float(curr_data['avg_processing_time'] - prev_data['avg_processing_time']),
+                        'departments_change': int(curr_data['active_departments'] - prev_data['active_departments'])
+                    }
+                    period_comparison[f"{prev_period}_to_{curr_period}"] = comparison
+
+            # 📊 АНАЛІЗ ПО МІСТАХ І ПЕРІОДАХ
+            city_period_analysis = self.data.groupby(['period', 'department_city', 'department_region']).agg({
                 'deliveries_count': 'sum',
                 'processing_time_hours': 'mean',
                 'department_id': 'nunique'
             }).round(2).fillna(0)
 
-            region_stats.columns = ['total_records', 'total_deliveries', 'avg_processing_time', 'departments_count']
-
-            # Аналіз по містах
-            city_stats = self.data.groupby(['department_city', 'department_region']).agg({
-                'delivery_id': 'count',
-                'deliveries_count': 'sum',
-                'processing_time_hours': 'mean',
-                'department_id': 'nunique'
-            }).round(2).fillna(0)
-
-            city_stats.columns = ['total_records', 'total_deliveries', 'avg_processing_time', 'departments_count']
-
-            # ✅ ВИПРАВЛЕННЯ: Конвертуємо tuple індекси міст
-            city_stats_dict = {}
-            for (city_name, region_name), row in city_stats.iterrows():
-                key = f"{city_name}_{region_name}".replace(' ', '_')
-                city_stats_dict[key] = {
-                    'city_name': city_name,
-                    'region_name': region_name,
-                    **row.to_dict()
-                }
-
-            # Аналіз по типах посилок
-            parcel_type_stats = self.data.groupby('parcel_type_name').agg({
-                'delivery_id': 'count',
-                'deliveries_count': 'sum',
-                'processing_time_hours': 'mean',
-                'department_id': 'nunique'
-            }).round(2).fillna(0)
-
-            parcel_type_stats.columns = ['total_records', 'total_deliveries', 'avg_processing_time', 'departments_handling']
+            city_period_analysis.columns = [
+                'total_deliveries', 'avg_processing_time', 'departments_count'
+            ]
 
             # Загальна статистика
             general_stats = {
+                'total_periods': int(self.data['period'].nunique()),
                 'total_departments': int(self.data['department_id'].nunique()),
                 'total_records': int(len(self.data)),
                 'total_deliveries': int(self.data['deliveries_count'].sum()),
@@ -162,30 +208,58 @@ class DepartmentAnalyzer:
                 'total_regions': int(self.data['department_region'].nunique()),
                 'total_cities': int(self.data['department_city'].nunique()),
                 'parcel_types': int(self.data['parcel_type_name'].nunique()),
-                'transport_types': int(self.data['transport_type_name'].nunique())
+                'transport_types': int(self.data['transport_type_name'].nunique()),
+                'department_types': int(self.data['department_type'].nunique()),
+                'avg_period_duration': float(self.data['period_duration_days'].mean())
             }
 
             # Збираємо результати з конвертацією типів
             results = {
+                'analysis_type': 'department_workload_by_periods',
                 'general_stats': self._convert_numpy_types(general_stats),
-                'department_workload': self._convert_numpy_types(dept_stats_dict),
-                'busiest_departments': self._convert_numpy_types(busiest_dict),
-                'department_type_analysis': self._convert_numpy_types(dept_type_stats.to_dict('index')),
-                'region_analysis': self._convert_numpy_types(region_stats.to_dict('index')),
-                'city_analysis': self._convert_numpy_types(city_stats_dict),
-                'parcel_type_analysis': self._convert_numpy_types(parcel_type_stats.to_dict('index')),
+                'period_department_analysis': self._convert_multiindex_to_dict(period_dept_analysis),
+                'period_summary': self._convert_numpy_types(period_summary.to_dict('index')),
+                'department_trends': self._convert_multiindex_to_dict(dept_trends),
+                'top_busy_departments_by_period': self._convert_numpy_types(top_busy_by_period),
+                'department_type_period_analysis': self._convert_multiindex_to_dict(dept_type_period_analysis),
+                'region_period_analysis': self._convert_multiindex_to_dict(region_period_analysis),
+                'city_period_analysis': self._convert_multiindex_to_dict(city_period_analysis),
+                'period_comparison': self._convert_numpy_types(period_comparison),
                 'analysis_timestamp': datetime.now().isoformat()
             }
 
-            # Зберігаємо результати
-            self._save_results(results, 'department_workload_analysis')
+            # Зберігаємо в окремий файл
+            self._save_results(results, 'department_workload_by_periods')
 
-            print("✅ Аналіз завантажень відділень завершено!")
+            print("✅ Аналіз завантажень відділень по періодах завершено!")
             return results
 
         except Exception as e:
-            print(f"❌ Помилка при аналізі відділень: {e}")
+            print(f"❌ Помилка при аналізі відділень по періодах: {e}")
+            import traceback
+            traceback.print_exc()
             return {'error': str(e)}
+
+    def _convert_multiindex_to_dict(self, df):
+        """Конвертує MultiIndex DataFrame в словник"""
+        result = {}
+        for idx, row in df.iterrows():
+            if isinstance(idx, tuple):
+                key = "_".join([str(i).replace(' ', '_').replace('/', '_').replace('-', '_') for i in idx])
+            else:
+                key = str(idx).replace(' ', '_').replace('/', '_').replace('-', '_')
+
+            # Додаємо інформацію про індекси
+            row_dict = row.to_dict()
+            if isinstance(idx, tuple):
+                index_names = df.index.names if hasattr(df.index, 'names') else []
+                for i, index_name in enumerate(index_names):
+                    if index_name and i < len(idx):
+                        row_dict[index_name] = idx[i]
+
+            result[key] = self._convert_numpy_types(row_dict)
+
+        return result
 
     def _convert_numpy_types(self, obj):
         """Конвертує numpy типи в Python типи для JSON серіалізації"""
@@ -207,16 +281,21 @@ class DepartmentAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу"""
+        """Зберігає результати аналізу в окремі файли"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
             filename = f"{filename_prefix}_{timestamp}.json"
             filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
+            # Створюємо директорію якщо не існує
+            os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
+
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(results, f, ensure_ascii=False, indent=2)
 
             print(f"💾 Результати збережено: {filename}")
+            return filepath
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")
+            return None
