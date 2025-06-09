@@ -256,20 +256,116 @@ class ProcessingTimeAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу в окремі файли"""
+        """Зберігає результати аналізу в окремі файли по категоріях"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = f"{filename_prefix}_{timestamp}.json"
-            filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
             # Створюємо директорію якщо не існує
             os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
 
-            with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(results, f, ensure_ascii=False, indent=2)
+            saved_files = []
 
-            print(f"💾 Результати збережено: {filename}")
-            return filepath
+            # 1. Загальна статистика
+            general_stats_file = f"processing_time_general_stats_{timestamp}.json"
+            general_stats_path = os.path.join(self.config.PROCESSED_DATA_PATH, general_stats_file)
+            with open(general_stats_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_general_stats',
+                    'data': results['general_stats'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(general_stats_file)
+
+            # 2. Обробка посилок по періодах
+            period_parcel_file = f"processing_time_period_parcel_{timestamp}.json"
+            period_parcel_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_parcel_file)
+            with open(period_parcel_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_period_parcel',
+                    'data': results['period_parcel_processing'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_parcel_file)
+
+            # 3. Тренди обробки
+            processing_trends_file = f"processing_time_trends_{timestamp}.json"
+            processing_trends_path = os.path.join(self.config.PROCESSED_DATA_PATH, processing_trends_file)
+            with open(processing_trends_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_trends',
+                    'data': results['processing_trends'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(processing_trends_file)
+
+            # 4. Порівняння періодів
+            period_comparison_file = f"processing_time_period_comparison_{timestamp}.json"
+            period_comparison_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_comparison_file)
+            with open(period_comparison_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_period_comparison',
+                    'data': results['period_comparison'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_comparison_file)
+
+            # 5. Складні посилки по періодах
+            complex_parcels_file = f"processing_time_complex_parcels_{timestamp}.json"
+            complex_parcels_path = os.path.join(self.config.PROCESSED_DATA_PATH, complex_parcels_file)
+            with open(complex_parcels_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_complex_parcels',
+                    'data': results['complex_parcels_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(complex_parcels_file)
+
+            # 6. Ефективність відділень
+            dept_efficiency_file = f"processing_time_dept_efficiency_{timestamp}.json"
+            dept_efficiency_path = os.path.join(self.config.PROCESSED_DATA_PATH, dept_efficiency_file)
+            with open(dept_efficiency_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_dept_efficiency',
+                    'data': results['department_efficiency_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(dept_efficiency_file)
+
+            # 7. Ефективні відділення
+            efficient_depts_file = f"processing_time_efficient_depts_{timestamp}.json"
+            efficient_depts_path = os.path.join(self.config.PROCESSED_DATA_PATH, efficient_depts_file)
+            with open(efficient_depts_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_efficient_depts',
+                    'data': results['efficient_departments_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(efficient_depts_file)
+
+            # 8. Обробка по регіонах
+            region_processing_file = f"processing_time_region_analysis_{timestamp}.json"
+            region_processing_path = os.path.join(self.config.PROCESSED_DATA_PATH, region_processing_file)
+            with open(region_processing_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_region_analysis',
+                    'data': results['region_processing_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(region_processing_file)
+
+            # 9. Зміни по періодах
+            period_changes_file = f"processing_time_period_changes_{timestamp}.json"
+            period_changes_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_changes_file)
+            with open(period_changes_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'processing_time_period_changes',
+                    'data': results['period_changes'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_changes_file)
+
+            print(f"💾 Збережено {len(saved_files)} файлів: {', '.join(saved_files)}")
+            return saved_files
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")

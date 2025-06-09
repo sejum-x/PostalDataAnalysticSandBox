@@ -281,20 +281,116 @@ class DepartmentAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу в окремі файли"""
+        """Зберігає результати аналізу в окремі файли по категоріях"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = f"{filename_prefix}_{timestamp}.json"
-            filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
             # Створюємо директорію якщо не існує
             os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
 
-            with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(results, f, ensure_ascii=False, indent=2)
+            saved_files = []
 
-            print(f"💾 Результати збережено: {filename}")
-            return filepath
+            # 1. Загальна статистика
+            general_stats_file = f"department_general_stats_{timestamp}.json"
+            general_stats_path = os.path.join(self.config.PROCESSED_DATA_PATH, general_stats_file)
+            with open(general_stats_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_general_stats',
+                    'data': results['general_stats'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(general_stats_file)
+
+            # 2. Аналіз відділень по періодах
+            period_dept_file = f"department_period_analysis_{timestamp}.json"
+            period_dept_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_dept_file)
+            with open(period_dept_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_period_analysis',
+                    'data': results['period_department_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_dept_file)
+
+            # 3. Підсумки по періодах
+            period_summary_file = f"department_period_summary_{timestamp}.json"
+            period_summary_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_summary_file)
+            with open(period_summary_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_period_summary',
+                    'data': results['period_summary'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_summary_file)
+
+            # 4. Тренди відділень
+            dept_trends_file = f"department_trends_{timestamp}.json"
+            dept_trends_path = os.path.join(self.config.PROCESSED_DATA_PATH, dept_trends_file)
+            with open(dept_trends_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_trends',
+                    'data': results['department_trends'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(dept_trends_file)
+
+            # 5. Топ завантажені відділення
+            top_busy_file = f"department_top_busy_{timestamp}.json"
+            top_busy_path = os.path.join(self.config.PROCESSED_DATA_PATH, top_busy_file)
+            with open(top_busy_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_top_busy',
+                    'data': results['top_busy_departments_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(top_busy_file)
+
+            # 6. Аналіз типів відділень
+            dept_type_file = f"department_type_analysis_{timestamp}.json"
+            dept_type_path = os.path.join(self.config.PROCESSED_DATA_PATH, dept_type_file)
+            with open(dept_type_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_type_analysis',
+                    'data': results['department_type_period_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(dept_type_file)
+
+            # 7. Аналіз по регіонах
+            region_analysis_file = f"department_region_analysis_{timestamp}.json"
+            region_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, region_analysis_file)
+            with open(region_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_region_analysis',
+                    'data': results['region_period_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(region_analysis_file)
+
+            # 8. Аналіз по містах
+            city_analysis_file = f"department_city_analysis_{timestamp}.json"
+            city_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, city_analysis_file)
+            with open(city_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_city_analysis',
+                    'data': results['city_period_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(city_analysis_file)
+
+            # 9. Порівняння періодів
+            period_comparison_file = f"department_period_comparison_{timestamp}.json"
+            period_comparison_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_comparison_file)
+            with open(period_comparison_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'department_period_comparison',
+                    'data': results['period_comparison'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_comparison_file)
+
+            print(f"💾 Збережено {len(saved_files)} файлів: {', '.join(saved_files)}")
+            return saved_files
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")

@@ -286,20 +286,127 @@ class TransportAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу в окремі файли"""
+        """Зберігає результати аналізу в окремі файли по категоріях"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = f"{filename_prefix}_{timestamp}.json"
-            filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
             # Створюємо директорію якщо не існує
             os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
 
-            with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(results, f, ensure_ascii=False, indent=2)
+            saved_files = []
 
-            print(f"💾 Результати збережено: {filename}")
-            return filepath
+            # 1. Загальна статистика
+            general_stats_file = f"transport_general_stats_{timestamp}.json"
+            general_stats_path = os.path.join(self.config.PROCESSED_DATA_PATH, general_stats_file)
+            with open(general_stats_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_general_stats',
+                    'data': results['general_stats'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(general_stats_file)
+
+            # 2. Використання транспорту по періодах
+            period_usage_file = f"transport_period_usage_{timestamp}.json"
+            period_usage_path = os.path.join(self.config.PROCESSED_DATA_PATH, period_usage_file)
+            with open(period_usage_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_period_usage',
+                    'data': results['period_transport_usage'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(period_usage_file)
+
+            # 3. Тренди транспорту
+            transport_trends_file = f"transport_trends_{timestamp}.json"
+            transport_trends_path = os.path.join(self.config.PROCESSED_DATA_PATH, transport_trends_file)
+            with open(transport_trends_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_trends',
+                    'data': results['transport_trends'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(transport_trends_file)
+
+            # 4. Ефективність транспорту
+            efficiency_file = f"transport_efficiency_{timestamp}.json"
+            efficiency_path = os.path.join(self.config.PROCESSED_DATA_PATH, efficiency_file)
+            with open(efficiency_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_efficiency',
+                    'data': results['transport_efficiency_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(efficiency_file)
+
+            # 5. Ефективний транспорт по періодах
+            efficient_transport_file = f"transport_efficient_by_period_{timestamp}.json"
+            efficient_transport_path = os.path.join(self.config.PROCESSED_DATA_PATH, efficient_transport_file)
+            with open(efficient_transport_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_efficient_by_period',
+                    'data': results['efficient_transport_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(efficient_transport_file)
+
+            # 6. Транспорт і посилки по періодах
+            parcel_analysis_file = f"transport_parcel_analysis_{timestamp}.json"
+            parcel_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, parcel_analysis_file)
+            with open(parcel_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_parcel_analysis',
+                    'data': results['transport_parcel_period_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(parcel_analysis_file)
+
+            # 7. Транспорт по регіонах
+            region_analysis_file = f"transport_region_analysis_{timestamp}.json"
+            region_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, region_analysis_file)
+            with open(region_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_region_analysis',
+                    'data': results['transport_region_period_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(region_analysis_file)
+
+            # 8. Транспорт по відділенням
+            dept_analysis_file = f"transport_department_analysis_{timestamp}.json"
+            dept_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, dept_analysis_file)
+            with open(dept_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_department_analysis',
+                    'data': results['department_transport_period_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(dept_analysis_file)
+
+            # 9. Найбільш використовуваний транспорт
+            most_used_file = f"transport_most_used_{timestamp}.json"
+            most_used_path = os.path.join(self.config.PROCESSED_DATA_PATH, most_used_file)
+            with open(most_used_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_most_used',
+                    'data': results['most_used_transport_by_period'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(most_used_file)
+
+            # 10. Зміни транспорту
+            changes_file = f"transport_changes_{timestamp}.json"
+            changes_path = os.path.join(self.config.PROCESSED_DATA_PATH, changes_file)
+            with open(changes_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'transport_changes',
+                    'data': results['transport_changes'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(changes_file)
+
+            print(f"💾 Збережено {len(saved_files)} файлів: {', '.join(saved_files)}")
+            return saved_files
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")

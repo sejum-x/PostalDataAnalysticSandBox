@@ -178,20 +178,72 @@ class CourierAnalyzer:
             return obj
 
     def _save_results(self, results, filename_prefix):
-        """Зберігає результати аналізу в окремі файли"""
+        """Зберігає результати аналізу в окремі файли по категоріях"""
         try:
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            filename = f"{filename_prefix}_{timestamp}.json"
-            filepath = os.path.join(self.config.PROCESSED_DATA_PATH, filename)
 
             # Створюємо директорію якщо не існує
             os.makedirs(self.config.PROCESSED_DATA_PATH, exist_ok=True)
 
-            with open(filepath, 'w', encoding='utf-8') as f:
-                json.dump(results, f, ensure_ascii=False, indent=2)
+            saved_files = []
 
-            print(f"💾 Результати збережено: {filename}")
-            return filepath
+            # 1. Загальна статистика
+            general_stats_file = f"courier_general_stats_{timestamp}.json"
+            general_stats_path = os.path.join(self.config.PROCESSED_DATA_PATH, general_stats_file)
+            with open(general_stats_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'courier_general_stats',
+                    'data': results['general_stats'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(general_stats_file)
+
+            # 2. Продуктивність кур'єрів
+            courier_performance_file = f"courier_performance_{timestamp}.json"
+            courier_performance_path = os.path.join(self.config.PROCESSED_DATA_PATH, courier_performance_file)
+            with open(courier_performance_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'courier_performance',
+                    'data': results['courier_performance'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(courier_performance_file)
+
+            # 3. Топ кур'єри
+            top_couriers_file = f"courier_top_performers_{timestamp}.json"
+            top_couriers_path = os.path.join(self.config.PROCESSED_DATA_PATH, top_couriers_file)
+            with open(top_couriers_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'courier_top_performers',
+                    'data': results['top_couriers'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(top_couriers_file)
+
+            # 4. Аналіз по регіонах
+            region_analysis_file = f"courier_region_analysis_{timestamp}.json"
+            region_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, region_analysis_file)
+            with open(region_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'courier_region_analysis',
+                    'data': results['region_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(region_analysis_file)
+
+            # 5. Аналіз по містах
+            city_analysis_file = f"courier_city_analysis_{timestamp}.json"
+            city_analysis_path = os.path.join(self.config.PROCESSED_DATA_PATH, city_analysis_file)
+            with open(city_analysis_path, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'analysis_type': 'courier_city_analysis',
+                    'data': results['city_analysis'],
+                    'analysis_timestamp': results['analysis_timestamp']
+                }, f, ensure_ascii=False, indent=2)
+            saved_files.append(city_analysis_file)
+
+            print(f"💾 Збережено {len(saved_files)} файлів: {', '.join(saved_files)}")
+            return saved_files
 
         except Exception as e:
             print(f"❌ Помилка збереження результатів: {e}")
