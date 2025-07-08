@@ -1,0 +1,17 @@
+{
+  "analysis_type": "department_general_stats",
+  "data": {
+    "total_periods": 7,
+    "total_departments": 261,
+    "total_records": 10062,
+    "total_deliveries": 69747,
+    "avg_processing_time": 4.48062015503876,
+    "total_regions": 25,
+    "total_cities": 74,
+    "parcel_types": 3,
+    "transport_types": 2,
+    "department_types": 3,
+    "avg_period_duration": 30.271914132379248
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.248238"
+}

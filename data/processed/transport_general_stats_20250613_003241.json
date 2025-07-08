@@ -1,0 +1,15 @@
+{
+  "analysis_type": "transport_general_stats",
+  "data": {
+    "total_periods": 7,
+    "total_transport_types": 2,
+    "total_records": 10062,
+    "total_deliveries": 69747,
+    "avg_processing_time": 4.48062015503876,
+    "departments_using_transport": 261,
+    "parcel_types_transported": 3,
+    "regions_served": 25,
+    "avg_share_percentage": 0.06956905883522163
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.843850"
+}

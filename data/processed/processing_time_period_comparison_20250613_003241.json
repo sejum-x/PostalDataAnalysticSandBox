@@ -1,0 +1,76 @@
+{
+  "analysis_type": "processing_time_period_comparison",
+  "data": {
+    "2024-09": {
+      "avg_processing_time": 4.11,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.1,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 4165,
+      "parcel_types": 3,
+      "departments": 261
+    },
+    "2024-10": {
+      "avg_processing_time": 4.47,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.56,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 12714,
+      "parcel_types": 3,
+      "departments": 261
+    },
+    "2024-11": {
+      "avg_processing_time": 4.54,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.55,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 12435,
+      "parcel_types": 3,
+      "departments": 261
+    },
+    "2024-12": {
+      "avg_processing_time": 4.47,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.53,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 12291,
+      "parcel_types": 3,
+      "departments": 261
+    },
+    "2025-01": {
+      "avg_processing_time": 4.52,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.55,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 12647,
+      "parcel_types": 3,
+      "departments": 261
+    },
+    "2025-02": {
+      "avg_processing_time": 4.56,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.66,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 11576,
+      "parcel_types": 3,
+      "departments": 261
+    },
+    "2025-03": {
+      "avg_processing_time": 4.67,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.22,
+      "min_processing_time": 1,
+      "max_processing_time": 10,
+      "total_deliveries": 3919,
+      "parcel_types": 3,
+      "departments": 261
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.540710"
+}

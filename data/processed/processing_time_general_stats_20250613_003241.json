@@ -1,0 +1,16 @@
+{
+  "analysis_type": "processing_time_general_stats",
+  "data": {
+    "total_periods": 7,
+    "total_records": 10062,
+    "avg_processing_time": 4.48062015503876,
+    "median_processing_time": 4.0,
+    "min_processing_time": 1.0,
+    "max_processing_time": 10.0,
+    "total_parcel_types": 3,
+    "total_departments": 261,
+    "total_deliveries": 69747,
+    "total_regions": 25
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.540710"
+}

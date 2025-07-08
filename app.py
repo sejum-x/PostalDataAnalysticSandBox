@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify, send_file, send_from_directory
 from flask_restx import Api, Resource, fields, Namespace
+from flask_cors import CORS
 from werkzeug.exceptions import NotFound
 import os
 import sys
@@ -26,6 +27,14 @@ from utils.helpers import get_latest_csv_file
 app = Flask(__name__)
 app.config['JSON_AS_ASCII'] = False
 app.config['RESTX_MASK_SWAGGER'] = False
+
+# 🌐 Налаштування CORS - дозволяємо всім
+CORS(app,
+     origins="*",  # Дозволяємо всі домени
+     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],  # Всі методи
+     allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials"],
+     supports_credentials=True
+)
 
 # Swagger конфігурація
 api = Api(

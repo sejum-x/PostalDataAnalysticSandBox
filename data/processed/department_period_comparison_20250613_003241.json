@@ -1,0 +1,48 @@
+{
+  "analysis_type": "department_period_comparison",
+  "data": {
+    "2024-09_to_2024-10": {
+      "previous_period": "2024-09",
+      "current_period": "2024-10",
+      "deliveries_change": 8549.0,
+      "processing_time_change": 0.35999999999999943,
+      "departments_change": 0
+    },
+    "2024-10_to_2024-11": {
+      "previous_period": "2024-10",
+      "current_period": "2024-11",
+      "deliveries_change": -279.0,
+      "processing_time_change": 0.07000000000000028,
+      "departments_change": 0
+    },
+    "2024-11_to_2024-12": {
+      "previous_period": "2024-11",
+      "current_period": "2024-12",
+      "deliveries_change": -144.0,
+      "processing_time_change": -0.07000000000000028,
+      "departments_change": 0
+    },
+    "2024-12_to_2025-01": {
+      "previous_period": "2024-12",
+      "current_period": "2025-01",
+      "deliveries_change": 356.0,
+      "processing_time_change": 0.04999999999999982,
+      "departments_change": 0
+    },
+    "2025-01_to_2025-02": {
+      "previous_period": "2025-01",
+      "current_period": "2025-02",
+      "deliveries_change": -1071.0,
+      "processing_time_change": 0.040000000000000036,
+      "departments_change": 0
+    },
+    "2025-02_to_2025-03": {
+      "previous_period": "2025-02",
+      "current_period": "2025-03",
+      "deliveries_change": -7657.0,
+      "processing_time_change": 0.11000000000000032,
+      "departments_change": 0
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.248238"
+}

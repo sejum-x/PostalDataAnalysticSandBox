@@ -1,0 +1,531 @@
+{
+  "analysis_type": "courier_city_analysis",
+  "data": {
+    "Alchevsk_Luhansk": {
+      "total_deliveries": 203.0,
+      "avg_delivery_time": 71.83,
+      "unique_couriers": 3.0,
+      "city_name": "Alchevsk",
+      "region_name": "Luhansk"
+    },
+    "Bashtanka_Mykolaiv": {
+      "total_deliveries": 181.0,
+      "avg_delivery_time": 77.19,
+      "unique_couriers": 3.0,
+      "city_name": "Bashtanka",
+      "region_name": "Mykolaiv"
+    },
+    "Berdyansk_Zaporizhzhia": {
+      "total_deliveries": 169.0,
+      "avg_delivery_time": 75.93,
+      "unique_couriers": 3.0,
+      "city_name": "Berdyansk",
+      "region_name": "Zaporizhzhia"
+    },
+    "Berezhany_Ternopil": {
+      "total_deliveries": 197.0,
+      "avg_delivery_time": 75.73,
+      "unique_couriers": 3.0,
+      "city_name": "Berezhany",
+      "region_name": "Ternopil"
+    },
+    "Bilhorod-Dnistrovskyi_Odesa": {
+      "total_deliveries": 173.0,
+      "avg_delivery_time": 77.88,
+      "unique_couriers": 3.0,
+      "city_name": "Bilhorod-Dnistrovskyi",
+      "region_name": "Odesa"
+    },
+    "Bolekhiv_Ivano-Frankivsk": {
+      "total_deliveries": 185.0,
+      "avg_delivery_time": 77.0,
+      "unique_couriers": 3.0,
+      "city_name": "Bolekhiv",
+      "region_name": "Ivano-Frankivsk"
+    },
+    "Brovary_Kyiv": {
+      "total_deliveries": 196.0,
+      "avg_delivery_time": 81.02,
+      "unique_couriers": 3.0,
+      "city_name": "Brovary",
+      "region_name": "Kyiv"
+    },
+    "Cherkasy_Cherkasy": {
+      "total_deliveries": 192.0,
+      "avg_delivery_time": 80.15,
+      "unique_couriers": 3.0,
+      "city_name": "Cherkasy",
+      "region_name": "Cherkasy"
+    },
+    "Chernihiv_Chernihiv": {
+      "total_deliveries": 232.0,
+      "avg_delivery_time": 72.56,
+      "unique_couriers": 3.0,
+      "city_name": "Chernihiv",
+      "region_name": "Chernihiv"
+    },
+    "Chernivtsi_Chernivtsi": {
+      "total_deliveries": 157.0,
+      "avg_delivery_time": 76.78,
+      "unique_couriers": 3.0,
+      "city_name": "Chernivtsi",
+      "region_name": "Chernivtsi"
+    },
+    "Chervonohrad_Lviv": {
+      "total_deliveries": 193.0,
+      "avg_delivery_time": 71.14,
+      "unique_couriers": 3.0,
+      "city_name": "Chervonohrad",
+      "region_name": "Lviv"
+    },
+    "Chortkiv_Ternopil": {
+      "total_deliveries": 160.0,
+      "avg_delivery_time": 79.38,
+      "unique_couriers": 3.0,
+      "city_name": "Chortkiv",
+      "region_name": "Ternopil"
+    },
+    "Dnipro_Dnipro": {
+      "total_deliveries": 182.0,
+      "avg_delivery_time": 78.09,
+      "unique_couriers": 3.0,
+      "city_name": "Dnipro",
+      "region_name": "Dnipro"
+    },
+    "Dolynska_Kropyvnytskyi": {
+      "total_deliveries": 178.0,
+      "avg_delivery_time": 70.84,
+      "unique_couriers": 3.0,
+      "city_name": "Dolynska",
+      "region_name": "Kropyvnytskyi"
+    },
+    "Donetsk_Donetsk": {
+      "total_deliveries": 201.0,
+      "avg_delivery_time": 81.2,
+      "unique_couriers": 3.0,
+      "city_name": "Donetsk",
+      "region_name": "Donetsk"
+    },
+    "Drohobych_Lviv": {
+      "total_deliveries": 194.0,
+      "avg_delivery_time": 75.47,
+      "unique_couriers": 3.0,
+      "city_name": "Drohobych",
+      "region_name": "Lviv"
+    },
+    "Dubno_Rivne": {
+      "total_deliveries": 189.0,
+      "avg_delivery_time": 84.62,
+      "unique_couriers": 3.0,
+      "city_name": "Dubno",
+      "region_name": "Rivne"
+    },
+    "Fastiv_Kyiv": {
+      "total_deliveries": 182.0,
+      "avg_delivery_time": 75.14,
+      "unique_couriers": 3.0,
+      "city_name": "Fastiv",
+      "region_name": "Kyiv"
+    },
+    "Genichesk_Kherson": {
+      "total_deliveries": 185.0,
+      "avg_delivery_time": 75.06,
+      "unique_couriers": 3.0,
+      "city_name": "Genichesk",
+      "region_name": "Kherson"
+    },
+    "Hlyboka_Chernivtsi": {
+      "total_deliveries": 176.0,
+      "avg_delivery_time": 69.97,
+      "unique_couriers": 3.0,
+      "city_name": "Hlyboka",
+      "region_name": "Chernivtsi"
+    },
+    "Ivano-Frankivsk_Ivano-Frankivsk": {
+      "total_deliveries": 200.0,
+      "avg_delivery_time": 74.22,
+      "unique_couriers": 3.0,
+      "city_name": "Ivano-Frankivsk",
+      "region_name": "Ivano-Frankivsk"
+    },
+    "Izmail_Odesa": {
+      "total_deliveries": 212.0,
+      "avg_delivery_time": 77.11,
+      "unique_couriers": 3.0,
+      "city_name": "Izmail",
+      "region_name": "Odesa"
+    },
+    "Izyaslav_Khmelnytskyi": {
+      "total_deliveries": 182.0,
+      "avg_delivery_time": 79.57,
+      "unique_couriers": 3.0,
+      "city_name": "Izyaslav",
+      "region_name": "Khmelnytskyi"
+    },
+    "Izyum_Kharkiv": {
+      "total_deliveries": 209.0,
+      "avg_delivery_time": 73.22,
+      "unique_couriers": 3.0,
+      "city_name": "Izyum",
+      "region_name": "Kharkiv"
+    },
+    "Kamianets-Podilskyi_Khmelnytskyi": {
+      "total_deliveries": 178.0,
+      "avg_delivery_time": 71.2,
+      "unique_couriers": 3.0,
+      "city_name": "Kamianets-Podilskyi",
+      "region_name": "Khmelnytskyi"
+    },
+    "Kharkiv_Kharkiv": {
+      "total_deliveries": 178.0,
+      "avg_delivery_time": 74.44,
+      "unique_couriers": 3.0,
+      "city_name": "Kharkiv",
+      "region_name": "Kharkiv"
+    },
+    "Kherson_Kherson": {
+      "total_deliveries": 213.0,
+      "avg_delivery_time": 78.57,
+      "unique_couriers": 3.0,
+      "city_name": "Kherson",
+      "region_name": "Kherson"
+    },
+    "Khmelnytskyi_Khmelnytskyi": {
+      "total_deliveries": 171.0,
+      "avg_delivery_time": 72.54,
+      "unique_couriers": 3.0,
+      "city_name": "Khmelnytskyi",
+      "region_name": "Khmelnytskyi"
+    },
+    "Khmilnyk_Vinnytsia": {
+      "total_deliveries": 179.0,
+      "avg_delivery_time": 75.31,
+      "unique_couriers": 3.0,
+      "city_name": "Khmilnyk",
+      "region_name": "Vinnytsia"
+    },
+    "Khust_Uzhhorod": {
+      "total_deliveries": 141.0,
+      "avg_delivery_time": 73.71,
+      "unique_couriers": 3.0,
+      "city_name": "Khust",
+      "region_name": "Uzhhorod"
+    },
+    "Kolomyia_Ivano-Frankivsk": {
+      "total_deliveries": 161.0,
+      "avg_delivery_time": 76.58,
+      "unique_couriers": 3.0,
+      "city_name": "Kolomyia",
+      "region_name": "Ivano-Frankivsk"
+    },
+    "Konotop_Sumy": {
+      "total_deliveries": 201.0,
+      "avg_delivery_time": 76.64,
+      "unique_couriers": 3.0,
+      "city_name": "Konotop",
+      "region_name": "Sumy"
+    },
+    "Korosten_Zhytomyr": {
+      "total_deliveries": 176.0,
+      "avg_delivery_time": 75.66,
+      "unique_couriers": 3.0,
+      "city_name": "Korosten",
+      "region_name": "Zhytomyr"
+    },
+    "Kovel_Lutsk": {
+      "total_deliveries": 195.0,
+      "avg_delivery_time": 78.11,
+      "unique_couriers": 3.0,
+      "city_name": "Kovel",
+      "region_name": "Lutsk"
+    },
+    "Kremenchuk_Poltava": {
+      "total_deliveries": 153.0,
+      "avg_delivery_time": 85.29,
+      "unique_couriers": 3.0,
+      "city_name": "Kremenchuk",
+      "region_name": "Poltava"
+    },
+    "Kropyvnytskyi_Kropyvnytskyi": {
+      "total_deliveries": 174.0,
+      "avg_delivery_time": 77.74,
+      "unique_couriers": 3.0,
+      "city_name": "Kropyvnytskyi",
+      "region_name": "Kropyvnytskyi"
+    },
+    "Kryvyi_Rih_Dnipro": {
+      "total_deliveries": 198.0,
+      "avg_delivery_time": 72.26,
+      "unique_couriers": 3.0,
+      "city_name": "Kryvyi Rih",
+      "region_name": "Dnipro"
+    },
+    "Kyiv_Kyiv": {
+      "total_deliveries": 184.0,
+      "avg_delivery_time": 76.28,
+      "unique_couriers": 3.0,
+      "city_name": "Kyiv",
+      "region_name": "Kyiv"
+    },
+    "Lubny_Poltava": {
+      "total_deliveries": 163.0,
+      "avg_delivery_time": 80.61,
+      "unique_couriers": 3.0,
+      "city_name": "Lubny",
+      "region_name": "Poltava"
+    },
+    "Luhansk_Kharkiv": {
+      "total_deliveries": 208.0,
+      "avg_delivery_time": 74.95,
+      "unique_couriers": 3.0,
+      "city_name": "Luhansk",
+      "region_name": "Kharkiv"
+    },
+    "Luhansk_Luhansk": {
+      "total_deliveries": 176.0,
+      "avg_delivery_time": 84.72,
+      "unique_couriers": 3.0,
+      "city_name": "Luhansk",
+      "region_name": "Luhansk"
+    },
+    "Lutsk_Lutsk": {
+      "total_deliveries": 152.0,
+      "avg_delivery_time": 76.76,
+      "unique_couriers": 3.0,
+      "city_name": "Lutsk",
+      "region_name": "Lutsk"
+    },
+    "Lviv_Lviv": {
+      "total_deliveries": 227.0,
+      "avg_delivery_time": 84.34,
+      "unique_couriers": 3.0,
+      "city_name": "Lviv",
+      "region_name": "Lviv"
+    },
+    "Makiivka_Donetsk": {
+      "total_deliveries": 172.0,
+      "avg_delivery_time": 73.15,
+      "unique_couriers": 3.0,
+      "city_name": "Makiivka",
+      "region_name": "Donetsk"
+    },
+    "Mariupol_Donetsk": {
+      "total_deliveries": 190.0,
+      "avg_delivery_time": 76.15,
+      "unique_couriers": 3.0,
+      "city_name": "Mariupol",
+      "region_name": "Donetsk"
+    },
+    "Melitopol_Zaporizhzhia": {
+      "total_deliveries": 145.0,
+      "avg_delivery_time": 81.23,
+      "unique_couriers": 3.0,
+      "city_name": "Melitopol",
+      "region_name": "Zaporizhzhia"
+    },
+    "Mohyliv-Podilskyi_Vinnytsia": {
+      "total_deliveries": 221.0,
+      "avg_delivery_time": 81.07,
+      "unique_couriers": 3.0,
+      "city_name": "Mohyliv-Podilskyi",
+      "region_name": "Vinnytsia"
+    },
+    "Mukachevo_Uzhhorod": {
+      "total_deliveries": 194.0,
+      "avg_delivery_time": 74.48,
+      "unique_couriers": 3.0,
+      "city_name": "Mukachevo",
+      "region_name": "Uzhhorod"
+    },
+    "Mykolaiv_Mykolaiv": {
+      "total_deliveries": 169.0,
+      "avg_delivery_time": 80.56,
+      "unique_couriers": 3.0,
+      "city_name": "Mykolaiv",
+      "region_name": "Mykolaiv"
+    },
+    "Nikopol_Dnipro": {
+      "total_deliveries": 167.0,
+      "avg_delivery_time": 76.87,
+      "unique_couriers": 3.0,
+      "city_name": "Nikopol",
+      "region_name": "Dnipro"
+    },
+    "Nizhyn_Chernihiv": {
+      "total_deliveries": 182.0,
+      "avg_delivery_time": 77.81,
+      "unique_couriers": 3.0,
+      "city_name": "Nizhyn",
+      "region_name": "Chernihiv"
+    },
+    "Nova_Kakhovka_Kherson": {
+      "total_deliveries": 192.0,
+      "avg_delivery_time": 75.94,
+      "unique_couriers": 3.0,
+      "city_name": "Nova Kakhovka",
+      "region_name": "Kherson"
+    },
+    "Novohrad-Volynskyi_Zhytomyr": {
+      "total_deliveries": 169.0,
+      "avg_delivery_time": 70.82,
+      "unique_couriers": 3.0,
+      "city_name": "Novohrad-Volynskyi",
+      "region_name": "Zhytomyr"
+    },
+    "Novoselytsia_Chernivtsi": {
+      "total_deliveries": 181.0,
+      "avg_delivery_time": 71.22,
+      "unique_couriers": 3.0,
+      "city_name": "Novoselytsia",
+      "region_name": "Chernivtsi"
+    },
+    "Novovolynsk_Lutsk": {
+      "total_deliveries": 184.0,
+      "avg_delivery_time": 67.26,
+      "unique_couriers": 3.0,
+      "city_name": "Novovolynsk",
+      "region_name": "Lutsk"
+    },
+    "Odesa_Odesa": {
+      "total_deliveries": 161.0,
+      "avg_delivery_time": 74.17,
+      "unique_couriers": 3.0,
+      "city_name": "Odesa",
+      "region_name": "Odesa"
+    },
+    "Pervomaisk_Mykolaiv": {
+      "total_deliveries": 172.0,
+      "avg_delivery_time": 69.94,
+      "unique_couriers": 3.0,
+      "city_name": "Pervomaisk",
+      "region_name": "Mykolaiv"
+    },
+    "Poltava_Poltava": {
+      "total_deliveries": 184.0,
+      "avg_delivery_time": 75.46,
+      "unique_couriers": 3.0,
+      "city_name": "Poltava",
+      "region_name": "Poltava"
+    },
+    "Priluky_Chernihiv": {
+      "total_deliveries": 203.0,
+      "avg_delivery_time": 75.64,
+      "unique_couriers": 3.0,
+      "city_name": "Priluky",
+      "region_name": "Chernihiv"
+    },
+    "Rivne_Rivne": {
+      "total_deliveries": 164.0,
+      "avg_delivery_time": 76.28,
+      "unique_couriers": 3.0,
+      "city_name": "Rivne",
+      "region_name": "Rivne"
+    },
+    "Sarny_Rivne": {
+      "total_deliveries": 165.0,
+      "avg_delivery_time": 75.05,
+      "unique_couriers": 3.0,
+      "city_name": "Sarny",
+      "region_name": "Rivne"
+    },
+    "Sevastopol_Crimea": {
+      "total_deliveries": 181.0,
+      "avg_delivery_time": 74.24,
+      "unique_couriers": 3.0,
+      "city_name": "Sevastopol",
+      "region_name": "Crimea"
+    },
+    "Shostka_Sumy": {
+      "total_deliveries": 201.0,
+      "avg_delivery_time": 73.1,
+      "unique_couriers": 3.0,
+      "city_name": "Shostka",
+      "region_name": "Sumy"
+    },
+    "Sievierodonetsk_Luhansk": {
+      "total_deliveries": 161.0,
+      "avg_delivery_time": 73.21,
+      "unique_couriers": 3.0,
+      "city_name": "Sievierodonetsk",
+      "region_name": "Luhansk"
+    },
+    "Simferopol_Crimea": {
+      "total_deliveries": 190.0,
+      "avg_delivery_time": 81.02,
+      "unique_couriers": 3.0,
+      "city_name": "Simferopol",
+      "region_name": "Crimea"
+    },
+    "Smila_Cherkasy": {
+      "total_deliveries": 180.0,
+      "avg_delivery_time": 79.55,
+      "unique_couriers": 3.0,
+      "city_name": "Smila",
+      "region_name": "Cherkasy"
+    },
+    "Sumy_Sumy": {
+      "total_deliveries": 184.0,
+      "avg_delivery_time": 77.43,
+      "unique_couriers": 3.0,
+      "city_name": "Sumy",
+      "region_name": "Sumy"
+    },
+    "Ternopil_Ternopil": {
+      "total_deliveries": 197.0,
+      "avg_delivery_time": 75.28,
+      "unique_couriers": 3.0,
+      "city_name": "Ternopil",
+      "region_name": "Ternopil"
+    },
+    "Uzhhorod_Uzhhorod": {
+      "total_deliveries": 198.0,
+      "avg_delivery_time": 76.33,
+      "unique_couriers": 3.0,
+      "city_name": "Uzhhorod",
+      "region_name": "Uzhhorod"
+    },
+    "Vinnytsia_Vinnytsia": {
+      "total_deliveries": 194.0,
+      "avg_delivery_time": 75.71,
+      "unique_couriers": 3.0,
+      "city_name": "Vinnytsia",
+      "region_name": "Vinnytsia"
+    },
+    "Yalta_Crimea": {
+      "total_deliveries": 189.0,
+      "avg_delivery_time": 75.62,
+      "unique_couriers": 3.0,
+      "city_name": "Yalta",
+      "region_name": "Crimea"
+    },
+    "Zaporizhzhia_Zaporizhzhia": {
+      "total_deliveries": 187.0,
+      "avg_delivery_time": 70.57,
+      "unique_couriers": 3.0,
+      "city_name": "Zaporizhzhia",
+      "region_name": "Zaporizhzhia"
+    },
+    "Zhytomyr_Zhytomyr": {
+      "total_deliveries": 162.0,
+      "avg_delivery_time": 74.33,
+      "unique_couriers": 3.0,
+      "city_name": "Zhytomyr",
+      "region_name": "Zhytomyr"
+    },
+    "Znamyanka_Kropyvnytskyi": {
+      "total_deliveries": 185.0,
+      "avg_delivery_time": 73.25,
+      "unique_couriers": 3.0,
+      "city_name": "Znamyanka",
+      "region_name": "Kropyvnytskyi"
+    },
+    "Zvenyhorodka_Cherkasy": {
+      "total_deliveries": 210.0,
+      "avg_delivery_time": 77.75,
+      "unique_couriers": 3.0,
+      "city_name": "Zvenyhorodka",
+      "region_name": "Cherkasy"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:40.991294"
+}

@@ -1,0 +1,3156 @@
+{
+  "analysis_type": "transport_region_analysis",
+  "data": {
+    "2024_09_Minivan_Cherkasy": {
+      "total_deliveries": 104.0,
+      "avg_processing_time": 3.74,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2024_09_Minivan_Chernihiv": {
+      "total_deliveries": 115.0,
+      "avg_processing_time": 4.79,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2024_09_Minivan_Chernivtsi": {
+      "total_deliveries": 97.0,
+      "avg_processing_time": 3.83,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2024_09_Minivan_Crimea": {
+      "total_deliveries": 46.0,
+      "avg_processing_time": 3.48,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2024_09_Minivan_Dnipro": {
+      "total_deliveries": 101.0,
+      "avg_processing_time": 4.22,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2024_09_Minivan_Donetsk": {
+      "total_deliveries": 45.0,
+      "avg_processing_time": 3.82,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2024_09_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 121.0,
+      "avg_processing_time": 3.08,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_09_Minivan_Kharkiv": {
+      "total_deliveries": 115.0,
+      "avg_processing_time": 3.67,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2024_09_Minivan_Kherson": {
+      "total_deliveries": 33.0,
+      "avg_processing_time": 4.76,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2024_09_Minivan_Khmelnytskyi": {
+      "total_deliveries": 121.0,
+      "avg_processing_time": 4.28,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_09_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 28.0,
+      "avg_processing_time": 4.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_09_Minivan_Kyiv": {
+      "total_deliveries": 94.0,
+      "avg_processing_time": 4.75,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2024_09_Minivan_Luhansk": {
+      "total_deliveries": 60.0,
+      "avg_processing_time": 3.76,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2024_09_Minivan_Lutsk": {
+      "total_deliveries": 98.0,
+      "avg_processing_time": 3.48,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2024_09_Minivan_Lviv": {
+      "total_deliveries": 99.0,
+      "avg_processing_time": 3.73,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2024_09_Minivan_Mykolaiv": {
+      "total_deliveries": 88.0,
+      "avg_processing_time": 4.43,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2024_09_Minivan_Odesa": {
+      "total_deliveries": 102.0,
+      "avg_processing_time": 3.84,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2024_09_Minivan_Poltava": {
+      "total_deliveries": 92.0,
+      "avg_processing_time": 5.33,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2024_09_Minivan_Rivne": {
+      "total_deliveries": 111.0,
+      "avg_processing_time": 4.03,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2024_09_Minivan_Sumy": {
+      "total_deliveries": 101.0,
+      "avg_processing_time": 3.92,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2024_09_Minivan_Ternopil": {
+      "total_deliveries": 111.0,
+      "avg_processing_time": 3.81,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2024_09_Minivan_Uzhhorod": {
+      "total_deliveries": 43.0,
+      "avg_processing_time": 5.81,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2024_09_Minivan_Vinnytsia": {
+      "total_deliveries": 33.0,
+      "avg_processing_time": 3.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2024_09_Minivan_Zaporizhzhia": {
+      "total_deliveries": 110.0,
+      "avg_processing_time": 3.96,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_09_Minivan_Zhytomyr": {
+      "total_deliveries": 103.0,
+      "avg_processing_time": 4.46,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2024_09_Truck_Cherkasy": {
+      "total_deliveries": 104.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2024_09_Truck_Chernihiv": {
+      "total_deliveries": 100.0,
+      "avg_processing_time": 4.13,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2024_09_Truck_Chernivtsi": {
+      "total_deliveries": 94.0,
+      "avg_processing_time": 4.4,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2024_09_Truck_Crimea": {
+      "total_deliveries": 48.0,
+      "avg_processing_time": 4.08,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2024_09_Truck_Dnipro": {
+      "total_deliveries": 105.0,
+      "avg_processing_time": 4.65,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2024_09_Truck_Donetsk": {
+      "total_deliveries": 43.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2024_09_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 88.0,
+      "avg_processing_time": 4.19,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_09_Truck_Kharkiv": {
+      "total_deliveries": 103.0,
+      "avg_processing_time": 3.89,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2024_09_Truck_Kherson": {
+      "total_deliveries": 33.0,
+      "avg_processing_time": 4.94,
+      "departments_count": 8.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2024_09_Truck_Khmelnytskyi": {
+      "total_deliveries": 99.0,
+      "avg_processing_time": 4.28,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_09_Truck_Kropyvnytskyi": {
+      "total_deliveries": 29.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_09_Truck_Kyiv": {
+      "total_deliveries": 98.0,
+      "avg_processing_time": 4.29,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2024_09_Truck_Luhansk": {
+      "total_deliveries": 43.0,
+      "avg_processing_time": 3.76,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2024_09_Truck_Lutsk": {
+      "total_deliveries": 85.0,
+      "avg_processing_time": 3.88,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2024_09_Truck_Lviv": {
+      "total_deliveries": 100.0,
+      "avg_processing_time": 4.12,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2024_09_Truck_Mykolaiv": {
+      "total_deliveries": 86.0,
+      "avg_processing_time": 4.0,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2024_09_Truck_Odesa": {
+      "total_deliveries": 89.0,
+      "avg_processing_time": 4.2,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2024_09_Truck_Poltava": {
+      "total_deliveries": 102.0,
+      "avg_processing_time": 3.92,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2024_09_Truck_Rivne": {
+      "total_deliveries": 96.0,
+      "avg_processing_time": 4.04,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2024_09_Truck_Sumy": {
+      "total_deliveries": 99.0,
+      "avg_processing_time": 4.29,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2024_09_Truck_Ternopil": {
+      "total_deliveries": 73.0,
+      "avg_processing_time": 3.77,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2024_09_Truck_Uzhhorod": {
+      "total_deliveries": 38.0,
+      "avg_processing_time": 3.55,
+      "departments_count": 8.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2024_09_Truck_Vinnytsia": {
+      "total_deliveries": 42.0,
+      "avg_processing_time": 4.22,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2024_09_Truck_Zaporizhzhia": {
+      "total_deliveries": 111.0,
+      "avg_processing_time": 3.4,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_09_Truck_Zhytomyr": {
+      "total_deliveries": 86.0,
+      "avg_processing_time": 3.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    },
+    "2024_10_Minivan_Cherkasy": {
+      "total_deliveries": 340.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2024_10_Minivan_Chernihiv": {
+      "total_deliveries": 332.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2024_10_Minivan_Chernivtsi": {
+      "total_deliveries": 327.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2024_10_Minivan_Crimea": {
+      "total_deliveries": 144.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2024_10_Minivan_Dnipro": {
+      "total_deliveries": 323.0,
+      "avg_processing_time": 4.88,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2024_10_Minivan_Donetsk": {
+      "total_deliveries": 132.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2024_10_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 346.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_10_Minivan_Kharkiv": {
+      "total_deliveries": 348.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2024_10_Minivan_Kherson": {
+      "total_deliveries": 130.0,
+      "avg_processing_time": 4.11,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2024_10_Minivan_Khmelnytskyi": {
+      "total_deliveries": 342.0,
+      "avg_processing_time": 4.21,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_10_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 148.0,
+      "avg_processing_time": 4.07,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_10_Minivan_Kyiv": {
+      "total_deliveries": 299.0,
+      "avg_processing_time": 4.33,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2024_10_Minivan_Luhansk": {
+      "total_deliveries": 142.0,
+      "avg_processing_time": 4.48,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2024_10_Minivan_Lutsk": {
+      "total_deliveries": 314.0,
+      "avg_processing_time": 4.76,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2024_10_Minivan_Lviv": {
+      "total_deliveries": 317.0,
+      "avg_processing_time": 4.65,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2024_10_Minivan_Mykolaiv": {
+      "total_deliveries": 339.0,
+      "avg_processing_time": 4.42,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2024_10_Minivan_Odesa": {
+      "total_deliveries": 326.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2024_10_Minivan_Poltava": {
+      "total_deliveries": 331.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2024_10_Minivan_Rivne": {
+      "total_deliveries": 303.0,
+      "avg_processing_time": 4.72,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2024_10_Minivan_Sumy": {
+      "total_deliveries": 328.0,
+      "avg_processing_time": 4.15,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2024_10_Minivan_Ternopil": {
+      "total_deliveries": 345.0,
+      "avg_processing_time": 4.03,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2024_10_Minivan_Uzhhorod": {
+      "total_deliveries": 127.0,
+      "avg_processing_time": 3.77,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2024_10_Minivan_Vinnytsia": {
+      "total_deliveries": 139.0,
+      "avg_processing_time": 4.04,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2024_10_Minivan_Zaporizhzhia": {
+      "total_deliveries": 308.0,
+      "avg_processing_time": 4.0,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_10_Minivan_Zhytomyr": {
+      "total_deliveries": 302.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2024_10_Truck_Cherkasy": {
+      "total_deliveries": 265.0,
+      "avg_processing_time": 4.34,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2024_10_Truck_Chernihiv": {
+      "total_deliveries": 300.0,
+      "avg_processing_time": 4.41,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2024_10_Truck_Chernivtsi": {
+      "total_deliveries": 285.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2024_10_Truck_Crimea": {
+      "total_deliveries": 102.0,
+      "avg_processing_time": 4.63,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2024_10_Truck_Dnipro": {
+      "total_deliveries": 259.0,
+      "avg_processing_time": 4.88,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2024_10_Truck_Donetsk": {
+      "total_deliveries": 140.0,
+      "avg_processing_time": 4.63,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2024_10_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 308.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_10_Truck_Kharkiv": {
+      "total_deliveries": 311.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2024_10_Truck_Kherson": {
+      "total_deliveries": 124.0,
+      "avg_processing_time": 4.73,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2024_10_Truck_Khmelnytskyi": {
+      "total_deliveries": 297.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_10_Truck_Kropyvnytskyi": {
+      "total_deliveries": 115.0,
+      "avg_processing_time": 3.96,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_10_Truck_Kyiv": {
+      "total_deliveries": 283.0,
+      "avg_processing_time": 4.97,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2024_10_Truck_Luhansk": {
+      "total_deliveries": 107.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2024_10_Truck_Lutsk": {
+      "total_deliveries": 267.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2024_10_Truck_Lviv": {
+      "total_deliveries": 291.0,
+      "avg_processing_time": 4.21,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2024_10_Truck_Mykolaiv": {
+      "total_deliveries": 275.0,
+      "avg_processing_time": 4.27,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2024_10_Truck_Odesa": {
+      "total_deliveries": 256.0,
+      "avg_processing_time": 4.34,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2024_10_Truck_Poltava": {
+      "total_deliveries": 290.0,
+      "avg_processing_time": 4.71,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2024_10_Truck_Rivne": {
+      "total_deliveries": 271.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2024_10_Truck_Sumy": {
+      "total_deliveries": 293.0,
+      "avg_processing_time": 4.94,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2024_10_Truck_Ternopil": {
+      "total_deliveries": 254.0,
+      "avg_processing_time": 4.81,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2024_10_Truck_Uzhhorod": {
+      "total_deliveries": 113.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2024_10_Truck_Vinnytsia": {
+      "total_deliveries": 121.0,
+      "avg_processing_time": 4.77,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2024_10_Truck_Zaporizhzhia": {
+      "total_deliveries": 266.0,
+      "avg_processing_time": 4.25,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_10_Truck_Zhytomyr": {
+      "total_deliveries": 289.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    },
+    "2024_11_Minivan_Cherkasy": {
+      "total_deliveries": 321.0,
+      "avg_processing_time": 4.0,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2024_11_Minivan_Chernihiv": {
+      "total_deliveries": 322.0,
+      "avg_processing_time": 4.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2024_11_Minivan_Chernivtsi": {
+      "total_deliveries": 295.0,
+      "avg_processing_time": 4.42,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2024_11_Minivan_Crimea": {
+      "total_deliveries": 137.0,
+      "avg_processing_time": 4.07,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2024_11_Minivan_Dnipro": {
+      "total_deliveries": 292.0,
+      "avg_processing_time": 4.48,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2024_11_Minivan_Donetsk": {
+      "total_deliveries": 127.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2024_11_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 308.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_11_Minivan_Kharkiv": {
+      "total_deliveries": 307.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2024_11_Minivan_Kherson": {
+      "total_deliveries": 118.0,
+      "avg_processing_time": 4.35,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2024_11_Minivan_Khmelnytskyi": {
+      "total_deliveries": 316.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_11_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 136.0,
+      "avg_processing_time": 4.93,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_11_Minivan_Kyiv": {
+      "total_deliveries": 323.0,
+      "avg_processing_time": 4.76,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2024_11_Minivan_Luhansk": {
+      "total_deliveries": 119.0,
+      "avg_processing_time": 5.11,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2024_11_Minivan_Lutsk": {
+      "total_deliveries": 339.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2024_11_Minivan_Lviv": {
+      "total_deliveries": 323.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2024_11_Minivan_Mykolaiv": {
+      "total_deliveries": 349.0,
+      "avg_processing_time": 4.48,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2024_11_Minivan_Odesa": {
+      "total_deliveries": 322.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2024_11_Minivan_Poltava": {
+      "total_deliveries": 279.0,
+      "avg_processing_time": 4.25,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2024_11_Minivan_Rivne": {
+      "total_deliveries": 312.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2024_11_Minivan_Sumy": {
+      "total_deliveries": 291.0,
+      "avg_processing_time": 4.22,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2024_11_Minivan_Ternopil": {
+      "total_deliveries": 315.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2024_11_Minivan_Uzhhorod": {
+      "total_deliveries": 129.0,
+      "avg_processing_time": 4.85,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2024_11_Minivan_Vinnytsia": {
+      "total_deliveries": 137.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2024_11_Minivan_Zaporizhzhia": {
+      "total_deliveries": 304.0,
+      "avg_processing_time": 4.72,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_11_Minivan_Zhytomyr": {
+      "total_deliveries": 330.0,
+      "avg_processing_time": 5.09,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2024_11_Truck_Cherkasy": {
+      "total_deliveries": 261.0,
+      "avg_processing_time": 4.82,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2024_11_Truck_Chernihiv": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.94,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2024_11_Truck_Chernivtsi": {
+      "total_deliveries": 235.0,
+      "avg_processing_time": 5.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2024_11_Truck_Crimea": {
+      "total_deliveries": 116.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2024_11_Truck_Dnipro": {
+      "total_deliveries": 271.0,
+      "avg_processing_time": 4.61,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2024_11_Truck_Donetsk": {
+      "total_deliveries": 108.0,
+      "avg_processing_time": 4.23,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2024_11_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 277.0,
+      "avg_processing_time": 4.84,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_11_Truck_Kharkiv": {
+      "total_deliveries": 337.0,
+      "avg_processing_time": 4.24,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2024_11_Truck_Kherson": {
+      "total_deliveries": 126.0,
+      "avg_processing_time": 4.68,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2024_11_Truck_Khmelnytskyi": {
+      "total_deliveries": 307.0,
+      "avg_processing_time": 4.42,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_11_Truck_Kropyvnytskyi": {
+      "total_deliveries": 126.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_11_Truck_Kyiv": {
+      "total_deliveries": 271.0,
+      "avg_processing_time": 4.3,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2024_11_Truck_Luhansk": {
+      "total_deliveries": 119.0,
+      "avg_processing_time": 3.81,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2024_11_Truck_Lutsk": {
+      "total_deliveries": 296.0,
+      "avg_processing_time": 4.09,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2024_11_Truck_Lviv": {
+      "total_deliveries": 285.0,
+      "avg_processing_time": 4.5,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2024_11_Truck_Mykolaiv": {
+      "total_deliveries": 284.0,
+      "avg_processing_time": 4.85,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2024_11_Truck_Odesa": {
+      "total_deliveries": 302.0,
+      "avg_processing_time": 4.06,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2024_11_Truck_Poltava": {
+      "total_deliveries": 269.0,
+      "avg_processing_time": 4.62,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2024_11_Truck_Rivne": {
+      "total_deliveries": 272.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2024_11_Truck_Sumy": {
+      "total_deliveries": 276.0,
+      "avg_processing_time": 4.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2024_11_Truck_Ternopil": {
+      "total_deliveries": 293.0,
+      "avg_processing_time": 4.25,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2024_11_Truck_Uzhhorod": {
+      "total_deliveries": 98.0,
+      "avg_processing_time": 4.78,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2024_11_Truck_Vinnytsia": {
+      "total_deliveries": 125.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2024_11_Truck_Zaporizhzhia": {
+      "total_deliveries": 266.0,
+      "avg_processing_time": 4.19,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_11_Truck_Zhytomyr": {
+      "total_deliveries": 278.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    },
+    "2024_12_Minivan_Cherkasy": {
+      "total_deliveries": 316.0,
+      "avg_processing_time": 4.3,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2024_12_Minivan_Chernihiv": {
+      "total_deliveries": 350.0,
+      "avg_processing_time": 4.76,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2024_12_Minivan_Chernivtsi": {
+      "total_deliveries": 267.0,
+      "avg_processing_time": 4.33,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2024_12_Minivan_Crimea": {
+      "total_deliveries": 115.0,
+      "avg_processing_time": 4.15,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2024_12_Minivan_Dnipro": {
+      "total_deliveries": 298.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2024_12_Minivan_Donetsk": {
+      "total_deliveries": 117.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2024_12_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 310.0,
+      "avg_processing_time": 4.62,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_12_Minivan_Kharkiv": {
+      "total_deliveries": 321.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2024_12_Minivan_Kherson": {
+      "total_deliveries": 121.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2024_12_Minivan_Khmelnytskyi": {
+      "total_deliveries": 259.0,
+      "avg_processing_time": 3.68,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_12_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 136.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_12_Minivan_Kyiv": {
+      "total_deliveries": 310.0,
+      "avg_processing_time": 4.3,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2024_12_Minivan_Luhansk": {
+      "total_deliveries": 119.0,
+      "avg_processing_time": 3.81,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2024_12_Minivan_Lutsk": {
+      "total_deliveries": 325.0,
+      "avg_processing_time": 4.3,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2024_12_Minivan_Lviv": {
+      "total_deliveries": 354.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2024_12_Minivan_Mykolaiv": {
+      "total_deliveries": 336.0,
+      "avg_processing_time": 3.97,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2024_12_Minivan_Odesa": {
+      "total_deliveries": 325.0,
+      "avg_processing_time": 4.12,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2024_12_Minivan_Poltava": {
+      "total_deliveries": 336.0,
+      "avg_processing_time": 4.79,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2024_12_Minivan_Rivne": {
+      "total_deliveries": 313.0,
+      "avg_processing_time": 4.47,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2024_12_Minivan_Sumy": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.18,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2024_12_Minivan_Ternopil": {
+      "total_deliveries": 265.0,
+      "avg_processing_time": 4.87,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2024_12_Minivan_Uzhhorod": {
+      "total_deliveries": 114.0,
+      "avg_processing_time": 4.12,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2024_12_Minivan_Vinnytsia": {
+      "total_deliveries": 127.0,
+      "avg_processing_time": 4.81,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2024_12_Minivan_Zaporizhzhia": {
+      "total_deliveries": 313.0,
+      "avg_processing_time": 4.82,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_12_Minivan_Zhytomyr": {
+      "total_deliveries": 330.0,
+      "avg_processing_time": 4.58,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2024_12_Truck_Cherkasy": {
+      "total_deliveries": 275.0,
+      "avg_processing_time": 4.66,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2024_12_Truck_Chernihiv": {
+      "total_deliveries": 295.0,
+      "avg_processing_time": 4.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2024_12_Truck_Chernivtsi": {
+      "total_deliveries": 249.0,
+      "avg_processing_time": 4.81,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2024_12_Truck_Crimea": {
+      "total_deliveries": 122.0,
+      "avg_processing_time": 4.48,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2024_12_Truck_Dnipro": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2024_12_Truck_Donetsk": {
+      "total_deliveries": 94.0,
+      "avg_processing_time": 4.4,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2024_12_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 285.0,
+      "avg_processing_time": 4.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024_12_Truck_Kharkiv": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.59,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2024_12_Truck_Kherson": {
+      "total_deliveries": 117.0,
+      "avg_processing_time": 4.41,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2024_12_Truck_Khmelnytskyi": {
+      "total_deliveries": 265.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024_12_Truck_Kropyvnytskyi": {
+      "total_deliveries": 126.0,
+      "avg_processing_time": 4.3,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024_12_Truck_Kyiv": {
+      "total_deliveries": 272.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2024_12_Truck_Luhansk": {
+      "total_deliveries": 114.0,
+      "avg_processing_time": 4.2,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2024_12_Truck_Lutsk": {
+      "total_deliveries": 254.0,
+      "avg_processing_time": 4.5,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2024_12_Truck_Lviv": {
+      "total_deliveries": 281.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2024_12_Truck_Mykolaiv": {
+      "total_deliveries": 297.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2024_12_Truck_Odesa": {
+      "total_deliveries": 269.0,
+      "avg_processing_time": 4.38,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2024_12_Truck_Poltava": {
+      "total_deliveries": 301.0,
+      "avg_processing_time": 4.33,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2024_12_Truck_Rivne": {
+      "total_deliveries": 257.0,
+      "avg_processing_time": 4.19,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2024_12_Truck_Sumy": {
+      "total_deliveries": 308.0,
+      "avg_processing_time": 4.74,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2024_12_Truck_Ternopil": {
+      "total_deliveries": 292.0,
+      "avg_processing_time": 4.5,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2024_12_Truck_Uzhhorod": {
+      "total_deliveries": 104.0,
+      "avg_processing_time": 4.37,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2024_12_Truck_Vinnytsia": {
+      "total_deliveries": 119.0,
+      "avg_processing_time": 4.31,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2024_12_Truck_Zaporizhzhia": {
+      "total_deliveries": 299.0,
+      "avg_processing_time": 4.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024_12_Truck_Zhytomyr": {
+      "total_deliveries": 261.0,
+      "avg_processing_time": 4.88,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    },
+    "2025_01_Minivan_Cherkasy": {
+      "total_deliveries": 349.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2025_01_Minivan_Chernihiv": {
+      "total_deliveries": 328.0,
+      "avg_processing_time": 4.77,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2025_01_Minivan_Chernivtsi": {
+      "total_deliveries": 337.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2025_01_Minivan_Crimea": {
+      "total_deliveries": 121.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2025_01_Minivan_Dnipro": {
+      "total_deliveries": 313.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2025_01_Minivan_Donetsk": {
+      "total_deliveries": 140.0,
+      "avg_processing_time": 4.5,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2025_01_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 320.0,
+      "avg_processing_time": 4.64,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025_01_Minivan_Kharkiv": {
+      "total_deliveries": 304.0,
+      "avg_processing_time": 4.55,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2025_01_Minivan_Kherson": {
+      "total_deliveries": 131.0,
+      "avg_processing_time": 4.48,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2025_01_Minivan_Khmelnytskyi": {
+      "total_deliveries": 316.0,
+      "avg_processing_time": 4.47,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025_01_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 113.0,
+      "avg_processing_time": 4.63,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025_01_Minivan_Kyiv": {
+      "total_deliveries": 315.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2025_01_Minivan_Luhansk": {
+      "total_deliveries": 130.0,
+      "avg_processing_time": 4.81,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2025_01_Minivan_Lutsk": {
+      "total_deliveries": 310.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2025_01_Minivan_Lviv": {
+      "total_deliveries": 319.0,
+      "avg_processing_time": 4.66,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2025_01_Minivan_Mykolaiv": {
+      "total_deliveries": 320.0,
+      "avg_processing_time": 4.33,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2025_01_Minivan_Odesa": {
+      "total_deliveries": 318.0,
+      "avg_processing_time": 4.59,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2025_01_Minivan_Poltava": {
+      "total_deliveries": 341.0,
+      "avg_processing_time": 4.38,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2025_01_Minivan_Rivne": {
+      "total_deliveries": 333.0,
+      "avg_processing_time": 4.18,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2025_01_Minivan_Sumy": {
+      "total_deliveries": 332.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2025_01_Minivan_Ternopil": {
+      "total_deliveries": 385.0,
+      "avg_processing_time": 4.33,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2025_01_Minivan_Uzhhorod": {
+      "total_deliveries": 133.0,
+      "avg_processing_time": 4.15,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2025_01_Minivan_Vinnytsia": {
+      "total_deliveries": 115.0,
+      "avg_processing_time": 4.11,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2025_01_Minivan_Zaporizhzhia": {
+      "total_deliveries": 325.0,
+      "avg_processing_time": 4.58,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025_01_Minivan_Zhytomyr": {
+      "total_deliveries": 291.0,
+      "avg_processing_time": 4.72,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2025_01_Truck_Cherkasy": {
+      "total_deliveries": 289.0,
+      "avg_processing_time": 4.84,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2025_01_Truck_Chernihiv": {
+      "total_deliveries": 304.0,
+      "avg_processing_time": 4.59,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2025_01_Truck_Chernivtsi": {
+      "total_deliveries": 291.0,
+      "avg_processing_time": 4.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2025_01_Truck_Crimea": {
+      "total_deliveries": 143.0,
+      "avg_processing_time": 4.81,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2025_01_Truck_Dnipro": {
+      "total_deliveries": 254.0,
+      "avg_processing_time": 4.97,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2025_01_Truck_Donetsk": {
+      "total_deliveries": 121.0,
+      "avg_processing_time": 4.88,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2025_01_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025_01_Truck_Kharkiv": {
+      "total_deliveries": 309.0,
+      "avg_processing_time": 3.85,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2025_01_Truck_Kherson": {
+      "total_deliveries": 105.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2025_01_Truck_Khmelnytskyi": {
+      "total_deliveries": 248.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025_01_Truck_Kropyvnytskyi": {
+      "total_deliveries": 119.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025_01_Truck_Kyiv": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.16,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2025_01_Truck_Luhansk": {
+      "total_deliveries": 109.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2025_01_Truck_Lutsk": {
+      "total_deliveries": 285.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2025_01_Truck_Lviv": {
+      "total_deliveries": 281.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2025_01_Truck_Mykolaiv": {
+      "total_deliveries": 279.0,
+      "avg_processing_time": 5.03,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2025_01_Truck_Odesa": {
+      "total_deliveries": 292.0,
+      "avg_processing_time": 4.81,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2025_01_Truck_Poltava": {
+      "total_deliveries": 299.0,
+      "avg_processing_time": 4.59,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2025_01_Truck_Rivne": {
+      "total_deliveries": 268.0,
+      "avg_processing_time": 4.23,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2025_01_Truck_Sumy": {
+      "total_deliveries": 280.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2025_01_Truck_Ternopil": {
+      "total_deliveries": 291.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2025_01_Truck_Uzhhorod": {
+      "total_deliveries": 104.0,
+      "avg_processing_time": 4.19,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2025_01_Truck_Vinnytsia": {
+      "total_deliveries": 127.0,
+      "avg_processing_time": 4.35,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2025_01_Truck_Zaporizhzhia": {
+      "total_deliveries": 282.0,
+      "avg_processing_time": 4.6,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025_01_Truck_Zhytomyr": {
+      "total_deliveries": 256.0,
+      "avg_processing_time": 4.61,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    },
+    "2025_02_Minivan_Cherkasy": {
+      "total_deliveries": 318.0,
+      "avg_processing_time": 4.68,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2025_02_Minivan_Chernihiv": {
+      "total_deliveries": 304.0,
+      "avg_processing_time": 4.48,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2025_02_Minivan_Chernivtsi": {
+      "total_deliveries": 293.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2025_02_Minivan_Crimea": {
+      "total_deliveries": 115.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2025_02_Minivan_Dnipro": {
+      "total_deliveries": 296.0,
+      "avg_processing_time": 4.28,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2025_02_Minivan_Donetsk": {
+      "total_deliveries": 117.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2025_02_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 282.0,
+      "avg_processing_time": 4.85,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025_02_Minivan_Kharkiv": {
+      "total_deliveries": 274.0,
+      "avg_processing_time": 4.34,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2025_02_Minivan_Kherson": {
+      "total_deliveries": 112.0,
+      "avg_processing_time": 4.41,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2025_02_Minivan_Khmelnytskyi": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.68,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025_02_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 106.0,
+      "avg_processing_time": 4.37,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025_02_Minivan_Kyiv": {
+      "total_deliveries": 299.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2025_02_Minivan_Luhansk": {
+      "total_deliveries": 112.0,
+      "avg_processing_time": 5.04,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2025_02_Minivan_Lutsk": {
+      "total_deliveries": 284.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2025_02_Minivan_Lviv": {
+      "total_deliveries": 299.0,
+      "avg_processing_time": 4.68,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2025_02_Minivan_Mykolaiv": {
+      "total_deliveries": 318.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2025_02_Minivan_Odesa": {
+      "total_deliveries": 275.0,
+      "avg_processing_time": 4.74,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2025_02_Minivan_Poltava": {
+      "total_deliveries": 314.0,
+      "avg_processing_time": 4.39,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2025_02_Minivan_Rivne": {
+      "total_deliveries": 284.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2025_02_Minivan_Sumy": {
+      "total_deliveries": 278.0,
+      "avg_processing_time": 4.64,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2025_02_Minivan_Ternopil": {
+      "total_deliveries": 300.0,
+      "avg_processing_time": 4.62,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2025_02_Minivan_Uzhhorod": {
+      "total_deliveries": 116.0,
+      "avg_processing_time": 4.26,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2025_02_Minivan_Vinnytsia": {
+      "total_deliveries": 125.0,
+      "avg_processing_time": 4.73,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2025_02_Minivan_Zaporizhzhia": {
+      "total_deliveries": 292.0,
+      "avg_processing_time": 4.61,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025_02_Minivan_Zhytomyr": {
+      "total_deliveries": 287.0,
+      "avg_processing_time": 4.79,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2025_02_Truck_Cherkasy": {
+      "total_deliveries": 236.0,
+      "avg_processing_time": 5.28,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2025_02_Truck_Chernihiv": {
+      "total_deliveries": 262.0,
+      "avg_processing_time": 4.19,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2025_02_Truck_Chernivtsi": {
+      "total_deliveries": 243.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2025_02_Truck_Crimea": {
+      "total_deliveries": 101.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2025_02_Truck_Dnipro": {
+      "total_deliveries": 303.0,
+      "avg_processing_time": 4.34,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2025_02_Truck_Donetsk": {
+      "total_deliveries": 124.0,
+      "avg_processing_time": 4.11,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2025_02_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 284.0,
+      "avg_processing_time": 4.06,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025_02_Truck_Kharkiv": {
+      "total_deliveries": 286.0,
+      "avg_processing_time": 4.41,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2025_02_Truck_Kherson": {
+      "total_deliveries": 86.0,
+      "avg_processing_time": 5.22,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2025_02_Truck_Khmelnytskyi": {
+      "total_deliveries": 275.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025_02_Truck_Kropyvnytskyi": {
+      "total_deliveries": 91.0,
+      "avg_processing_time": 4.31,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025_02_Truck_Kyiv": {
+      "total_deliveries": 261.0,
+      "avg_processing_time": 4.7,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2025_02_Truck_Luhansk": {
+      "total_deliveries": 97.0,
+      "avg_processing_time": 4.42,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2025_02_Truck_Lutsk": {
+      "total_deliveries": 231.0,
+      "avg_processing_time": 4.63,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2025_02_Truck_Lviv": {
+      "total_deliveries": 285.0,
+      "avg_processing_time": 3.91,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2025_02_Truck_Mykolaiv": {
+      "total_deliveries": 237.0,
+      "avg_processing_time": 4.6,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2025_02_Truck_Odesa": {
+      "total_deliveries": 303.0,
+      "avg_processing_time": 4.27,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2025_02_Truck_Poltava": {
+      "total_deliveries": 260.0,
+      "avg_processing_time": 4.03,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2025_02_Truck_Rivne": {
+      "total_deliveries": 244.0,
+      "avg_processing_time": 4.88,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2025_02_Truck_Sumy": {
+      "total_deliveries": 266.0,
+      "avg_processing_time": 4.66,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2025_02_Truck_Ternopil": {
+      "total_deliveries": 258.0,
+      "avg_processing_time": 4.66,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2025_02_Truck_Uzhhorod": {
+      "total_deliveries": 99.0,
+      "avg_processing_time": 4.75,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2025_02_Truck_Vinnytsia": {
+      "total_deliveries": 111.0,
+      "avg_processing_time": 4.84,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2025_02_Truck_Zaporizhzhia": {
+      "total_deliveries": 267.0,
+      "avg_processing_time": 4.36,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025_02_Truck_Zhytomyr": {
+      "total_deliveries": 280.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    },
+    "2025_03_Minivan_Cherkasy": {
+      "total_deliveries": 101.0,
+      "avg_processing_time": 5.04,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Cherkasy"
+    },
+    "2025_03_Minivan_Chernihiv": {
+      "total_deliveries": 105.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernihiv"
+    },
+    "2025_03_Minivan_Chernivtsi": {
+      "total_deliveries": 103.0,
+      "avg_processing_time": 3.93,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Chernivtsi"
+    },
+    "2025_03_Minivan_Crimea": {
+      "total_deliveries": 36.0,
+      "avg_processing_time": 4.42,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Crimea"
+    },
+    "2025_03_Minivan_Dnipro": {
+      "total_deliveries": 87.0,
+      "avg_processing_time": 4.15,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Dnipro"
+    },
+    "2025_03_Minivan_Donetsk": {
+      "total_deliveries": 44.0,
+      "avg_processing_time": 3.83,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Donetsk"
+    },
+    "2025_03_Minivan_Ivano_Frankivsk": {
+      "total_deliveries": 86.0,
+      "avg_processing_time": 5.37,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025_03_Minivan_Kharkiv": {
+      "total_deliveries": 93.0,
+      "avg_processing_time": 4.88,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Kharkiv"
+    },
+    "2025_03_Minivan_Kherson": {
+      "total_deliveries": 36.0,
+      "avg_processing_time": 4.63,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Kherson"
+    },
+    "2025_03_Minivan_Khmelnytskyi": {
+      "total_deliveries": 97.0,
+      "avg_processing_time": 4.52,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025_03_Minivan_Kropyvnytskyi": {
+      "total_deliveries": 48.0,
+      "avg_processing_time": 4.6,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025_03_Minivan_Kyiv": {
+      "total_deliveries": 101.0,
+      "avg_processing_time": 4.57,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Kyiv"
+    },
+    "2025_03_Minivan_Luhansk": {
+      "total_deliveries": 47.0,
+      "avg_processing_time": 5.17,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Luhansk"
+    },
+    "2025_03_Minivan_Lutsk": {
+      "total_deliveries": 97.0,
+      "avg_processing_time": 4.96,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Lutsk"
+    },
+    "2025_03_Minivan_Lviv": {
+      "total_deliveries": 113.0,
+      "avg_processing_time": 4.46,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Lviv"
+    },
+    "2025_03_Minivan_Mykolaiv": {
+      "total_deliveries": 85.0,
+      "avg_processing_time": 4.54,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Mykolaiv"
+    },
+    "2025_03_Minivan_Odesa": {
+      "total_deliveries": 107.0,
+      "avg_processing_time": 4.93,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Odesa"
+    },
+    "2025_03_Minivan_Poltava": {
+      "total_deliveries": 93.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Poltava"
+    },
+    "2025_03_Minivan_Rivne": {
+      "total_deliveries": 111.0,
+      "avg_processing_time": 4.38,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Rivne"
+    },
+    "2025_03_Minivan_Sumy": {
+      "total_deliveries": 103.0,
+      "avg_processing_time": 5.04,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Sumy"
+    },
+    "2025_03_Minivan_Ternopil": {
+      "total_deliveries": 110.0,
+      "avg_processing_time": 4.12,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Ternopil"
+    },
+    "2025_03_Minivan_Uzhhorod": {
+      "total_deliveries": 46.0,
+      "avg_processing_time": 4.91,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Uzhhorod"
+    },
+    "2025_03_Minivan_Vinnytsia": {
+      "total_deliveries": 35.0,
+      "avg_processing_time": 5.7,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Vinnytsia"
+    },
+    "2025_03_Minivan_Zaporizhzhia": {
+      "total_deliveries": 92.0,
+      "avg_processing_time": 4.15,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025_03_Minivan_Zhytomyr": {
+      "total_deliveries": 93.0,
+      "avg_processing_time": 4.5,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "department_region": "Zhytomyr"
+    },
+    "2025_03_Truck_Cherkasy": {
+      "total_deliveries": 79.0,
+      "avg_processing_time": 4.21,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Cherkasy"
+    },
+    "2025_03_Truck_Chernihiv": {
+      "total_deliveries": 99.0,
+      "avg_processing_time": 4.46,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Chernihiv"
+    },
+    "2025_03_Truck_Chernivtsi": {
+      "total_deliveries": 98.0,
+      "avg_processing_time": 3.56,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Chernivtsi"
+    },
+    "2025_03_Truck_Crimea": {
+      "total_deliveries": 27.0,
+      "avg_processing_time": 4.75,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Crimea"
+    },
+    "2025_03_Truck_Dnipro": {
+      "total_deliveries": 73.0,
+      "avg_processing_time": 4.68,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Dnipro"
+    },
+    "2025_03_Truck_Donetsk": {
+      "total_deliveries": 39.0,
+      "avg_processing_time": 4.89,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Donetsk"
+    },
+    "2025_03_Truck_Ivano_Frankivsk": {
+      "total_deliveries": 81.0,
+      "avg_processing_time": 5.45,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025_03_Truck_Kharkiv": {
+      "total_deliveries": 104.0,
+      "avg_processing_time": 4.54,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Kharkiv"
+    },
+    "2025_03_Truck_Kherson": {
+      "total_deliveries": 46.0,
+      "avg_processing_time": 5.43,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Kherson"
+    },
+    "2025_03_Truck_Khmelnytskyi": {
+      "total_deliveries": 125.0,
+      "avg_processing_time": 4.2,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025_03_Truck_Kropyvnytskyi": {
+      "total_deliveries": 21.0,
+      "avg_processing_time": 4.0,
+      "departments_count": 8.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025_03_Truck_Kyiv": {
+      "total_deliveries": 92.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Kyiv"
+    },
+    "2025_03_Truck_Luhansk": {
+      "total_deliveries": 34.0,
+      "avg_processing_time": 5.0,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Luhansk"
+    },
+    "2025_03_Truck_Lutsk": {
+      "total_deliveries": 103.0,
+      "avg_processing_time": 4.93,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Lutsk"
+    },
+    "2025_03_Truck_Lviv": {
+      "total_deliveries": 79.0,
+      "avg_processing_time": 4.89,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Lviv"
+    },
+    "2025_03_Truck_Mykolaiv": {
+      "total_deliveries": 77.0,
+      "avg_processing_time": 4.78,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Mykolaiv"
+    },
+    "2025_03_Truck_Odesa": {
+      "total_deliveries": 105.0,
+      "avg_processing_time": 4.46,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Odesa"
+    },
+    "2025_03_Truck_Poltava": {
+      "total_deliveries": 78.0,
+      "avg_processing_time": 4.23,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Poltava"
+    },
+    "2025_03_Truck_Rivne": {
+      "total_deliveries": 86.0,
+      "avg_processing_time": 4.71,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Rivne"
+    },
+    "2025_03_Truck_Sumy": {
+      "total_deliveries": 94.0,
+      "avg_processing_time": 5.12,
+      "departments_count": 10.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Sumy"
+    },
+    "2025_03_Truck_Ternopil": {
+      "total_deliveries": 71.0,
+      "avg_processing_time": 5.68,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Ternopil"
+    },
+    "2025_03_Truck_Uzhhorod": {
+      "total_deliveries": 32.0,
+      "avg_processing_time": 4.22,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Uzhhorod"
+    },
+    "2025_03_Truck_Vinnytsia": {
+      "total_deliveries": 43.0,
+      "avg_processing_time": 4.77,
+      "departments_count": 9.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Vinnytsia"
+    },
+    "2025_03_Truck_Zaporizhzhia": {
+      "total_deliveries": 83.0,
+      "avg_processing_time": 4.92,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025_03_Truck_Zhytomyr": {
+      "total_deliveries": 81.0,
+      "avg_processing_time": 4.58,
+      "departments_count": 11.0,
+      "parcel_types_handled": 3.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "department_region": "Zhytomyr"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.843850"
+}

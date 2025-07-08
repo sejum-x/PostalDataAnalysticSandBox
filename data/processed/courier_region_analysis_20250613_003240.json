@@ -1,0 +1,131 @@
+{
+  "analysis_type": "courier_region_analysis",
+  "data": {
+    "Cherkasy": {
+      "total_deliveries": 582,
+      "avg_delivery_time": 79.1,
+      "unique_couriers": 9
+    },
+    "Chernihiv": {
+      "total_deliveries": 617,
+      "avg_delivery_time": 75.12,
+      "unique_couriers": 9
+    },
+    "Chernivtsi": {
+      "total_deliveries": 514,
+      "avg_delivery_time": 72.49,
+      "unique_couriers": 9
+    },
+    "Crimea": {
+      "total_deliveries": 560,
+      "avg_delivery_time": 77.01,
+      "unique_couriers": 9
+    },
+    "Dnipro": {
+      "total_deliveries": 547,
+      "avg_delivery_time": 75.61,
+      "unique_couriers": 9
+    },
+    "Donetsk": {
+      "total_deliveries": 563,
+      "avg_delivery_time": 77.04,
+      "unique_couriers": 9
+    },
+    "Ivano-Frankivsk": {
+      "total_deliveries": 546,
+      "avg_delivery_time": 75.86,
+      "unique_couriers": 9
+    },
+    "Kharkiv": {
+      "total_deliveries": 595,
+      "avg_delivery_time": 74.19,
+      "unique_couriers": 9
+    },
+    "Kherson": {
+      "total_deliveries": 590,
+      "avg_delivery_time": 76.61,
+      "unique_couriers": 9
+    },
+    "Khmelnytskyi": {
+      "total_deliveries": 531,
+      "avg_delivery_time": 74.5,
+      "unique_couriers": 9
+    },
+    "Kropyvnytskyi": {
+      "total_deliveries": 537,
+      "avg_delivery_time": 73.91,
+      "unique_couriers": 9
+    },
+    "Kyiv": {
+      "total_deliveries": 562,
+      "avg_delivery_time": 77.56,
+      "unique_couriers": 9
+    },
+    "Luhansk": {
+      "total_deliveries": 540,
+      "avg_delivery_time": 76.44,
+      "unique_couriers": 9
+    },
+    "Lutsk": {
+      "total_deliveries": 531,
+      "avg_delivery_time": 73.96,
+      "unique_couriers": 9
+    },
+    "Lviv": {
+      "total_deliveries": 614,
+      "avg_delivery_time": 77.39,
+      "unique_couriers": 9
+    },
+    "Mykolaiv": {
+      "total_deliveries": 522,
+      "avg_delivery_time": 75.89,
+      "unique_couriers": 9
+    },
+    "Odesa": {
+      "total_deliveries": 546,
+      "avg_delivery_time": 76.49,
+      "unique_couriers": 9
+    },
+    "Poltava": {
+      "total_deliveries": 500,
+      "avg_delivery_time": 80.15,
+      "unique_couriers": 9
+    },
+    "Rivne": {
+      "total_deliveries": 518,
+      "avg_delivery_time": 78.93,
+      "unique_couriers": 9
+    },
+    "Sumy": {
+      "total_deliveries": 586,
+      "avg_delivery_time": 75.67,
+      "unique_couriers": 9
+    },
+    "Ternopil": {
+      "total_deliveries": 554,
+      "avg_delivery_time": 76.62,
+      "unique_couriers": 9
+    },
+    "Uzhhorod": {
+      "total_deliveries": 533,
+      "avg_delivery_time": 74.96,
+      "unique_couriers": 9
+    },
+    "Vinnytsia": {
+      "total_deliveries": 594,
+      "avg_delivery_time": 77.58,
+      "unique_couriers": 9
+    },
+    "Zaporizhzhia": {
+      "total_deliveries": 501,
+      "avg_delivery_time": 75.47,
+      "unique_couriers": 9
+    },
+    "Zhytomyr": {
+      "total_deliveries": 507,
+      "avg_delivery_time": 73.62,
+      "unique_couriers": 9
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:40.991294"
+}

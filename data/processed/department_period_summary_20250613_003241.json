@@ -1,0 +1,55 @@
+{
+  "analysis_type": "department_period_summary",
+  "data": {
+    "2024-09": {
+      "total_deliveries": 4165,
+      "avg_processing_time": 4.11,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    },
+    "2024-10": {
+      "total_deliveries": 12714,
+      "avg_processing_time": 4.47,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    },
+    "2024-11": {
+      "total_deliveries": 12435,
+      "avg_processing_time": 4.54,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    },
+    "2024-12": {
+      "total_deliveries": 12291,
+      "avg_processing_time": 4.47,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    },
+    "2025-01": {
+      "total_deliveries": 12647,
+      "avg_processing_time": 4.52,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    },
+    "2025-02": {
+      "total_deliveries": 11576,
+      "avg_processing_time": 4.56,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    },
+    "2025-03": {
+      "total_deliveries": 3919,
+      "avg_processing_time": 4.67,
+      "active_departments": 261,
+      "parcel_types": 3,
+      "transport_types": 2
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.248238"
+}

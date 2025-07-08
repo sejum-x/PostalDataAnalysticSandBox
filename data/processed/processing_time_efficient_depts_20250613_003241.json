@@ -1,0 +1,335 @@
+{
+  "analysis_type": "processing_time_efficient_depts",
+  "data": {
+    "2025-03": {
+      "2025-03_212_SF-61-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 137.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 30.93,
+        "period": "2025-03",
+        "department_id": 212,
+        "department_number": "SF-61-1"
+      },
+      "2025-03_161_SF-46-1": {
+        "avg_processing_time": 4.0,
+        "total_deliveries": 123.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 30.0,
+        "period": "2025-03",
+        "department_id": 161,
+        "department_number": "SF-46-1"
+      },
+      "2025-03_234_SF-67-1": {
+        "avg_processing_time": 3.83,
+        "total_deliveries": 116.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 29.52,
+        "period": "2025-03",
+        "department_id": 234,
+        "department_number": "SF-67-1"
+      },
+      "2025-03_128_SF-37-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 121.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 28.34,
+        "period": "2025-03",
+        "department_id": 128,
+        "department_number": "SF-37-1"
+      },
+      "2025-03_66_SF-19-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 115.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 26.93,
+        "period": "2025-03",
+        "department_id": 66,
+        "department_number": "SF-19-1"
+      }
+    },
+    "2025-02": {
+      "2025-02_13_SF-4-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 360.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 84.31,
+        "period": "2025-02",
+        "department_id": 13,
+        "department_number": "SF-4-1"
+      },
+      "2025-02_139_SF-40-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 337.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 76.07,
+        "period": "2025-02",
+        "department_id": 139,
+        "department_number": "SF-40-1"
+      },
+      "2025-02_245_SF-70-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 335.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 75.62,
+        "period": "2025-02",
+        "department_id": 245,
+        "department_number": "SF-70-1"
+      },
+      "2025-02_44_SF-13-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 333.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 75.17,
+        "period": "2025-02",
+        "department_id": 44,
+        "department_number": "SF-13-1"
+      },
+      "2025-02_55_SF-16-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 330.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 74.49,
+        "period": "2025-02",
+        "department_id": 55,
+        "department_number": "SF-16-1"
+      }
+    },
+    "2025-01": {
+      "2025-01_150_SF-43-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 364.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 85.25,
+        "period": "2025-01",
+        "department_id": 150,
+        "department_number": "SF-43-1"
+      },
+      "2025-01_44_SF-13-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 374.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 84.42,
+        "period": "2025-01",
+        "department_id": 44,
+        "department_number": "SF-13-1"
+      },
+      "2025-01_139_SF-40-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 374.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 84.42,
+        "period": "2025-01",
+        "department_id": 139,
+        "department_number": "SF-40-1"
+      },
+      "2025-01_128_SF-37-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 370.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 83.52,
+        "period": "2025-01",
+        "department_id": 128,
+        "department_number": "SF-37-1"
+      },
+      "2025-01_192_SF-55-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 355.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 83.14,
+        "period": "2025-01",
+        "department_id": 192,
+        "department_number": "SF-55-1"
+      }
+    },
+    "2024-12": {
+      "2024-12_245_SF-70-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 378.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 88.52,
+        "period": "2024-12",
+        "department_id": 245,
+        "department_number": "SF-70-1"
+      },
+      "2024-12_55_SF-16-1": {
+        "avg_processing_time": 4.0,
+        "total_deliveries": 348.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 84.88,
+        "period": "2024-12",
+        "department_id": 55,
+        "department_number": "SF-16-1"
+      },
+      "2024-12_117_SF-34-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 376.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 84.88,
+        "period": "2024-12",
+        "department_id": 117,
+        "department_number": "SF-34-1"
+      },
+      "2024-12_44_SF-13-1": {
+        "avg_processing_time": 4.33,
+        "total_deliveries": 358.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 80.81,
+        "period": "2024-12",
+        "department_id": 44,
+        "department_number": "SF-13-1"
+      },
+      "2024-12_139_SF-40-1": {
+        "avg_processing_time": 4.5,
+        "total_deliveries": 371.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 80.65,
+        "period": "2024-12",
+        "department_id": 139,
+        "department_number": "SF-40-1"
+      }
+    },
+    "2024-11": {
+      "2024-11_172_SF-49-1": {
+        "avg_processing_time": 4.0,
+        "total_deliveries": 358.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 87.32,
+        "period": "2024-11",
+        "department_id": 172,
+        "department_number": "SF-49-1"
+      },
+      "2024-11_95_SF-28-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 366.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 85.71,
+        "period": "2024-11",
+        "department_id": 95,
+        "department_number": "SF-28-1"
+      },
+      "2024-11_128_SF-37-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 359.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 84.07,
+        "period": "2024-11",
+        "department_id": 128,
+        "department_number": "SF-37-1"
+      },
+      "2024-11_117_SF-34-1": {
+        "avg_processing_time": 4.5,
+        "total_deliveries": 386.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 83.91,
+        "period": "2024-11",
+        "department_id": 117,
+        "department_number": "SF-34-1"
+      },
+      "2024-11_212_SF-61-1": {
+        "avg_processing_time": 4.5,
+        "total_deliveries": 381.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 82.83,
+        "period": "2024-11",
+        "department_id": 212,
+        "department_number": "SF-61-1"
+      }
+    },
+    "2024-10": {
+      "2024-10_212_SF-61-1": {
+        "avg_processing_time": 4.0,
+        "total_deliveries": 382.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 93.17,
+        "period": "2024-10",
+        "department_id": 212,
+        "department_number": "SF-61-1"
+      },
+      "2024-10_117_SF-34-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 378.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 88.52,
+        "period": "2024-10",
+        "department_id": 117,
+        "department_number": "SF-34-1"
+      },
+      "2024-10_234_SF-67-1": {
+        "avg_processing_time": 4.0,
+        "total_deliveries": 361.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 88.05,
+        "period": "2024-10",
+        "department_id": 234,
+        "department_number": "SF-67-1"
+      },
+      "2024-10_33_SF-10-1": {
+        "avg_processing_time": 4.17,
+        "total_deliveries": 354.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 82.9,
+        "period": "2024-10",
+        "department_id": 33,
+        "department_number": "SF-10-1"
+      },
+      "2024-10_192_SF-55-1": {
+        "avg_processing_time": 4.5,
+        "total_deliveries": 377.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 81.96,
+        "period": "2024-10",
+        "department_id": 192,
+        "department_number": "SF-55-1"
+      }
+    },
+    "2024-09": {
+      "2024-09_44_SF-13-1": {
+        "avg_processing_time": 3.5,
+        "total_deliveries": 133.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 36.94,
+        "period": "2024-09",
+        "department_id": 44,
+        "department_number": "SF-13-1"
+      },
+      "2024-09_33_SF-10-1": {
+        "avg_processing_time": 3.33,
+        "total_deliveries": 122.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 35.57,
+        "period": "2024-09",
+        "department_id": 33,
+        "department_number": "SF-10-1"
+      },
+      "2024-09_245_SF-70-1": {
+        "avg_processing_time": 3.67,
+        "total_deliveries": 128.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 33.95,
+        "period": "2024-09",
+        "department_id": 245,
+        "department_number": "SF-70-1"
+      },
+      "2024-09_212_SF-61-1": {
+        "avg_processing_time": 3.67,
+        "total_deliveries": 127.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 33.69,
+        "period": "2024-09",
+        "department_id": 212,
+        "department_number": "SF-61-1"
+      },
+      "2024-09_161_SF-46-1": {
+        "avg_processing_time": 3.5,
+        "total_deliveries": 119.0,
+        "parcel_types_handled": 3.0,
+        "efficiency_ratio": 33.06,
+        "period": "2024-09",
+        "department_id": 161,
+        "department_number": "SF-46-1"
+      }
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.540710"
+}

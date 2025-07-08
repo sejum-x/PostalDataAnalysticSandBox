@@ -1,0 +1,54 @@
+{
+  "analysis_type": "processing_time_period_changes",
+  "data": {
+    "2024-09_to_2024-10": {
+      "previous_period": "2024-09",
+      "current_period": "2024-10",
+      "avg_processing_time_change": 0.35999999999999943,
+      "deliveries_change": 8549,
+      "departments_change": 0,
+      "improvement_percentage": -8.551068883610439
+    },
+    "2024-10_to_2024-11": {
+      "previous_period": "2024-10",
+      "current_period": "2024-11",
+      "avg_processing_time_change": 0.07000000000000028,
+      "deliveries_change": -279,
+      "departments_change": 0,
+      "improvement_percentage": -1.5317286652078839
+    },
+    "2024-11_to_2024-12": {
+      "previous_period": "2024-11",
+      "current_period": "2024-12",
+      "avg_processing_time_change": -0.07000000000000028,
+      "deliveries_change": -144,
+      "departments_change": 0,
+      "improvement_percentage": 1.5086206896551788
+    },
+    "2024-12_to_2025-01": {
+      "previous_period": "2024-12",
+      "current_period": "2025-01",
+      "avg_processing_time_change": 0.04999999999999982,
+      "deliveries_change": 356,
+      "departments_change": 0,
+      "improvement_percentage": -1.0940919037199088
+    },
+    "2025-01_to_2025-02": {
+      "previous_period": "2025-01",
+      "current_period": "2025-02",
+      "avg_processing_time_change": 0.040000000000000036,
+      "deliveries_change": -1071,
+      "departments_change": 0,
+      "improvement_percentage": -0.8658008658008667
+    },
+    "2025-02_to_2025-03": {
+      "previous_period": "2025-02",
+      "current_period": "2025-03",
+      "avg_processing_time_change": 0.11000000000000032,
+      "deliveries_change": -7657,
+      "departments_change": 0,
+      "improvement_percentage": -2.3605150214592348
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.540710"
+}

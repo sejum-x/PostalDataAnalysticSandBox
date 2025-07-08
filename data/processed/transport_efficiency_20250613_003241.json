@@ -1,0 +1,118 @@
+{
+  "analysis_type": "transport_efficiency",
+  "data": {
+    "2024_09_Minivan": {
+      "total_deliveries": 2171.0,
+      "avg_processing_time": 4.07,
+      "avg_share_percentage": 0.09,
+      "efficiency_ratio": 520.62,
+      "period": "2024-09",
+      "transport_type_name": "Minivan"
+    },
+    "2024_09_Truck": {
+      "total_deliveries": 1994.0,
+      "avg_processing_time": 4.14,
+      "avg_share_percentage": 0.08,
+      "efficiency_ratio": 470.28,
+      "period": "2024-09",
+      "transport_type_name": "Truck"
+    },
+    "2024_10_Minivan": {
+      "total_deliveries": 6832.0,
+      "avg_processing_time": 4.41,
+      "avg_share_percentage": 0.07,
+      "efficiency_ratio": 1514.86,
+      "period": "2024-10",
+      "transport_type_name": "Minivan"
+    },
+    "2024_10_Truck": {
+      "total_deliveries": 5882.0,
+      "avg_processing_time": 4.53,
+      "avg_share_percentage": 0.06,
+      "efficiency_ratio": 1270.41,
+      "period": "2024-10",
+      "transport_type_name": "Truck"
+    },
+    "2024_11_Minivan": {
+      "total_deliveries": 6551.0,
+      "avg_processing_time": 4.55,
+      "avg_share_percentage": 0.07,
+      "efficiency_ratio": 1408.82,
+      "period": "2024-11",
+      "transport_type_name": "Minivan"
+    },
+    "2024_11_Truck": {
+      "total_deliveries": 5884.0,
+      "avg_processing_time": 4.52,
+      "avg_share_percentage": 0.06,
+      "efficiency_ratio": 1273.59,
+      "period": "2024-11",
+      "transport_type_name": "Truck"
+    },
+    "2024_12_Minivan": {
+      "total_deliveries": 6463.0,
+      "avg_processing_time": 4.43,
+      "avg_share_percentage": 0.07,
+      "efficiency_ratio": 1426.71,
+      "period": "2024-12",
+      "transport_type_name": "Minivan"
+    },
+    "2024_12_Truck": {
+      "total_deliveries": 5828.0,
+      "avg_processing_time": 4.51,
+      "avg_share_percentage": 0.06,
+      "efficiency_ratio": 1264.21,
+      "period": "2024-12",
+      "transport_type_name": "Truck"
+    },
+    "2025_01_Minivan": {
+      "total_deliveries": 6739.0,
+      "avg_processing_time": 4.5,
+      "avg_share_percentage": 0.07,
+      "efficiency_ratio": 1465.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan"
+    },
+    "2025_01_Truck": {
+      "total_deliveries": 5908.0,
+      "avg_processing_time": 4.55,
+      "avg_share_percentage": 0.06,
+      "efficiency_ratio": 1270.54,
+      "period": "2025-01",
+      "transport_type_name": "Truck"
+    },
+    "2025_02_Minivan": {
+      "total_deliveries": 6086.0,
+      "avg_processing_time": 4.57,
+      "avg_share_percentage": 0.07,
+      "efficiency_ratio": 1303.21,
+      "period": "2025-02",
+      "transport_type_name": "Minivan"
+    },
+    "2025_02_Truck": {
+      "total_deliveries": 5490.0,
+      "avg_processing_time": 4.54,
+      "avg_share_percentage": 0.06,
+      "efficiency_ratio": 1183.19,
+      "period": "2025-02",
+      "transport_type_name": "Truck"
+    },
+    "2025_03_Minivan": {
+      "total_deliveries": 2069.0,
+      "avg_processing_time": 4.65,
+      "avg_share_percentage": 0.09,
+      "efficiency_ratio": 435.58,
+      "period": "2025-03",
+      "transport_type_name": "Minivan"
+    },
+    "2025_03_Truck": {
+      "total_deliveries": 1850.0,
+      "avg_processing_time": 4.7,
+      "avg_share_percentage": 0.08,
+      "efficiency_ratio": 385.42,
+      "period": "2025-03",
+      "transport_type_name": "Truck"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.843850"
+}

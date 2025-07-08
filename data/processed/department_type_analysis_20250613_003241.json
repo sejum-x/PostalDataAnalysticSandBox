@@ -1,0 +1,153 @@
+{
+  "analysis_type": "department_type_analysis",
+  "data": {
+    "2024_09_Distribution_Center": {
+      "total_deliveries": 78.0,
+      "avg_processing_time": 4.62,
+      "departments_count": 18.0,
+      "period": "2024-09",
+      "department_type": "Distribution Center"
+    },
+    "2024_09_Local_Branch": {
+      "total_deliveries": 2014.0,
+      "avg_processing_time": 4.11,
+      "departments_count": 225.0,
+      "period": "2024-09",
+      "department_type": "Local Branch"
+    },
+    "2024_09_Sorting_Facility": {
+      "total_deliveries": 2073.0,
+      "avg_processing_time": 3.81,
+      "departments_count": 18.0,
+      "period": "2024-09",
+      "department_type": "Sorting Facility"
+    },
+    "2024_10_Distribution_Center": {
+      "total_deliveries": 203.0,
+      "avg_processing_time": 4.67,
+      "departments_count": 18.0,
+      "period": "2024-10",
+      "department_type": "Distribution Center"
+    },
+    "2024_10_Local_Branch": {
+      "total_deliveries": 6120.0,
+      "avg_processing_time": 4.46,
+      "departments_count": 225.0,
+      "period": "2024-10",
+      "department_type": "Local Branch"
+    },
+    "2024_10_Sorting_Facility": {
+      "total_deliveries": 6391.0,
+      "avg_processing_time": 4.37,
+      "departments_count": 18.0,
+      "period": "2024-10",
+      "department_type": "Sorting Facility"
+    },
+    "2024_11_Distribution_Center": {
+      "total_deliveries": 222.0,
+      "avg_processing_time": 4.37,
+      "departments_count": 18.0,
+      "period": "2024-11",
+      "department_type": "Distribution Center"
+    },
+    "2024_11_Local_Branch": {
+      "total_deliveries": 5994.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 225.0,
+      "period": "2024-11",
+      "department_type": "Local Branch"
+    },
+    "2024_11_Sorting_Facility": {
+      "total_deliveries": 6219.0,
+      "avg_processing_time": 4.38,
+      "departments_count": 18.0,
+      "period": "2024-11",
+      "department_type": "Sorting Facility"
+    },
+    "2024_12_Distribution_Center": {
+      "total_deliveries": 213.0,
+      "avg_processing_time": 5.07,
+      "departments_count": 18.0,
+      "period": "2024-12",
+      "department_type": "Distribution Center"
+    },
+    "2024_12_Local_Branch": {
+      "total_deliveries": 5950.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 225.0,
+      "period": "2024-12",
+      "department_type": "Local Branch"
+    },
+    "2024_12_Sorting_Facility": {
+      "total_deliveries": 6128.0,
+      "avg_processing_time": 4.41,
+      "departments_count": 18.0,
+      "period": "2024-12",
+      "department_type": "Sorting Facility"
+    },
+    "2025_01_Distribution_Center": {
+      "total_deliveries": 232.0,
+      "avg_processing_time": 4.43,
+      "departments_count": 18.0,
+      "period": "2025-01",
+      "department_type": "Distribution Center"
+    },
+    "2025_01_Local_Branch": {
+      "total_deliveries": 6118.0,
+      "avg_processing_time": 4.54,
+      "departments_count": 225.0,
+      "period": "2025-01",
+      "department_type": "Local Branch"
+    },
+    "2025_01_Sorting_Facility": {
+      "total_deliveries": 6297.0,
+      "avg_processing_time": 4.38,
+      "departments_count": 18.0,
+      "period": "2025-01",
+      "department_type": "Sorting Facility"
+    },
+    "2025_02_Distribution_Center": {
+      "total_deliveries": 223.0,
+      "avg_processing_time": 4.66,
+      "departments_count": 18.0,
+      "period": "2025-02",
+      "department_type": "Distribution Center"
+    },
+    "2025_02_Local_Branch": {
+      "total_deliveries": 5494.0,
+      "avg_processing_time": 4.56,
+      "departments_count": 225.0,
+      "period": "2025-02",
+      "department_type": "Local Branch"
+    },
+    "2025_02_Sorting_Facility": {
+      "total_deliveries": 5859.0,
+      "avg_processing_time": 4.43,
+      "departments_count": 18.0,
+      "period": "2025-02",
+      "department_type": "Sorting Facility"
+    },
+    "2025_03_Distribution_Center": {
+      "total_deliveries": 73.0,
+      "avg_processing_time": 4.89,
+      "departments_count": 18.0,
+      "period": "2025-03",
+      "department_type": "Distribution Center"
+    },
+    "2025_03_Local_Branch": {
+      "total_deliveries": 1895.0,
+      "avg_processing_time": 4.68,
+      "departments_count": 225.0,
+      "period": "2025-03",
+      "department_type": "Local Branch"
+    },
+    "2025_03_Sorting_Facility": {
+      "total_deliveries": 1951.0,
+      "avg_processing_time": 4.44,
+      "departments_count": 18.0,
+      "period": "2025-03",
+      "department_type": "Sorting Facility"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.248238"
+}

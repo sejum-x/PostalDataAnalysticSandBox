@@ -1,0 +1,153 @@
+{
+  "analysis_type": "processing_time_trends",
+  "data": {
+    "Large_2024-09": {
+      "avg_processing_time": 4.23,
+      "total_deliveries": 1476.0,
+      "departments_handling": 247.0,
+      "parcel_type_name": "Large",
+      "period": "2024-09"
+    },
+    "Large_2024-10": {
+      "avg_processing_time": 4.5,
+      "total_deliveries": 4317.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Large",
+      "period": "2024-10"
+    },
+    "Large_2024-11": {
+      "avg_processing_time": 4.64,
+      "total_deliveries": 3927.0,
+      "departments_handling": 260.0,
+      "parcel_type_name": "Large",
+      "period": "2024-11"
+    },
+    "Large_2024-12": {
+      "avg_processing_time": 4.42,
+      "total_deliveries": 4202.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Large",
+      "period": "2024-12"
+    },
+    "Large_2025-01": {
+      "avg_processing_time": 4.61,
+      "total_deliveries": 4173.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Large",
+      "period": "2025-01"
+    },
+    "Large_2025-02": {
+      "avg_processing_time": 4.51,
+      "total_deliveries": 4077.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Large",
+      "period": "2025-02"
+    },
+    "Large_2025-03": {
+      "avg_processing_time": 4.54,
+      "total_deliveries": 1354.0,
+      "departments_handling": 239.0,
+      "parcel_type_name": "Large",
+      "period": "2025-03"
+    },
+    "Medium_2024-09": {
+      "avg_processing_time": 4.06,
+      "total_deliveries": 1325.0,
+      "departments_handling": 241.0,
+      "parcel_type_name": "Medium",
+      "period": "2024-09"
+    },
+    "Medium_2024-10": {
+      "avg_processing_time": 4.41,
+      "total_deliveries": 4244.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Medium",
+      "period": "2024-10"
+    },
+    "Medium_2024-11": {
+      "avg_processing_time": 4.52,
+      "total_deliveries": 4229.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Medium",
+      "period": "2024-11"
+    },
+    "Medium_2024-12": {
+      "avg_processing_time": 4.48,
+      "total_deliveries": 4059.0,
+      "departments_handling": 260.0,
+      "parcel_type_name": "Medium",
+      "period": "2024-12"
+    },
+    "Medium_2025-01": {
+      "avg_processing_time": 4.43,
+      "total_deliveries": 4259.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Medium",
+      "period": "2025-01"
+    },
+    "Medium_2025-02": {
+      "avg_processing_time": 4.6,
+      "total_deliveries": 3783.0,
+      "departments_handling": 259.0,
+      "parcel_type_name": "Medium",
+      "period": "2025-02"
+    },
+    "Medium_2025-03": {
+      "avg_processing_time": 4.78,
+      "total_deliveries": 1354.0,
+      "departments_handling": 245.0,
+      "parcel_type_name": "Medium",
+      "period": "2025-03"
+    },
+    "Small_2024-09": {
+      "avg_processing_time": 4.01,
+      "total_deliveries": 1364.0,
+      "departments_handling": 247.0,
+      "parcel_type_name": "Small",
+      "period": "2024-09"
+    },
+    "Small_2024-10": {
+      "avg_processing_time": 4.5,
+      "total_deliveries": 4153.0,
+      "departments_handling": 260.0,
+      "parcel_type_name": "Small",
+      "period": "2024-10"
+    },
+    "Small_2024-11": {
+      "avg_processing_time": 4.44,
+      "total_deliveries": 4279.0,
+      "departments_handling": 261.0,
+      "parcel_type_name": "Small",
+      "period": "2024-11"
+    },
+    "Small_2024-12": {
+      "avg_processing_time": 4.5,
+      "total_deliveries": 4030.0,
+      "departments_handling": 260.0,
+      "parcel_type_name": "Small",
+      "period": "2024-12"
+    },
+    "Small_2025-01": {
+      "avg_processing_time": 4.53,
+      "total_deliveries": 4215.0,
+      "departments_handling": 260.0,
+      "parcel_type_name": "Small",
+      "period": "2025-01"
+    },
+    "Small_2025-02": {
+      "avg_processing_time": 4.56,
+      "total_deliveries": 3716.0,
+      "departments_handling": 260.0,
+      "parcel_type_name": "Small",
+      "period": "2025-02"
+    },
+    "Small_2025-03": {
+      "avg_processing_time": 4.7,
+      "total_deliveries": 1211.0,
+      "departments_handling": 245.0,
+      "parcel_type_name": "Small",
+      "period": "2025-03"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.540710"
+}

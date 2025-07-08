@@ -1,6 +1,6 @@
 """
 Головний файл для запуску всього процесу аналізу Data Warehouse з інтерактивним інтерфейсом
-NumPy 2.x compatible
+NumPy 2.x compatible + Data Science моделі
 """
 
 import os
@@ -26,6 +26,9 @@ from reports.report_generator import DWReportGenerator
 from config.database_config import DatabaseConfig
 from utils.helpers import get_latest_csv_file, create_directories, clean_old_files
 
+# 🧠 Data Science імпорти
+from data_science.ds_controller import DataScienceController
+
 class PostDWAnalyticsSystem:
     def __init__(self):
         self.config = DatabaseConfig()
@@ -36,6 +39,10 @@ class PostDWAnalyticsSystem:
         self.transport_analyzer = TransportAnalyzer()
         self.chart_generator = DWChartGenerator()
         self.report_generator = DWReportGenerator()
+
+        # 🧠 Data Science контролер
+        self.ds_controller = DataScienceController()
+
         create_directories()
 
     def show_main_menu(self):
@@ -47,10 +54,11 @@ class PostDWAnalyticsSystem:
         print("2. 📊 Провести аналіз даних")
         print("3. 📋 Згенерувати звіти")
         print("4. 📈 Створити графіки та візуалізації")
-        print("5. 🔄 Повний цикл (вивантаження + аналіз + звіти + графіки)")
-        print("6. 🧹 Очистити старі файли")
-        print("7. 📁 Показати статус файлів")
-        print("8. 🔍 Тестувати підключення до DW")
+        print("5. 🧠 Data Science аналіз та прогнозування")  # 🆕 НОВИЙ ПУНКТ
+        print("6. 🔄 Повний цикл (вивантаження + аналіз + звіти + графіки)")
+        print("7. 🧹 Очистити старі файли")
+        print("8. 📁 Показати статус файлів")
+        print("9. 🔍 Тестувати підключення до DW")
         print("0. ❌ Вихід")
         print("="*70)
 
@@ -89,6 +97,23 @@ class PostDWAnalyticsSystem:
         print("3. 📋 Згенерувати всі звіти")
         print("0. ⬅️ Повернутися до головного меню")
         print("-"*50)
+
+    # 🧠 НОВИЙ МЕТОД: Меню Data Science
+    def show_data_science_menu(self):
+        """Показує меню Data Science аналізу"""
+        print("\n" + "-"*60)
+        print("🧠 МЕНЮ DATA SCIENCE АНАЛІЗУ ТА ПРОГНОЗУВАННЯ")
+        print("-"*60)
+        print("1. 🎯 Повний Data Science аналіз")
+        print("2. 📈 Прогнозування доставок на наступний місяць")
+        print("3. 🏢 Аналіз ефективності відділень")
+        print("4. 🚛 Аналіз ефективності транспорту")
+        print("5. 📅 Аналіз сезонних патернів")
+        print("6. 💡 Генерація рекомендацій для оптимізації")
+        print("7. 🔮 Швидкий прогноз для відділення")
+        print("8. 📊 Показати важливість ознак моделі")
+        print("0. ⬅️ Повернутися до головного меню")
+        print("-"*60)
 
     def test_dw_connection(self):
         """Тестує підключення до Data Warehouse"""
@@ -143,7 +168,7 @@ class PostDWAnalyticsSystem:
 
         patterns = {
             'courier_delivery': 'courier_delivery_raw_data_*.csv',
-            'delivery_periodic': 'delivery_periodic_raw_data_*.csv'  # Один файл для завдань 2,3,4
+            'delivery_periodic': 'delivery_periodic_raw_data_*.csv'
         }
 
         for key, pattern in patterns.items():
@@ -187,7 +212,6 @@ class PostDWAnalyticsSystem:
 
         try:
             print("🔄 Аналіз завантажень відділень по періодах...")
-            # ✅ ВИПРАВЛЕНО: викликаємо правильний метод з періодами
             results = self.department_analyzer.analyze_department_workload_by_periods(files['delivery_periodic'])
 
             if 'error' in results:
@@ -213,7 +237,6 @@ class PostDWAnalyticsSystem:
 
         try:
             print("🔄 Аналіз часу обробки посилок по періодах...")
-            # ✅ ВИПРАВЛЕНО: викликаємо правильний метод з періодами
             results = self.processing_analyzer.analyze_processing_times_by_periods(files['delivery_periodic'])
 
             if 'error' in results:
@@ -239,7 +262,6 @@ class PostDWAnalyticsSystem:
 
         try:
             print("🔄 Аналіз використання транспорту по періодах...")
-            # ✅ ВИПРАВЛЕНО: викликаємо правильний метод з періодами
             results = self.transport_analyzer.analyze_transport_utilization_by_periods(files['delivery_periodic'])
 
             if 'error' in results:
@@ -288,6 +310,321 @@ class PostDWAnalyticsSystem:
 
         return successful > 0
 
+    # 🧠 НОВІ МЕТОДИ DATA SCIENCE
+
+    def run_full_data_science_analysis(self):
+        """Запуск повного Data Science аналізу"""
+        print("\n🧠 ЗАПУСК ПОВНОГО DATA SCIENCE АНАЛІЗУ")
+        print("=" * 50)
+
+        try:
+            results = self.ds_controller.run_full_analysis()
+
+            if results['summary']['status'] == 'completed':
+                print(f"✅ Data Science аналіз завершено!")
+                print(f"📊 Успішно: {results['summary']['successful_components']}/{results['summary']['total_components']} компонентів")
+
+                # Показуємо короткий підсумок
+                if 'next_month_forecast' in results['components'] and 'error' not in results['components']['next_month_forecast']:
+                    forecast = results['components']['next_month_forecast']['summary']
+                    print(f"🔮 Прогноз на наступний місяць: {forecast['total_predicted_deliveries']} доставок")
+
+                return True
+            else:
+                print("❌ Data Science аналіз завершено з помилками")
+                return False
+
+        except Exception as e:
+            print(f"❌ Помилка в Data Science аналізі: {e}")
+            return False
+
+    def forecast_next_month(self):
+        """Прогнозування на наступний місяць"""
+        print("\n📈 ПРОГНОЗУВАННЯ ДОСТАВОК НА НАСТУПНИЙ МІСЯЦЬ")
+        print("-" * 50)
+
+        try:
+            # Спочатку навчаємо модель
+            print("🎯 Навчання моделі прогнозування...")
+            training_results = self.ds_controller.delivery_forecast.train_forecast_model()
+
+            if 'error' in training_results:
+                print(f"❌ Помилка навчання: {training_results['error']}")
+                return False
+
+            print(f"✅ Модель навчена! R² = {training_results['model_metrics']['test_r2']:.3f}")
+
+            # Робимо прогноз
+            print("🔮 Створення прогнозу...")
+            forecast_results = self.ds_controller.delivery_forecast.forecast_next_month()
+
+            if 'error' in forecast_results:
+                print(f"❌ Помилка прогнозування: {forecast_results['error']}")
+                return False
+
+            # Показуємо результати
+            summary = forecast_results['summary']
+            print(f"\n📊 ПРОГНОЗ НА {summary['forecast_period']}:")
+            print(f"🎯 Загальна кількість доставок: {summary['total_predicted_deliveries']}")
+            print(f"🏢 Кількість відділень: {summary['total_departments']}")
+
+            print(f"\n🌍 ТОП-5 РЕГІОНІВ:")
+            sorted_regions = sorted(summary['region_forecasts'].items(), key=lambda x: x[1], reverse=True)
+            for i, (region, count) in enumerate(sorted_regions[:5], 1):
+                print(f"  {i}. {region}: {count} доставок")
+
+            print(f"\n📦 ТОП-3 ТИПИ ПОСИЛОК:")
+            sorted_parcels = sorted(summary['parcel_type_forecasts'].items(), key=lambda x: x[1], reverse=True)
+            for i, (parcel_type, count) in enumerate(sorted_parcels[:3], 1):
+                print(f"  {i}. {parcel_type}: {count} доставок")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка прогнозування: {e}")
+            return False
+
+    def analyze_department_efficiency(self):
+        """Аналіз ефективності відділень"""
+        print("\n🏢 АНАЛІЗ ЕФЕКТИВНОСТІ ВІДДІЛЕНЬ")
+        print("-" * 40)
+
+        try:
+            dept_performance = self.ds_controller.efficiency_analyzer.analyze_department_performance()
+
+            print(f"📊 Проаналізовано {len(dept_performance)} відділень")
+
+            # Топ-5 найефективніших
+            top_depts = dept_performance.nlargest(5, 'efficiency_score')
+            print(f"\n🏆 ТОП-5 НАЙЕФЕКТИВНІШИХ ВІДДІЛЕНЬ:")
+            for i, (_, dept) in enumerate(top_depts.iterrows(), 1):
+                print(f"  {i}. {dept['department_number']} ({dept['department_city']})")
+                print(f"     Ефективність: {dept['efficiency_score']:.3f}, Доставок: {dept['total_deliveries']}")
+
+            # Відділення, що потребують покращення
+            low_performance = dept_performance[dept_performance['performance_category'] == 'Needs_Improvement']
+            if len(low_performance) > 0:
+                print(f"\n⚠️ ВІДДІЛЕННЯ, ЩО ПОТРЕБУЮТЬ ПОКРАЩЕННЯ: {len(low_performance)}")
+                for _, dept in low_performance.head(3).iterrows():
+                    print(f"  • {dept['department_number']} ({dept['department_city']})")
+                    print(f"    Ефективність: {dept['efficiency_score']:.3f}")
+
+            # Аномальні відділення
+            anomalies = dept_performance[dept_performance['is_anomaly'] == True]
+            if len(anomalies) > 0:
+                print(f"\n🔍 ВИЯВЛЕНО АНОМАЛІЇ: {len(anomalies)} відділень")
+                for _, dept in anomalies.iterrows():
+                    print(f"  ⚡ {dept['department_number']} ({dept['department_city']}) - потребує перевірки")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка аналізу ефективності: {e}")
+            return False
+
+    def analyze_transport_efficiency(self):
+        """Аналіз ефективності транспорту"""
+        print("\n🚛 АНАЛІЗ ЕФЕКТИВНОСТІ ТРАНСПОРТУ")
+        print("-" * 40)
+
+        try:
+            transport_analysis = self.ds_controller.efficiency_analyzer.analyze_transport_efficiency()
+
+            print(f"📊 Проаналізовано {len(transport_analysis)} типів транспорту")
+
+            # Сортуємо по ефективності
+            transport_sorted = transport_analysis.sort_values('transport_efficiency_score', ascending=False)
+
+            print(f"\n🏆 РЕЙТИНГ ЕФЕКТИВНОСТІ ТРАНСПОРТУ:")
+            for i, (_, transport) in enumerate(transport_sorted.iterrows(), 1):
+                print(f"  {i}. {transport['transport_type_name']}")
+                print(f"     Ефективність: {transport['transport_efficiency_score']:.3f}")
+                print(f"     Використовується в {transport['departments_using']} відділеннях")
+                print(f"     Середня вага: {transport['avg_max_weight']:.1f} кг")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка аналізу транспорту: {e}")
+            return False
+
+    def analyze_seasonal_patterns(self):
+        """Аналіз сезонних патернів"""
+        print("\n📅 АНАЛІЗ СЕЗОННИХ ПАТЕРНІВ")
+        print("-" * 35)
+
+        try:
+            seasonal_analysis = self.ds_controller.efficiency_analyzer.analyze_seasonal_patterns()
+
+            # Місячні паттерни
+            monthly_patterns = seasonal_analysis['monthly_patterns']
+            print("📊 АКТИВНІСТЬ ПО МІСЯЦЯХ:")
+
+            months_names = {
+                1: 'Січень', 2: 'Лютий', 3: 'Березень', 4: 'Квітень',
+                5: 'Травень', 6: 'Червень', 7: 'Липень', 8: 'Серпень',
+                9: 'Вересень', 10: 'Жовтень', 11: 'Листопад', 12: 'Грудень'
+            }
+
+            for month, data in monthly_patterns.items():
+                month_name = months_names.get(month, f"Місяць {month}")
+                print(f"  {month_name}: {data['total_deliveries']} доставок, "
+                      f"час обробки: {data['avg_processing_time']:.1f} год")
+
+            # Сезонні паттерни
+            seasonal_patterns = seasonal_analysis['seasonal_patterns']
+            if seasonal_patterns:
+                print(f"\n🌍 СЕЗОННА АКТИВНІСТЬ:")
+                season_names = {'Winter': 'Зима', 'Spring': 'Весна', 'Summer': 'Літо', 'Autumn': 'Осінь'}
+
+                for season, data in seasonal_patterns.items():
+                    season_name = season_names.get(season, season)
+                    print(f"  {season_name}: {data['total_deliveries']} доставок, "
+                          f"{data['active_departments']} активних відділень")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка сезонного аналізу: {e}")
+            return False
+
+    def generate_optimization_recommendations(self):
+        """Генерація рекомендацій для оптимізації"""
+        print("\n💡 ГЕНЕРАЦІЯ РЕКОМЕНДАЦІЙ ДЛЯ ОПТИМІЗАЦІЇ")
+        print("-" * 45)
+
+        try:
+            recommendations = self.ds_controller.efficiency_analyzer.generate_improvement_recommendations()
+
+            if not recommendations:
+                print("✅ Рекомендацій не знайдено - система працює оптимально!")
+                return True
+
+            print(f"📋 Згенеровано {len(recommendations)} рекомендацій:")
+
+            # Групуємо по пріоритету
+            high_priority = [r for r in recommendations if r['priority'] == 'high']
+            medium_priority = [r for r in recommendations if r['priority'] == 'medium']
+
+            if high_priority:
+                print(f"\n🔥 ВИСОКИЙ ПРІОРИТЕТ ({len(high_priority)}):")
+                for i, rec in enumerate(high_priority, 1):
+                    print(f"  {i}. {rec['target']}")
+                    print(f"     Тип: {rec['type']}")
+                    for issue in rec['issues']:
+                        print(f"     ⚠️ {issue}")
+                    print(f"     💡 Рекомендації:")
+                    for suggestion in rec['suggestions']:
+                        print(f"       • {suggestion}")
+                    print()
+
+            if medium_priority:
+                print(f"\n📋 СЕРЕДНІЙ ПРІОРИТЕТ ({len(medium_priority)}):")
+                for i, rec in enumerate(medium_priority, 1):
+                    print(f"  {i}. {rec['target']}")
+                    print(f"     💡 {rec['suggestions'][0] if rec['suggestions'] else 'Немає конкретних рекомендацій'}")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка генерації рекомендацій: {e}")
+            return False
+
+    def quick_department_forecast(self):
+        """Швидкий прогноз для конкретного відділення"""
+        print("\n🔮 ШВИДКИЙ ПРОГНОЗ ДЛЯ ВІДДІЛЕННЯ")
+        print("-" * 35)
+
+        try:
+            dept_id = input("Введіть ID відділення (або Enter для загального прогнозу): ").strip()
+
+            if dept_id:
+                try:
+                    dept_id = int(dept_id)
+                    forecast = self.ds_controller.get_quick_forecast(dept_id)
+                except ValueError:
+                    print("❌ Невірний формат ID відділення!")
+                    return False
+            else:
+                forecast = self.ds_controller.get_quick_forecast()
+
+            if 'error' in forecast:
+                print(f"❌ {forecast['error']}")
+                return False
+
+            if isinstance(forecast, list):
+                # Прогноз для конкретного відділення
+                if forecast:
+                    dept_forecast = forecast[0]
+                    print(f"🏢 Відділення: {dept_forecast['department_number']} ({dept_forecast['department_city']})")
+                    print(f"📈 Прогноз доставок: {dept_forecast['predicted_deliveries']}")
+                    print(f"📅 Період: {dept_forecast['forecast_month']}/{dept_forecast['forecast_year']}")
+                    print(f"🎯 Впевненість: {dept_forecast['confidence']}")
+                else:
+                    print("❌ Прогноз для цього відділення недоступний")
+            else:
+                # Загальний прогноз
+                print(f"🎯 Загальний прогноз на {forecast['forecast_period']}:")
+                print(f"📦 Всього доставок: {forecast['total_predicted_deliveries']}")
+                print(f"🏢 Відділень: {forecast['total_departments']}")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка швидкого прогнозу: {e}")
+            return False
+
+    def show_model_feature_importance(self):
+        """Показує важливість ознак моделі"""
+        print("\n📊 ВАЖЛИВІСТЬ ОЗНАК МОДЕЛІ ПРОГНОЗУВАННЯ")
+        print("-" * 45)
+
+        try:
+            # Спочатку навчаємо модель, якщо не навчена
+            if not hasattr(self.ds_controller.delivery_forecast, 'model') or self.ds_controller.delivery_forecast.model is None:
+                print("🎯 Навчання моделі...")
+                training_results = self.ds_controller.delivery_forecast.train_forecast_model()
+                if 'error' in training_results:
+                    print(f"❌ Помилка навчання: {training_results['error']}")
+                    return False
+
+            # Отримуємо важливість ознак
+            importance = self.ds_controller.delivery_forecast.get_feature_importance()
+
+            if not importance:
+                print("❌ Важливість ознак недоступна для цієї моделі")
+                return False
+
+            print("🏆 ТОП-10 НАЙВАЖЛИВІШИХ ОЗНАК:")
+            for i, feature_info in enumerate(importance[:10], 1):
+                feature_name = feature_info['feature']
+                importance_score = feature_info['importance']
+
+                # Переклад назв ознак
+                feature_translations = {
+                    'department_id': 'ID відділення',
+                    'parcel_type_id': 'Тип посилки',
+                    'start_month': 'Місяць',
+                    'processing_time_hours': 'Час обробки',
+                    'parcel_max_weight': 'Максимальна вага',
+                    'dept_avg_deliveries': 'Середні доставки відділення',
+                    'region_avg_deliveries': 'Середні доставки регіону',
+                    'is_winter': 'Зимовий сезон',
+                    'is_spring': 'Весняний сезон'
+                }
+
+                translated_name = feature_translations.get(feature_name, feature_name)
+                bar_length = int(importance_score * 50)  # Візуальна шкала
+                bar = "█" * bar_length + "░" * (50 - bar_length)
+
+                print(f"  {i:2d}. {translated_name:<25} {importance_score:.3f} |{bar}|")
+
+            return True
+
+        except Exception as e:
+            print(f"❌ Помилка отримання важливості ознак: {e}")
+            return False
+
     def create_charts(self):
         """Створення графіків"""
         print("\n🎨 СТВОРЕННЯ ГРАФІКІВ...")
@@ -332,13 +669,17 @@ class PostDWAnalyticsSystem:
         directories = [
             ("📊 Оброблені дані", self.config.PROCESSED_DATA_PATH, "*.json"),
             ("📈 Графіки", self.config.CHARTS_PATH, "*.png"),
-            ("📋 Звіти", self.config.REPORTS_PATH, "*.txt")
+            ("📋 Звіти", self.config.REPORTS_PATH, "*.txt"),
+            ("🧠 ML моделі", os.path.join(self.config.PROCESSED_DATA_PATH, 'models'), "*.joblib")  # 🆕
         ]
 
         print(f"\n📂 ЗГЕНЕРОВАНІ ФАЙЛИ:")
         for name, path, pattern in directories:
-            files_count = len(glob.glob(os.path.join(path, pattern)))
-            print(f"  {name}: {files_count} файлів")
+            if os.path.exists(path):
+                files_count = len(glob.glob(os.path.join(path, pattern)))
+                print(f"  {name}: {files_count} файлів")
+            else:
+                print(f"  {name}: директорія не існує")
 
     def clean_old_files_menu(self):
         """Меню очищення старих файлів"""
@@ -384,6 +725,7 @@ class PostDWAnalyticsSystem:
         steps = [
             ("📥 Вивантаження даних з DW", self.extract_data),
             ("📊 Аналіз даних", self.run_all_analysis),
+            ("🧠 Data Science аналіз", self.run_full_data_science_analysis),  # 🆕
             ("📋 Генерація звітів", self.generate_reports),
             ("📈 Створення графіків", self.create_charts)
         ]
@@ -482,9 +824,40 @@ class PostDWAnalyticsSystem:
 
             input("\nНатисніть Enter для продовження...")
 
+    # 🧠 НОВИЙ МЕТОД: Обробка меню Data Science
+    def handle_data_science_menu(self):
+        """Обробка меню Data Science"""
+        while True:
+            self.show_data_science_menu()
+            choice = input("\nВаш вибір: ").strip()
+
+            if choice == '1':
+                self.run_full_data_science_analysis()
+            elif choice == '2':
+                self.forecast_next_month()
+            elif choice == '3':
+                self.analyze_department_efficiency()
+            elif choice == '4':
+                self.analyze_transport_efficiency()
+            elif choice == '5':
+                self.analyze_seasonal_patterns()
+            elif choice == '6':
+                self.generate_optimization_recommendations()
+            elif choice == '7':
+                self.quick_department_forecast()
+            elif choice == '8':
+                self.show_model_feature_importance()
+            elif choice == '0':
+                break
+            else:
+                print("❌ Невірний вибір! Спробуйте ще раз.")
+
+            input("\nНатисніть Enter для продовження...")
+
     def run(self):
         """Головний цикл програми"""
         print("🎉 Ласкаво просимо до системи аналізу Data Warehouse поштової служби!")
+        print("🧠 Тепер з підтримкою Data Science та Machine Learning!")
 
         while True:
             try:
@@ -499,13 +872,15 @@ class PostDWAnalyticsSystem:
                     self.handle_reports_menu()
                 elif choice == '4':
                     self.handle_charts_menu()
-                elif choice == '5':
-                    self.full_cycle()
+                elif choice == '5':  # 🆕 Data Science меню
+                    self.handle_data_science_menu()
                 elif choice == '6':
-                    self.clean_old_files_menu()
+                    self.full_cycle()
                 elif choice == '7':
-                    self.show_file_status()
+                    self.clean_old_files_menu()
                 elif choice == '8':
+                    self.show_file_status()
+                elif choice == '9':
                     self.test_dw_connection()
                 elif choice == '0':
                     print("\n👋 До побачення!")

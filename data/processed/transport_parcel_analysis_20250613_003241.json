@@ -1,0 +1,426 @@
+{
+  "analysis_type": "transport_parcel_analysis",
+  "data": {
+    "2024_09_Minivan_Large": {
+      "total_deliveries": 776.0,
+      "avg_processing_time": 4.18,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 209.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2024_09_Minivan_Medium": {
+      "total_deliveries": 704.0,
+      "avg_processing_time": 4.04,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 202.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2024_09_Minivan_Small": {
+      "total_deliveries": 691.0,
+      "avg_processing_time": 3.99,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 200.0,
+      "period": "2024-09",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2024_09_Truck_Large": {
+      "total_deliveries": 700.0,
+      "avg_processing_time": 4.29,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 209.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2024_09_Truck_Medium": {
+      "total_deliveries": 621.0,
+      "avg_processing_time": 4.09,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 195.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2024_09_Truck_Small": {
+      "total_deliveries": 673.0,
+      "avg_processing_time": 4.04,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 207.0,
+      "period": "2024-09",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    },
+    "2024_10_Minivan_Large": {
+      "total_deliveries": 2266.0,
+      "avg_processing_time": 4.45,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 261.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2024_10_Minivan_Medium": {
+      "total_deliveries": 2317.0,
+      "avg_processing_time": 4.42,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 258.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2024_10_Minivan_Small": {
+      "total_deliveries": 2249.0,
+      "avg_processing_time": 4.35,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 258.0,
+      "period": "2024-10",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2024_10_Truck_Large": {
+      "total_deliveries": 2051.0,
+      "avg_processing_time": 4.55,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2024_10_Truck_Medium": {
+      "total_deliveries": 1927.0,
+      "avg_processing_time": 4.39,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2024_10_Truck_Small": {
+      "total_deliveries": 1904.0,
+      "avg_processing_time": 4.66,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2024-10",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    },
+    "2024_11_Minivan_Large": {
+      "total_deliveries": 2113.0,
+      "avg_processing_time": 4.6,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2024_11_Minivan_Medium": {
+      "total_deliveries": 2208.0,
+      "avg_processing_time": 4.59,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 257.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2024_11_Minivan_Small": {
+      "total_deliveries": 2230.0,
+      "avg_processing_time": 4.47,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 257.0,
+      "period": "2024-11",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2024_11_Truck_Large": {
+      "total_deliveries": 1814.0,
+      "avg_processing_time": 4.69,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 254.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2024_11_Truck_Medium": {
+      "total_deliveries": 2021.0,
+      "avg_processing_time": 4.46,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2024_11_Truck_Small": {
+      "total_deliveries": 2049.0,
+      "avg_processing_time": 4.42,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2024-11",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    },
+    "2024_12_Minivan_Large": {
+      "total_deliveries": 2157.0,
+      "avg_processing_time": 4.44,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2024_12_Minivan_Medium": {
+      "total_deliveries": 2156.0,
+      "avg_processing_time": 4.46,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2024_12_Minivan_Small": {
+      "total_deliveries": 2150.0,
+      "avg_processing_time": 4.38,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 257.0,
+      "period": "2024-12",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2024_12_Truck_Large": {
+      "total_deliveries": 2045.0,
+      "avg_processing_time": 4.4,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 254.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2024_12_Truck_Medium": {
+      "total_deliveries": 1903.0,
+      "avg_processing_time": 4.5,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2024_12_Truck_Small": {
+      "total_deliveries": 1880.0,
+      "avg_processing_time": 4.63,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 252.0,
+      "period": "2024-12",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    },
+    "2025_01_Minivan_Large": {
+      "total_deliveries": 2239.0,
+      "avg_processing_time": 4.62,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 258.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2025_01_Minivan_Medium": {
+      "total_deliveries": 2294.0,
+      "avg_processing_time": 4.49,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 258.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2025_01_Minivan_Small": {
+      "total_deliveries": 2206.0,
+      "avg_processing_time": 4.38,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 256.0,
+      "period": "2025-01",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2025_01_Truck_Large": {
+      "total_deliveries": 1934.0,
+      "avg_processing_time": 4.6,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 254.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2025_01_Truck_Medium": {
+      "total_deliveries": 1965.0,
+      "avg_processing_time": 4.38,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2025_01_Truck_Small": {
+      "total_deliveries": 2009.0,
+      "avg_processing_time": 4.67,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2025-01",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    },
+    "2025_02_Minivan_Large": {
+      "total_deliveries": 2169.0,
+      "avg_processing_time": 4.53,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 259.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2025_02_Minivan_Medium": {
+      "total_deliveries": 2010.0,
+      "avg_processing_time": 4.6,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 252.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2025_02_Minivan_Small": {
+      "total_deliveries": 1907.0,
+      "avg_processing_time": 4.58,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2025-02",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2025_02_Truck_Large": {
+      "total_deliveries": 1908.0,
+      "avg_processing_time": 4.49,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 250.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2025_02_Truck_Medium": {
+      "total_deliveries": 1773.0,
+      "avg_processing_time": 4.59,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 252.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2025_02_Truck_Small": {
+      "total_deliveries": 1809.0,
+      "avg_processing_time": 4.55,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 255.0,
+      "period": "2025-02",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    },
+    "2025_03_Minivan_Large": {
+      "total_deliveries": 695.0,
+      "avg_processing_time": 4.41,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 205.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Large"
+    },
+    "2025_03_Minivan_Medium": {
+      "total_deliveries": 711.0,
+      "avg_processing_time": 4.76,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 207.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Medium"
+    },
+    "2025_03_Minivan_Small": {
+      "total_deliveries": 663.0,
+      "avg_processing_time": 4.78,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 196.0,
+      "period": "2025-03",
+      "transport_type_name": "Minivan",
+      "parcel_type_name": "Small"
+    },
+    "2025_03_Truck_Large": {
+      "total_deliveries": 659.0,
+      "avg_processing_time": 4.67,
+      "avg_parcel_weight": 15.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 193.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Large"
+    },
+    "2025_03_Truck_Medium": {
+      "total_deliveries": 643.0,
+      "avg_processing_time": 4.81,
+      "avg_parcel_weight": 10.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 188.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Medium"
+    },
+    "2025_03_Truck_Small": {
+      "total_deliveries": 548.0,
+      "avg_processing_time": 4.61,
+      "avg_parcel_weight": 5.0,
+      "avg_parcel_size": 0.0,
+      "departments_served": 183.0,
+      "period": "2025-03",
+      "transport_type_name": "Truck",
+      "parcel_type_name": "Small"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.843850"
+}

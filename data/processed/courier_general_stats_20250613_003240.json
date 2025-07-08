@@ -1,0 +1,12 @@
+{
+  "analysis_type": "courier_general_stats",
+  "data": {
+    "total_couriers": 225,
+    "total_deliveries": 13790,
+    "avg_delivery_time": 76.10391588107323,
+    "total_regions": 25,
+    "total_cities": 74,
+    "avg_improvement": -0.43720087019579407
+  },
+  "analysis_timestamp": "2025-06-13T00:32:40.991294"
+}

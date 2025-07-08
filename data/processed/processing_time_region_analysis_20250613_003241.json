@@ -1,0 +1,1756 @@
+{
+  "analysis_type": "processing_time_region_analysis",
+  "data": {
+    "2024-09_Cherkasy": {
+      "avg_processing_time": 4.12,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.8,
+      "total_deliveries": 208.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Cherkasy"
+    },
+    "2024-09_Chernihiv": {
+      "avg_processing_time": 4.49,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.86,
+      "total_deliveries": 215.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Chernihiv"
+    },
+    "2024-09_Chernivtsi": {
+      "avg_processing_time": 4.12,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.01,
+      "total_deliveries": 191.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Chernivtsi"
+    },
+    "2024-09_Crimea": {
+      "avg_processing_time": 3.8,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.97,
+      "total_deliveries": 94.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Crimea"
+    },
+    "2024-09_Dnipro": {
+      "avg_processing_time": 4.45,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.22,
+      "total_deliveries": 206.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Dnipro"
+    },
+    "2024-09_Donetsk": {
+      "avg_processing_time": 4.14,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.31,
+      "total_deliveries": 88.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Donetsk"
+    },
+    "2024-09_Ivano-Frankivsk": {
+      "avg_processing_time": 3.63,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.67,
+      "total_deliveries": 209.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024-09_Kharkiv": {
+      "avg_processing_time": 3.78,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.89,
+      "total_deliveries": 218.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Kharkiv"
+    },
+    "2024-09_Kherson": {
+      "avg_processing_time": 4.85,
+      "median_processing_time": 4.5,
+      "std_processing_time": 2.27,
+      "total_deliveries": 66.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Kherson"
+    },
+    "2024-09_Khmelnytskyi": {
+      "avg_processing_time": 4.28,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.92,
+      "total_deliveries": 220.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024-09_Kropyvnytskyi": {
+      "avg_processing_time": 4.49,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.76,
+      "total_deliveries": 57.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024-09_Kyiv": {
+      "avg_processing_time": 4.52,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.11,
+      "total_deliveries": 192.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Kyiv"
+    },
+    "2024-09_Luhansk": {
+      "avg_processing_time": 3.76,
+      "median_processing_time": 3.0,
+      "std_processing_time": 1.98,
+      "total_deliveries": 103.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Luhansk"
+    },
+    "2024-09_Lutsk": {
+      "avg_processing_time": 3.68,
+      "median_processing_time": 3.0,
+      "std_processing_time": 1.95,
+      "total_deliveries": 183.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Lutsk"
+    },
+    "2024-09_Lviv": {
+      "avg_processing_time": 3.94,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.11,
+      "total_deliveries": 199.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Lviv"
+    },
+    "2024-09_Mykolaiv": {
+      "avg_processing_time": 4.2,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.27,
+      "total_deliveries": 174.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Mykolaiv"
+    },
+    "2024-09_Odesa": {
+      "avg_processing_time": 4.02,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.21,
+      "total_deliveries": 191.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Odesa"
+    },
+    "2024-09_Poltava": {
+      "avg_processing_time": 4.61,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.4,
+      "total_deliveries": 194.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Poltava"
+    },
+    "2024-09_Rivne": {
+      "avg_processing_time": 4.04,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.21,
+      "total_deliveries": 207.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Rivne"
+    },
+    "2024-09_Sumy": {
+      "avg_processing_time": 4.11,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.95,
+      "total_deliveries": 200.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Sumy"
+    },
+    "2024-09_Ternopil": {
+      "avg_processing_time": 3.79,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.04,
+      "total_deliveries": 184.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Ternopil"
+    },
+    "2024-09_Uzhhorod": {
+      "avg_processing_time": 4.71,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.48,
+      "total_deliveries": 81.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Uzhhorod"
+    },
+    "2024-09_Vinnytsia": {
+      "avg_processing_time": 3.67,
+      "median_processing_time": 3.0,
+      "std_processing_time": 1.97,
+      "total_deliveries": 75.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Vinnytsia"
+    },
+    "2024-09_Zaporizhzhia": {
+      "avg_processing_time": 3.7,
+      "median_processing_time": 3.0,
+      "std_processing_time": 1.98,
+      "total_deliveries": 221.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024-09_Zhytomyr": {
+      "avg_processing_time": 4.19,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.11,
+      "total_deliveries": 189.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-09",
+      "department_region": "Zhytomyr"
+    },
+    "2024-10_Cherkasy": {
+      "avg_processing_time": 4.4,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.43,
+      "total_deliveries": 605.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Cherkasy"
+    },
+    "2024-10_Chernihiv": {
+      "avg_processing_time": 4.43,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.27,
+      "total_deliveries": 632.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Chernihiv"
+    },
+    "2024-10_Chernivtsi": {
+      "avg_processing_time": 4.44,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.51,
+      "total_deliveries": 612.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Chernivtsi"
+    },
+    "2024-10_Crimea": {
+      "avg_processing_time": 4.57,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.28,
+      "total_deliveries": 246.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Crimea"
+    },
+    "2024-10_Dnipro": {
+      "avg_processing_time": 4.88,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.57,
+      "total_deliveries": 582.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Dnipro"
+    },
+    "2024-10_Donetsk": {
+      "avg_processing_time": 4.65,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.59,
+      "total_deliveries": 272.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Donetsk"
+    },
+    "2024-10_Ivano-Frankivsk": {
+      "avg_processing_time": 4.48,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.28,
+      "total_deliveries": 654.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024-10_Kharkiv": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.42,
+      "total_deliveries": 659.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Kharkiv"
+    },
+    "2024-10_Kherson": {
+      "avg_processing_time": 4.42,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.52,
+      "total_deliveries": 254.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Kherson"
+    },
+    "2024-10_Khmelnytskyi": {
+      "avg_processing_time": 4.3,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.65,
+      "total_deliveries": 639.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024-10_Kropyvnytskyi": {
+      "avg_processing_time": 4.02,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.22,
+      "total_deliveries": 263.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024-10_Kyiv": {
+      "avg_processing_time": 4.64,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.67,
+      "total_deliveries": 582.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Kyiv"
+    },
+    "2024-10_Luhansk": {
+      "avg_processing_time": 4.46,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.5,
+      "total_deliveries": 249.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Luhansk"
+    },
+    "2024-10_Lutsk": {
+      "avg_processing_time": 4.88,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.91,
+      "total_deliveries": 581.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Lutsk"
+    },
+    "2024-10_Lviv": {
+      "avg_processing_time": 4.42,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.68,
+      "total_deliveries": 608.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Lviv"
+    },
+    "2024-10_Mykolaiv": {
+      "avg_processing_time": 4.35,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.68,
+      "total_deliveries": 614.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Mykolaiv"
+    },
+    "2024-10_Odesa": {
+      "avg_processing_time": 4.39,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.7,
+      "total_deliveries": 582.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Odesa"
+    },
+    "2024-10_Poltava": {
+      "avg_processing_time": 4.58,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.41,
+      "total_deliveries": 621.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Poltava"
+    },
+    "2024-10_Rivne": {
+      "avg_processing_time": 4.64,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.61,
+      "total_deliveries": 574.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Rivne"
+    },
+    "2024-10_Sumy": {
+      "avg_processing_time": 4.54,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.49,
+      "total_deliveries": 621.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Sumy"
+    },
+    "2024-10_Ternopil": {
+      "avg_processing_time": 4.42,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.64,
+      "total_deliveries": 599.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Ternopil"
+    },
+    "2024-10_Uzhhorod": {
+      "avg_processing_time": 4.15,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.54,
+      "total_deliveries": 240.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Uzhhorod"
+    },
+    "2024-10_Vinnytsia": {
+      "avg_processing_time": 4.4,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.6,
+      "total_deliveries": 260.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Vinnytsia"
+    },
+    "2024-10_Zaporizhzhia": {
+      "avg_processing_time": 4.12,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.59,
+      "total_deliveries": 574.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024-10_Zhytomyr": {
+      "avg_processing_time": 4.38,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.83,
+      "total_deliveries": 591.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-10",
+      "department_region": "Zhytomyr"
+    },
+    "2024-11_Cherkasy": {
+      "avg_processing_time": 4.41,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.54,
+      "total_deliveries": 582.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Cherkasy"
+    },
+    "2024-11_Chernihiv": {
+      "avg_processing_time": 4.74,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.81,
+      "total_deliveries": 608.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Chernihiv"
+    },
+    "2024-11_Chernivtsi": {
+      "avg_processing_time": 4.97,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.69,
+      "total_deliveries": 530.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Chernivtsi"
+    },
+    "2024-11_Crimea": {
+      "avg_processing_time": 4.31,
+      "median_processing_time": 4.5,
+      "std_processing_time": 1.43,
+      "total_deliveries": 253.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Crimea"
+    },
+    "2024-11_Dnipro": {
+      "avg_processing_time": 4.55,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.78,
+      "total_deliveries": 563.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Dnipro"
+    },
+    "2024-11_Donetsk": {
+      "avg_processing_time": 4.45,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.54,
+      "total_deliveries": 235.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Donetsk"
+    },
+    "2024-11_Ivano-Frankivsk": {
+      "avg_processing_time": 4.7,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.62,
+      "total_deliveries": 585.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024-11_Kharkiv": {
+      "avg_processing_time": 4.57,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.56,
+      "total_deliveries": 644.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Kharkiv"
+    },
+    "2024-11_Kherson": {
+      "avg_processing_time": 4.51,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.45,
+      "total_deliveries": 244.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Kherson"
+    },
+    "2024-11_Khmelnytskyi": {
+      "avg_processing_time": 4.44,
+      "median_processing_time": 4.5,
+      "std_processing_time": 1.6,
+      "total_deliveries": 623.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024-11_Kropyvnytskyi": {
+      "avg_processing_time": 4.8,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.41,
+      "total_deliveries": 262.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024-11_Kyiv": {
+      "avg_processing_time": 4.53,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.57,
+      "total_deliveries": 594.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Kyiv"
+    },
+    "2024-11_Luhansk": {
+      "avg_processing_time": 4.47,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.62,
+      "total_deliveries": 238.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Luhansk"
+    },
+    "2024-11_Lutsk": {
+      "avg_processing_time": 4.3,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.32,
+      "total_deliveries": 635.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Lutsk"
+    },
+    "2024-11_Lviv": {
+      "avg_processing_time": 4.58,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.42,
+      "total_deliveries": 608.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Lviv"
+    },
+    "2024-11_Mykolaiv": {
+      "avg_processing_time": 4.67,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.65,
+      "total_deliveries": 633.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Mykolaiv"
+    },
+    "2024-11_Odesa": {
+      "avg_processing_time": 4.21,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.44,
+      "total_deliveries": 624.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Odesa"
+    },
+    "2024-11_Poltava": {
+      "avg_processing_time": 4.44,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.62,
+      "total_deliveries": 548.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Poltava"
+    },
+    "2024-11_Rivne": {
+      "avg_processing_time": 4.42,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.24,
+      "total_deliveries": 584.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Rivne"
+    },
+    "2024-11_Sumy": {
+      "avg_processing_time": 4.38,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.53,
+      "total_deliveries": 567.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Sumy"
+    },
+    "2024-11_Ternopil": {
+      "avg_processing_time": 4.35,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.36,
+      "total_deliveries": 608.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Ternopil"
+    },
+    "2024-11_Uzhhorod": {
+      "avg_processing_time": 4.81,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.71,
+      "total_deliveries": 227.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Uzhhorod"
+    },
+    "2024-11_Vinnytsia": {
+      "avg_processing_time": 4.56,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.37,
+      "total_deliveries": 262.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Vinnytsia"
+    },
+    "2024-11_Zaporizhzhia": {
+      "avg_processing_time": 4.46,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.63,
+      "total_deliveries": 570.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024-11_Zhytomyr": {
+      "avg_processing_time": 4.8,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.66,
+      "total_deliveries": 608.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-11",
+      "department_region": "Zhytomyr"
+    },
+    "2024-12_Cherkasy": {
+      "avg_processing_time": 4.48,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.11,
+      "total_deliveries": 591.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Cherkasy"
+    },
+    "2024-12_Chernihiv": {
+      "avg_processing_time": 4.66,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.56,
+      "total_deliveries": 645.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Chernihiv"
+    },
+    "2024-12_Chernivtsi": {
+      "avg_processing_time": 4.56,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.82,
+      "total_deliveries": 516.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Chernivtsi"
+    },
+    "2024-12_Crimea": {
+      "avg_processing_time": 4.31,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.52,
+      "total_deliveries": 237.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Crimea"
+    },
+    "2024-12_Dnipro": {
+      "avg_processing_time": 4.66,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.31,
+      "total_deliveries": 584.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Dnipro"
+    },
+    "2024-12_Donetsk": {
+      "avg_processing_time": 4.42,
+      "median_processing_time": 4.5,
+      "std_processing_time": 1.7,
+      "total_deliveries": 211.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Donetsk"
+    },
+    "2024-12_Ivano-Frankivsk": {
+      "avg_processing_time": 4.58,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.54,
+      "total_deliveries": 595.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2024-12_Kharkiv": {
+      "avg_processing_time": 4.52,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.76,
+      "total_deliveries": 607.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Kharkiv"
+    },
+    "2024-12_Kherson": {
+      "avg_processing_time": 4.54,
+      "median_processing_time": 4.5,
+      "std_processing_time": 1.46,
+      "total_deliveries": 238.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Kherson"
+    },
+    "2024-12_Khmelnytskyi": {
+      "avg_processing_time": 4.06,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.47,
+      "total_deliveries": 524.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Khmelnytskyi"
+    },
+    "2024-12_Kropyvnytskyi": {
+      "avg_processing_time": 4.48,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.61,
+      "total_deliveries": 262.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2024-12_Kyiv": {
+      "avg_processing_time": 4.41,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.61,
+      "total_deliveries": 582.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Kyiv"
+    },
+    "2024-12_Luhansk": {
+      "avg_processing_time": 4.0,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.44,
+      "total_deliveries": 233.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Luhansk"
+    },
+    "2024-12_Lutsk": {
+      "avg_processing_time": 4.4,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.6,
+      "total_deliveries": 579.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Lutsk"
+    },
+    "2024-12_Lviv": {
+      "avg_processing_time": 4.56,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.4,
+      "total_deliveries": 635.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Lviv"
+    },
+    "2024-12_Mykolaiv": {
+      "avg_processing_time": 4.45,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.73,
+      "total_deliveries": 633.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Mykolaiv"
+    },
+    "2024-12_Odesa": {
+      "avg_processing_time": 4.25,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.6,
+      "total_deliveries": 594.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Odesa"
+    },
+    "2024-12_Poltava": {
+      "avg_processing_time": 4.56,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.24,
+      "total_deliveries": 637.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Poltava"
+    },
+    "2024-12_Rivne": {
+      "avg_processing_time": 4.33,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.22,
+      "total_deliveries": 570.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Rivne"
+    },
+    "2024-12_Sumy": {
+      "avg_processing_time": 4.45,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.64,
+      "total_deliveries": 594.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Sumy"
+    },
+    "2024-12_Ternopil": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.42,
+      "total_deliveries": 557.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Ternopil"
+    },
+    "2024-12_Uzhhorod": {
+      "avg_processing_time": 4.25,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.34,
+      "total_deliveries": 218.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Uzhhorod"
+    },
+    "2024-12_Vinnytsia": {
+      "avg_processing_time": 4.57,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.5,
+      "total_deliveries": 246.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Vinnytsia"
+    },
+    "2024-12_Zaporizhzhia": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.65,
+      "total_deliveries": 612.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Zaporizhzhia"
+    },
+    "2024-12_Zhytomyr": {
+      "avg_processing_time": 4.72,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.71,
+      "total_deliveries": 591.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2024-12",
+      "department_region": "Zhytomyr"
+    },
+    "2025-01_Cherkasy": {
+      "avg_processing_time": 4.6,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.42,
+      "total_deliveries": 638.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Cherkasy"
+    },
+    "2025-01_Chernihiv": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.55,
+      "total_deliveries": 632.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Chernihiv"
+    },
+    "2025-01_Chernivtsi": {
+      "avg_processing_time": 4.41,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.35,
+      "total_deliveries": 628.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Chernivtsi"
+    },
+    "2025-01_Crimea": {
+      "avg_processing_time": 4.91,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.36,
+      "total_deliveries": 264.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Crimea"
+    },
+    "2025-01_Dnipro": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.79,
+      "total_deliveries": 567.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Dnipro"
+    },
+    "2025-01_Donetsk": {
+      "avg_processing_time": 4.69,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.9,
+      "total_deliveries": 261.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Donetsk"
+    },
+    "2025-01_Ivano-Frankivsk": {
+      "avg_processing_time": 4.65,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.49,
+      "total_deliveries": 606.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025-01_Kharkiv": {
+      "avg_processing_time": 4.2,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.3,
+      "total_deliveries": 613.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Kharkiv"
+    },
+    "2025-01_Kherson": {
+      "avg_processing_time": 4.46,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.61,
+      "total_deliveries": 236.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Kherson"
+    },
+    "2025-01_Khmelnytskyi": {
+      "avg_processing_time": 4.42,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.57,
+      "total_deliveries": 564.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025-01_Kropyvnytskyi": {
+      "avg_processing_time": 4.81,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.43,
+      "total_deliveries": 232.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025-01_Kyiv": {
+      "avg_processing_time": 4.34,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.28,
+      "total_deliveries": 601.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Kyiv"
+    },
+    "2025-01_Luhansk": {
+      "avg_processing_time": 4.63,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.61,
+      "total_deliveries": 239.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Luhansk"
+    },
+    "2025-01_Lutsk": {
+      "avg_processing_time": 4.38,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.27,
+      "total_deliveries": 595.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Lutsk"
+    },
+    "2025-01_Lviv": {
+      "avg_processing_time": 4.59,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.17,
+      "total_deliveries": 600.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Lviv"
+    },
+    "2025-01_Mykolaiv": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 4.5,
+      "std_processing_time": 1.61,
+      "total_deliveries": 599.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Mykolaiv"
+    },
+    "2025-01_Odesa": {
+      "avg_processing_time": 4.7,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.97,
+      "total_deliveries": 610.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Odesa"
+    },
+    "2025-01_Poltava": {
+      "avg_processing_time": 4.48,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.28,
+      "total_deliveries": 640.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Poltava"
+    },
+    "2025-01_Rivne": {
+      "avg_processing_time": 4.21,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.12,
+      "total_deliveries": 601.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Rivne"
+    },
+    "2025-01_Sumy": {
+      "avg_processing_time": 4.48,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.58,
+      "total_deliveries": 612.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Sumy"
+    },
+    "2025-01_Ternopil": {
+      "avg_processing_time": 4.5,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.82,
+      "total_deliveries": 676.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Ternopil"
+    },
+    "2025-01_Uzhhorod": {
+      "avg_processing_time": 4.17,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.48,
+      "total_deliveries": 237.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Uzhhorod"
+    },
+    "2025-01_Vinnytsia": {
+      "avg_processing_time": 4.23,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.9,
+      "total_deliveries": 242.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Vinnytsia"
+    },
+    "2025-01_Zaporizhzhia": {
+      "avg_processing_time": 4.59,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.82,
+      "total_deliveries": 607.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025-01_Zhytomyr": {
+      "avg_processing_time": 4.66,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.66,
+      "total_deliveries": 547.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-01",
+      "department_region": "Zhytomyr"
+    },
+    "2025-02_Cherkasy": {
+      "avg_processing_time": 4.98,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.88,
+      "total_deliveries": 554.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Cherkasy"
+    },
+    "2025-02_Chernihiv": {
+      "avg_processing_time": 4.34,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.49,
+      "total_deliveries": 566.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Chernihiv"
+    },
+    "2025-02_Chernivtsi": {
+      "avg_processing_time": 4.63,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.82,
+      "total_deliveries": 536.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Chernivtsi"
+    },
+    "2025-02_Crimea": {
+      "avg_processing_time": 4.75,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.67,
+      "total_deliveries": 216.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Crimea"
+    },
+    "2025-02_Dnipro": {
+      "avg_processing_time": 4.31,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.36,
+      "total_deliveries": 599.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Dnipro"
+    },
+    "2025-02_Donetsk": {
+      "avg_processing_time": 4.28,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.51,
+      "total_deliveries": 241.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Donetsk"
+    },
+    "2025-02_Ivano-Frankivsk": {
+      "avg_processing_time": 4.46,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.71,
+      "total_deliveries": 566.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025-02_Kharkiv": {
+      "avg_processing_time": 4.38,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.57,
+      "total_deliveries": 560.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Kharkiv"
+    },
+    "2025-02_Kherson": {
+      "avg_processing_time": 4.81,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.88,
+      "total_deliveries": 198.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Kherson"
+    },
+    "2025-02_Khmelnytskyi": {
+      "avg_processing_time": 4.67,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.7,
+      "total_deliveries": 561.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025-02_Kropyvnytskyi": {
+      "avg_processing_time": 4.34,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.82,
+      "total_deliveries": 197.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025-02_Kyiv": {
+      "avg_processing_time": 4.57,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.61,
+      "total_deliveries": 560.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Kyiv"
+    },
+    "2025-02_Luhansk": {
+      "avg_processing_time": 4.74,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.74,
+      "total_deliveries": 209.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Luhansk"
+    },
+    "2025-02_Lutsk": {
+      "avg_processing_time": 4.77,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.77,
+      "total_deliveries": 515.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Lutsk"
+    },
+    "2025-02_Lviv": {
+      "avg_processing_time": 4.29,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.58,
+      "total_deliveries": 584.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Lviv"
+    },
+    "2025-02_Mykolaiv": {
+      "avg_processing_time": 4.58,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.78,
+      "total_deliveries": 555.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Mykolaiv"
+    },
+    "2025-02_Odesa": {
+      "avg_processing_time": 4.5,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.49,
+      "total_deliveries": 578.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Odesa"
+    },
+    "2025-02_Poltava": {
+      "avg_processing_time": 4.22,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.73,
+      "total_deliveries": 574.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Poltava"
+    },
+    "2025-02_Rivne": {
+      "avg_processing_time": 4.62,
+      "median_processing_time": 4.5,
+      "std_processing_time": 1.67,
+      "total_deliveries": 528.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Rivne"
+    },
+    "2025-02_Sumy": {
+      "avg_processing_time": 4.65,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.63,
+      "total_deliveries": 544.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Sumy"
+    },
+    "2025-02_Ternopil": {
+      "avg_processing_time": 4.64,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.62,
+      "total_deliveries": 558.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Ternopil"
+    },
+    "2025-02_Uzhhorod": {
+      "avg_processing_time": 4.49,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.69,
+      "total_deliveries": 215.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Uzhhorod"
+    },
+    "2025-02_Vinnytsia": {
+      "avg_processing_time": 4.78,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.77,
+      "total_deliveries": 236.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Vinnytsia"
+    },
+    "2025-02_Zaporizhzhia": {
+      "avg_processing_time": 4.48,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.7,
+      "total_deliveries": 559.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025-02_Zhytomyr": {
+      "avg_processing_time": 4.68,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.32,
+      "total_deliveries": 567.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-02",
+      "department_region": "Zhytomyr"
+    },
+    "2025-03_Cherkasy": {
+      "avg_processing_time": 4.62,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.97,
+      "total_deliveries": 180.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Cherkasy"
+    },
+    "2025-03_Chernihiv": {
+      "avg_processing_time": 4.49,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.82,
+      "total_deliveries": 204.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Chernihiv"
+    },
+    "2025-03_Chernivtsi": {
+      "avg_processing_time": 3.75,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.87,
+      "total_deliveries": 201.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Chernivtsi"
+    },
+    "2025-03_Crimea": {
+      "avg_processing_time": 4.57,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.29,
+      "total_deliveries": 63.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Crimea"
+    },
+    "2025-03_Dnipro": {
+      "avg_processing_time": 4.41,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.14,
+      "total_deliveries": 160.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Dnipro"
+    },
+    "2025-03_Donetsk": {
+      "avg_processing_time": 4.3,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.93,
+      "total_deliveries": 83.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Donetsk"
+    },
+    "2025-03_Ivano-Frankivsk": {
+      "avg_processing_time": 5.41,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.38,
+      "total_deliveries": 167.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Ivano-Frankivsk"
+    },
+    "2025-03_Kharkiv": {
+      "avg_processing_time": 4.7,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.53,
+      "total_deliveries": 197.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Kharkiv"
+    },
+    "2025-03_Kherson": {
+      "avg_processing_time": 5.05,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.09,
+      "total_deliveries": 82.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Kherson"
+    },
+    "2025-03_Khmelnytskyi": {
+      "avg_processing_time": 4.35,
+      "median_processing_time": 4.0,
+      "std_processing_time": 1.86,
+      "total_deliveries": 222.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Khmelnytskyi"
+    },
+    "2025-03_Kropyvnytskyi": {
+      "avg_processing_time": 4.38,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.57,
+      "total_deliveries": 69.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Kropyvnytskyi"
+    },
+    "2025-03_Kyiv": {
+      "avg_processing_time": 4.8,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.13,
+      "total_deliveries": 193.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Kyiv"
+    },
+    "2025-03_Luhansk": {
+      "avg_processing_time": 5.1,
+      "median_processing_time": 5.0,
+      "std_processing_time": 1.76,
+      "total_deliveries": 81.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Luhansk"
+    },
+    "2025-03_Lutsk": {
+      "avg_processing_time": 4.94,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.32,
+      "total_deliveries": 200.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Lutsk"
+    },
+    "2025-03_Lviv": {
+      "avg_processing_time": 4.64,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.1,
+      "total_deliveries": 192.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Lviv"
+    },
+    "2025-03_Mykolaiv": {
+      "avg_processing_time": 4.66,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.31,
+      "total_deliveries": 162.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Mykolaiv"
+    },
+    "2025-03_Odesa": {
+      "avg_processing_time": 4.71,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.4,
+      "total_deliveries": 212.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Odesa"
+    },
+    "2025-03_Poltava": {
+      "avg_processing_time": 4.65,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.38,
+      "total_deliveries": 171.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Poltava"
+    },
+    "2025-03_Rivne": {
+      "avg_processing_time": 4.54,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.17,
+      "total_deliveries": 197.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Rivne"
+    },
+    "2025-03_Sumy": {
+      "avg_processing_time": 5.08,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.24,
+      "total_deliveries": 197.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Sumy"
+    },
+    "2025-03_Ternopil": {
+      "avg_processing_time": 4.83,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.47,
+      "total_deliveries": 181.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Ternopil"
+    },
+    "2025-03_Uzhhorod": {
+      "avg_processing_time": 4.6,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.13,
+      "total_deliveries": 78.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Uzhhorod"
+    },
+    "2025-03_Vinnytsia": {
+      "avg_processing_time": 5.21,
+      "median_processing_time": 5.0,
+      "std_processing_time": 2.41,
+      "total_deliveries": 78.0,
+      "departments_count": 9.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Vinnytsia"
+    },
+    "2025-03_Zaporizhzhia": {
+      "avg_processing_time": 4.53,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.35,
+      "total_deliveries": 175.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Zaporizhzhia"
+    },
+    "2025-03_Zhytomyr": {
+      "avg_processing_time": 4.54,
+      "median_processing_time": 4.0,
+      "std_processing_time": 2.41,
+      "total_deliveries": 174.0,
+      "departments_count": 11.0,
+      "parcel_types_count": 3.0,
+      "period": "2025-03",
+      "department_region": "Zhytomyr"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.540710"
+}

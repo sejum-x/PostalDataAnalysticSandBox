@@ -1,0 +1,118 @@
+{
+  "analysis_type": "transport_trends",
+  "data": {
+    "Minivan_2024_09": {
+      "total_deliveries": 2171.0,
+      "avg_processing_time": 4.07,
+      "avg_share_percentage": 0.09,
+      "departments_served": 257.0,
+      "transport_type_name": "Minivan",
+      "period": "2024-09"
+    },
+    "Minivan_2024_10": {
+      "total_deliveries": 6832.0,
+      "avg_processing_time": 4.41,
+      "avg_share_percentage": 0.07,
+      "departments_served": 261.0,
+      "transport_type_name": "Minivan",
+      "period": "2024-10"
+    },
+    "Minivan_2024_11": {
+      "total_deliveries": 6551.0,
+      "avg_processing_time": 4.55,
+      "avg_share_percentage": 0.07,
+      "departments_served": 261.0,
+      "transport_type_name": "Minivan",
+      "period": "2024-11"
+    },
+    "Minivan_2024_12": {
+      "total_deliveries": 6463.0,
+      "avg_processing_time": 4.43,
+      "avg_share_percentage": 0.07,
+      "departments_served": 260.0,
+      "transport_type_name": "Minivan",
+      "period": "2024-12"
+    },
+    "Minivan_2025_01": {
+      "total_deliveries": 6739.0,
+      "avg_processing_time": 4.5,
+      "avg_share_percentage": 0.07,
+      "departments_served": 261.0,
+      "transport_type_name": "Minivan",
+      "period": "2025-01"
+    },
+    "Minivan_2025_02": {
+      "total_deliveries": 6086.0,
+      "avg_processing_time": 4.57,
+      "avg_share_percentage": 0.07,
+      "departments_served": 261.0,
+      "transport_type_name": "Minivan",
+      "period": "2025-02"
+    },
+    "Minivan_2025_03": {
+      "total_deliveries": 2069.0,
+      "avg_processing_time": 4.65,
+      "avg_share_percentage": 0.09,
+      "departments_served": 258.0,
+      "transport_type_name": "Minivan",
+      "period": "2025-03"
+    },
+    "Truck_2024_09": {
+      "total_deliveries": 1994.0,
+      "avg_processing_time": 4.14,
+      "avg_share_percentage": 0.08,
+      "departments_served": 257.0,
+      "transport_type_name": "Truck",
+      "period": "2024-09"
+    },
+    "Truck_2024_10": {
+      "total_deliveries": 5882.0,
+      "avg_processing_time": 4.53,
+      "avg_share_percentage": 0.06,
+      "departments_served": 261.0,
+      "transport_type_name": "Truck",
+      "period": "2024-10"
+    },
+    "Truck_2024_11": {
+      "total_deliveries": 5884.0,
+      "avg_processing_time": 4.52,
+      "avg_share_percentage": 0.06,
+      "departments_served": 261.0,
+      "transport_type_name": "Truck",
+      "period": "2024-11"
+    },
+    "Truck_2024_12": {
+      "total_deliveries": 5828.0,
+      "avg_processing_time": 4.51,
+      "avg_share_percentage": 0.06,
+      "departments_served": 261.0,
+      "transport_type_name": "Truck",
+      "period": "2024-12"
+    },
+    "Truck_2025_01": {
+      "total_deliveries": 5908.0,
+      "avg_processing_time": 4.55,
+      "avg_share_percentage": 0.06,
+      "departments_served": 261.0,
+      "transport_type_name": "Truck",
+      "period": "2025-01"
+    },
+    "Truck_2025_02": {
+      "total_deliveries": 5490.0,
+      "avg_processing_time": 4.54,
+      "avg_share_percentage": 0.06,
+      "departments_served": 261.0,
+      "transport_type_name": "Truck",
+      "period": "2025-02"
+    },
+    "Truck_2025_03": {
+      "total_deliveries": 1850.0,
+      "avg_processing_time": 4.7,
+      "avg_share_percentage": 0.08,
+      "departments_served": 255.0,
+      "transport_type_name": "Truck",
+      "period": "2025-03"
+    }
+  },
+  "analysis_timestamp": "2025-06-13T00:32:41.843850"
+}
